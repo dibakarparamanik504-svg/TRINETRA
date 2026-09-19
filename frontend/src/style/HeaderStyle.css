@@ -1,0 +1,17 @@
+.head{
+  width: 100%;
+  height: 50px;
+  background-color: #282c34;
+  border: 2px,solid,black;
+  position: relative;
+  margin: 0;
+  display: flex;
+}
+
+.head .MainName{
+  text-align: left;
+  color: #61dafb;
+  padding:2%;
+  position: relative;
+  font-size:20px;
+}
