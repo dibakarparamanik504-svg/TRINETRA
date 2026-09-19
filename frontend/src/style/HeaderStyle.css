@@ -15,3 +15,10 @@
   position: relative;
   font-size:20px;
 }
+.person{
+  font-size: 30px;
+  color: aliceblue;
+  position: absolute;
+  padding: 2%;
+  right: 0px;
+}
