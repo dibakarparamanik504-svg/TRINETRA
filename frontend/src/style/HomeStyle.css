@@ -1,6 +1,6 @@
 .maincontain {
     position: relative;
-    top: 20px;
+    top: 50px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -10,5 +10,46 @@
         top: 50px;
         color: red;
     }
+
+}
+
+.det{
+    position: relative;
+    background-color: black;
+    width: fit-content;
+    padding: 2px;
+    top: 5px;
+    color: white;
+    margin-left: 5px;
+}
+
+
+.contener{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2px;
+    border: 2px solid black;
+    margin: 2px;
+
+    
+}
+
+.contbox{
+    border: 2px solid rgb(28, 105, 248);
+    height: fit-content;
+    width: fit-content;
+    margin: 5px;
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(193, 197, 197);
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+
 
 }

@@ -1,4 +1,4 @@
-import "./style/FooterStyle.css";
+import "../style/FooterStyle.css";
 import { GoHome } from "react-icons/go";
 import { AiFillAppstore } from "react-icons/ai";
 import { AiFillSignal } from "react-icons/ai";

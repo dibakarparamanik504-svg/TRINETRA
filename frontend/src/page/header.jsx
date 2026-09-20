@@ -1,10 +1,11 @@
-import "./style/HeaderStyle.css";
+import "../style/HeaderStyle.css";
 import { GoPerson } from "react-icons/go";
 
 function Header() {
+  let nam = "TRINETRA"
   return (
     <div className="head">
-      <div className="MainName">Welcome Solder !</div>
+      <div className="mainname">{nam}</div>
       <div className="person"><GoPerson/></div>
     </div>
   );

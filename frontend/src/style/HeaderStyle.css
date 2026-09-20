@@ -11,4 +11,12 @@
 
 .person{
   margin-left: auto;
+  color: rgb(218, 255, 10);
+  font-size: 25px;
+  border: 5px solid rgb(99, 99, 4);
+  border-radius: 50%;
+}
+
+.mainname{
+      color: aqua;
 }
