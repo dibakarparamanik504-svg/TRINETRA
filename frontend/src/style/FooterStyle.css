@@ -1,4 +1,4 @@
-.foot{
+.foot {
     height: 50px;
     width: 100%;
     background-color: #282c34;
@@ -8,47 +8,71 @@
     bottom: 0px;
     justify-content: space-around;
     align-items: center;
-    font-size: 20px;
-    /* z-index: 9999; */
+    font-size: 25px;
+    z-index: 9999;
 }
 
-.homebox{
-    border:2px,solid #282c34;
+.homebox {
+    border: 2px, solid #282c34;
     padding: 5px;
     border-radius: 20%;
     background-color: black;
     color: white;
 }
-.homebox:active{
+
+.homebox:active {
     background-color: aqua;
     color: black;
 }
 
-.dashbox{
-    border:2px,solid #282c34;
+.dashbox {
+    border: 2px, solid #282c34;
     padding: 5px;
     border-radius: 20%;
     background-color: black;
     color: white;
 }
-.monebox{
-    border:2px,solid #282c34;
+
+.monebox {
+    border: 2px, solid #282c34;
     padding: 5px;
     border-radius: 20%;
     background-color: black;
     color: white;
 }
-.disbox{
-    border:2px,solid #282c34;
+
+.disbox {
+    border: 2px, solid #282c34;
     padding: 5px;
     border-radius: 20%;
     background-color: black;
     color: white;
 }
-.analbox{
-    border:2px,solid #282c34;
+
+.analbox {
+    border: 2px, solid #282c34;
     padding: 5px;
     border-radius: 20%;
     background-color: black;
     color: white;
+}
+
+@media screen and (min-width: 1000px) {
+
+    .foot {
+        height: 300px;
+        width: 0px;
+        position: fixed;
+        margin: 0;
+        display: flex;
+        left: 0px;
+        top: 60px;
+        flex-direction: column;
+        align-items: first baseline;
+        justify-content: space-around;
+        font-size: 25px;
+        border-radius: 2%;
+        /* z-index: 9999; */
+    }
+
 }
