@@ -7,6 +7,7 @@
     top: 0px;
     align-items: center;
     font-size: 25px;
+    z-index: 999;
 }
 
 .person{
