@@ -36,21 +36,21 @@ function HomePage() {
         <div className="det">Detection</div>
         <div>
           <div className="contener">
-            {detect.map((detiteam) => {
-              return <button className="contbox">{detiteam}</button>;
+            {detect.map((detiteam,i) => {
+              return <button className="contbox" key={i}>{detiteam}</button>;
             })}
           </div>
         </div>
         <div className="det">Tracking</div>
         <div className="contener">
-          {tracking.map((traitem) => {
-            return <button className="contbox">{traitem}</button>;
+          {tracking.map((traitem,i) => {
+            return <button className="contbox" key={i}>{traitem}</button>;
           })}
         </div>
         <div className="det">Other</div>
         <div className="contener">
-          {other.map((othitem) => {
-            return <button className="contbox">{othitem}</button>;
+          {other.map((othitem,i) => {
+            return <button className="contbox" key={i}>{othitem}</button>;
           })}
         </div>
       </div>
