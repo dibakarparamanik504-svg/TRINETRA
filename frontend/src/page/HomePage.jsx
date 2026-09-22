@@ -29,27 +29,26 @@ function HomePage() {
       <div>
         <Header />
       </div>
+      <img className="imge" src={photo} alt="" width=" 100%" />
       <div className="maincontain">
-        <div className="imgcont">
-          <img className="imge" src={photo} alt="" width=" 100%" />
-        </div>
+        {" "}
+        {/*main css class*/}
+        <div className="det">Detection</div>
         <div>
-          <div className="det">Detection</div>
-          <div className="contener box1">
+          <div className="contener">
             {detect.map((detiteam) => {
               return <button className="contbox">{detiteam}</button>;
             })}
           </div>
         </div>
         <div className="det">Tracking</div>
-        <div className="contener box2">
+        <div className="contener">
           {tracking.map((traitem) => {
             return <button className="contbox">{traitem}</button>;
           })}
         </div>
-
         <div className="det">Other</div>
-        <div className="contener box2">
+        <div className="contener">
           {other.map((othitem) => {
             return <button className="contbox">{othitem}</button>;
           })}

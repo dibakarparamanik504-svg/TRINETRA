@@ -1,78 +1,134 @@
-.foot {
-    height: 50px;
-    width: 100%;
-    background-color: #282c34;
-    position: fixed;
-    margin: 0;
-    display: flex;
-    bottom: 0px;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 25px;
-    z-index: 9999;
+/* mobile responsive */
+
+@media screen and (max-width:800px) {
+
+    .foot {
+        height: 50px;
+        width: 100%;
+        background-color: #282c34;
+        position: fixed;
+        margin: 0;
+        display: flex;
+        bottom: 0px;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 25px;
+        z-index: 9999;
+    }
+
+    .homebox {
+        border: 2px, solid #282c34;
+        padding: 5px;
+        border-radius: 20%;
+        background-color: black;
+        color: white;
+    }
+
+    .homebox:active {
+        background-color: aqua;
+        color: black;
+    }
+
+    .dashbox {
+        border: 2px, solid #282c34;
+        padding: 5px;
+        border-radius: 20%;
+        background-color: black;
+        color: white;
+    }
+
+    .monebox {
+        border: 2px, solid #282c34;
+        padding: 5px;
+        border-radius: 20%;
+        background-color: black;
+        color: white;
+    }
+
+    .disbox {
+        border: 2px, solid #282c34;
+        padding: 5px;
+        border-radius: 20%;
+        background-color: black;
+        color: white;
+    }
+
+    .analbox {
+        border: 2px, solid #282c34;
+        padding: 5px;
+        border-radius: 20%;
+        background-color: black;
+        color: white;
+    }
 }
 
-.homebox {
-    border: 2px, solid #282c34;
-    padding: 5px;
-    border-radius: 20%;
-    background-color: black;
-    color: white;
-}
-
-.homebox:active {
-    background-color: aqua;
-    color: black;
-}
-
-.dashbox {
-    border: 2px, solid #282c34;
-    padding: 5px;
-    border-radius: 20%;
-    background-color: black;
-    color: white;
-}
-
-.monebox {
-    border: 2px, solid #282c34;
-    padding: 5px;
-    border-radius: 20%;
-    background-color: black;
-    color: white;
-}
-
-.disbox {
-    border: 2px, solid #282c34;
-    padding: 5px;
-    border-radius: 20%;
-    background-color: black;
-    color: white;
-}
-
-.analbox {
-    border: 2px, solid #282c34;
-    padding: 5px;
-    border-radius: 20%;
-    background-color: black;
-    color: white;
-}
+/* desktop responsiable */
 
 @media screen and (min-width: 1000px) {
 
     .foot {
-        height: 300px;
-        width: 0px;
+        height: 1200px;
+        width: 50px;
+        background-color: rgb(141, 56, 0);
         position: fixed;
         margin: 0;
         display: flex;
         left: 0px;
-        top: 60px;
+        top: 50px;
         flex-direction: column;
         align-items: first baseline;
-        justify-content: space-around;
+        justify-content: flex-start;
         font-size: 25px;
         border-radius: 2%;
         /* z-index: 9999; */
+        gap: 20px;
+        padding-top: 10px;
+        padding-left: 5px;
+    }
+
+    .homebox {
+        border: 2px, solid #282c34;
+        padding: 5px;
+        border-radius: 20%;
+        background-color: black;
+        color: white;
+    }
+
+    .homebox:active {
+        background-color: aqua;
+        color: black;
+    }
+
+    .dashbox {
+        border: 2px, solid #282c34;
+        padding: 5px;
+        border-radius: 20%;
+        background-color: black;
+        color: white;
+    }
+
+    .monebox {
+        border: 2px, solid #282c34;
+        padding: 5px;
+        border-radius: 20%;
+        background-color: black;
+        color: white;
+    }
+
+    .disbox {
+        border: 2px, solid #282c34;
+        padding: 5px;
+        border-radius: 20%;
+        background-color: black;
+        color: white;
+    }
+
+    .analbox {
+        border: 2px, solid #282c34;
+        padding: 5px;
+        border-radius: 20%;
+        background-color: black;
+        color: white;
     }
 
 }
