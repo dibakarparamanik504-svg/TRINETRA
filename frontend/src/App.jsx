@@ -19,14 +19,14 @@ function App() {
       <div>
         <BrowserRouter>
           <Routes>
-            <Route path="/home" element={<HomePage setName={setName}/>} />
+            <Route path="/" element={<HomePage setName={setName}/>} />
             <Route path="/dashboard" element={<Dashboard setName={setName}/>} />
             <Route path="/monitoring" element={<Monitor setName={setName}/>} />
             <Route path="/decision" element={<Decision setName={setName}/>} />
             <Route path="/analysis" element={<Analysis setName={setName}/>} />
           </Routes>
           <div>
-            <Footer/>
+            <Footer name={name}/>
           </div>
         </BrowserRouter>
       </div>

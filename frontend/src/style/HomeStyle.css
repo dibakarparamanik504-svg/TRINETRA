@@ -10,12 +10,13 @@
         position: relative;
         background-color: rgb(58, 52, 52);
         width: fit-content;
-        padding: 2px;
+        padding: 5px;
         top: 5px;
         color: rgb(255, 253, 253);
         margin-left: 5px;
         font-size: 20px;
         border: 5px solid rgb(17, 11, 11);
+        border-radius: 20px;
 
     }
 
@@ -32,13 +33,14 @@
         box-shadow: 50%;
         margin: 2px;
         margin-top: 10px;
-        background-color: rgba(17, 17, 17, 0.726);
+        background-color: rgba(68, 59, 59, 0.726);
+        border-radius: 20px;
 
 
     }
 
     .contbox {
-        border: 2px solid rgba(15, 15, 15, 0.815);
+        border: 5px solid rgb(20, 16, 12);
         height: fit-content;
         width: fit-content;
         margin: 5px;
@@ -46,7 +48,7 @@
         font-size: 20px;
         text-align: center;
         background-color: rgb(167, 212, 212);
-        border-radius: 20%;
+        border-radius: 50px;
         display: flex;
         align-items: center;
         padding: 5px;
@@ -83,10 +85,13 @@
         border: 5px solid rgb(211, 233, 250);
         box-shadow: 50%;
         flex-wrap: wrap;
+        border-radius: 20px;
+        background-color: rgba(68, 59, 59, 0.726);
+
 
     }
     .contbox{
-        border: 2px solid rgb(14, 13, 13);
+        border: 5px solid rgb(20, 16, 12);
         height: fit-content;
         width: fit-content;
         margin: 5px;
@@ -94,7 +99,7 @@
         font-size: 20px;
         text-align: center;
         background-color: rgb(167, 212, 212);
-        border-radius: 10%;
+        border-radius: 10px;
         display: flex;
         align-items: center;
         padding: 5px;
@@ -104,12 +109,13 @@
         margin: 10px;
         background-color: rgb(58, 52, 52);
         width: fit-content;
-        padding: 2px;
+        padding: 5px;
         top: 5px;
         color: rgb(250, 250, 253);
         margin-left: 50px;
         font-size: 20px;
         border: 5px solid black;
+        border-radius: 20px;
     }
 
     .imge {

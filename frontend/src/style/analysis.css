@@ -4,3 +4,13 @@
         color: chartreuse;
     }
 }
+
+
+@media screen and (min-width: 1000px){
+    .mainanal {
+        padding-top: 50px;
+        color: chartreuse;
+        padding-left: 50px;
+    }
+
+}

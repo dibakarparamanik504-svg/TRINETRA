@@ -3,7 +3,7 @@ import "../style/HomeStyle.css";
 import photo from "../img/india.jpg";
 
 function HomePage({setName}) {
-  setName("Home Page")
+  setName("Home Page");
   let detect = [
     "Human Detect",
     "Face Detect",

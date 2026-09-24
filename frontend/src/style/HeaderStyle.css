@@ -16,7 +16,7 @@
     color: rgb(255, 255, 253);
     font-size: 25px;
     border: 5px solid rgb(31, 31, 30);
-    border-radius: 50%;
+    border-radius: 50px;
   }
 
   .mainname {
@@ -46,13 +46,13 @@
     color: rgb(255, 255, 253);
     font-size: 25px;
     border: 5px solid rgb(31, 31, 30);
-    border-radius: 50%;
+    border-radius: 50px;
   }
 
   .mainname {
     color: aqua;
     padding: 10px;
-    padding-left: 50px;
+    padding-left: 60px;
   }
 
 }

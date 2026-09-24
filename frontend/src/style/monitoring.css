@@ -4,3 +4,13 @@
         color: aqua;
     }
 }
+
+
+@media screen and (min-width: 1000px){
+    .mainmoni {
+        padding-top: 50px;
+        color: aqua;
+        padding-left: 50px;
+    }
+    
+}

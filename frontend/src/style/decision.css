@@ -4,3 +4,12 @@
         color: blue;
     }
 }
+
+
+@media screen and (min-width: 1000px){
+    .maindeci {
+        padding-top: 50px;
+        color: blue;
+        padding-left: 50px;
+    }
+}
