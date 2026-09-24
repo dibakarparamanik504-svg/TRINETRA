@@ -24,8 +24,9 @@
         color: white;
     }
 
-    .homebox:active{
-        background-color: rgb(245, 24, 24);
+    .Hactives{
+        background-color: rgb(7, 226, 255);
+        color: black;
     }
 
     /* .homebox:hover {
@@ -41,8 +42,8 @@
         color: white;
     }
 
-    .dashbox:hover {
-        background-color: rgba(6, 205, 240, 0.466);
+   .Dactives{
+        background-color: rgb(7, 226, 255);
         color: black;
     }
 
@@ -53,8 +54,8 @@
         background-color: black;
         color: white;
     }
-    .monebox:hover {
-        background-color: rgba(6, 205, 240, 0.466);
+   .Mactives{
+        background-color: rgb(7, 226, 255);
         color: black;
     }
 
@@ -65,8 +66,8 @@
         background-color: black;
         color: white;
     }
-    .disbox:hover {
-        background-color: rgba(6, 205, 240, 0.466);
+    .Diactives{
+        background-color: rgb(7, 226, 255);
         color: black;
     }
 
@@ -77,8 +78,8 @@
         background-color: black;
         color: white;
     }
-    .analbox:hover {
-        background-color: rgba(6, 205, 240, 0.466);
+    .Aactives{
+        background-color: rgb(7, 226, 255);
         color: black;
     }
 }
@@ -115,8 +116,8 @@
         color: white;
     }
 
-    .homebox.box {
-        background-color: aqua;
+    .Hactives{
+        background-color: rgb(7, 226, 255);
         color: black;
     }
 
@@ -127,6 +128,10 @@
         background-color: black;
         color: white;
     }
+    .Dactives{
+        background-color: rgb(7, 226, 255);
+        color: black;
+    }
 
     .monebox {
         border: 2px, solid #282c34;
@@ -134,6 +139,10 @@
         border-radius: 20%;
         background-color: black;
         color: white;
+    }
+    .Mactives{
+        background-color: rgb(7, 226, 255);
+        color: black;
     }
 
     .disbox {
@@ -143,6 +152,10 @@
         background-color: black;
         color: white;
     }
+    .Diactives{
+        background-color: rgb(7, 226, 255);
+        color: black;
+    }
 
     .analbox {
         border: 2px, solid #282c34;
@@ -150,6 +163,10 @@
         border-radius: 20%;
         background-color: black;
         color: white;
+    }
+    .Aactives{
+        background-color: rgb(7, 226, 255);
+        color: black;
     }
 
 }

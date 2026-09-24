@@ -1,4 +1,6 @@
-.mainanal{
-    padding-top: 50px;
-    color: chartreuse;
+@media screen and (max-width:800px) {
+    .mainanal {
+        padding-top: 50px;
+        color: chartreuse;
+    }
 }

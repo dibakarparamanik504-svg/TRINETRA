@@ -1,4 +1,6 @@
-.maindash{
-    padding-top: 50px;
-    color: red;
+@media screen and (max-width:800px) {
+    .maindash {
+        padding-top: 50px;
+        color: red;
+    }
 }

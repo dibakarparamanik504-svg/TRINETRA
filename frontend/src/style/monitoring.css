@@ -1,4 +1,6 @@
-.mainmoni{
-    padding-top: 50px;
-    color: aqua;
+@media screen and (max-width:800px) {
+    .mainmoni {
+        padding-top: 50px;
+        color: aqua;
+    }
 }

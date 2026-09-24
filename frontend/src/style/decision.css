@@ -1,4 +1,6 @@
-.maindeci{
-    padding-top: 50px;
-    color: blue;
+@media screen and (max-width:800px) {
+    .maindeci {
+        padding-top: 50px;
+        color: blue;
+    }
 }
