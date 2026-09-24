@@ -31,7 +31,7 @@ function HomePage({setName}) {
       </div>
       <div className="imge">
         <div className="titlename">AI POWERED INTELLIGENT BOPRDER SURVEILLANCE PLATFROM</div>
-        <div className="surname">TRINETRA Providing low Bandwidth Network, real-time Detaction,Tracking, Threat Detection, fast and real time response without expensive hardware </div>
+        {/* <div className="surname">TRINETRA Providing low Bandwidth Network, real-time Detaction,Tracking, Threat Detection, fast and real time response without expensive hardware </div> */}
         <button className="titlebtn">GET STARTED</button>
       </div>
 

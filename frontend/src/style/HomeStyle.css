@@ -59,15 +59,16 @@
     .imge {
         position: relative;
         background-image: url("../img/india.jpg");
-        z-index: 2;
+        z-index: 2555;
         margin-top: 50px;
-        height: 320px;
+        height: 210px;
+        width: 100%;
         background-repeat: no-repeat;
         background-size: cover;
     }
     .titlename{
         position: relative;
-        font-size: 25px;
+        font-size: 15px;
         text-align: center;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: rgb(255, 255, 255);
@@ -87,13 +88,13 @@
     .titlebtn{
         position: relative;
         color: black;
-        font-size: 15px;
+        font-size: 10px;
         background-color: gold;
         border: 2px solid rgb(58, 24, 255);
         border-radius: 20px;
         padding: 5px;
-        top: 150px;
-        left: 220px;
+        top: 130px;
+        left: 150px;
     }
 
 }

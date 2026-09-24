@@ -10,7 +10,7 @@ import Decision from "./page/decision";
 import Analysis from "./page/analysis";
 
 function App() {
-  let [name, setName] = useState("TRINETRA");
+  let [name, setName] = useState("Home Page");
   return (
     <div className="App">
       <div>
