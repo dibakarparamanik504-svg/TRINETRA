@@ -58,11 +58,47 @@
 
     .imge {
         position: relative;
+        background-image: url("../img/india.jpg");
         z-index: 2;
         margin-top: 50px;
+        height: 320px;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
+    .titlename{
+        position: relative;
+        font-size: 25px;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(255, 255, 255);
+        font-style: oblique;
+        top: 130px;
+    }
+    .surname{
+        position: relative;
+        font-size: 15px;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(248, 163, 4);
+        font-style: italic;
+        top: 140px;
+
+    }
+    .titlebtn{
+        position: relative;
+        color: black;
+        font-size: 15px;
+        background-color: gold;
+        border: 2px solid rgb(58, 24, 255);
+        border-radius: 20px;
+        padding: 5px;
+        top: 150px;
+        left: 220px;
+    }
+
 }
 
+/* desktop mode working */
 
 @media screen and (min-width: 1000px) {
 
@@ -119,13 +155,49 @@
     }
 
     .imge {
-        width: 1000px;
-        height: 300px;
         position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        justify-self: center;
+        background-image: url("../img/india.jpg");
+        z-index: 2;
+        /* justify-content: center; */
+        height: 400px;
+        width: 1300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-position-x: 100px;
+        background-position-y: 0px;
+
+    }
+    .titlename{
+        position: relative;
+        font-size: 30px;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(255, 255, 255);
+        font-style: oblique;
+        top: 300px;
+    }
+    .surname{
+        position: relative;
+        font-size: 18px;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(248, 163, 4);
+        font-style: italic;
+        top: 300px;
+        padding-left: 100px;
+
+    }
+    .titlebtn{
+        position: relative;
+        color: black;
+        font-size: 15px;
+        background-color: gold;
+        border: 2px solid rgb(58, 24, 255);
+        border-radius: 20px;
+        padding: 5px;
+        top: 295px;
+        left: 650px;
     }
 
 }

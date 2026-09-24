@@ -1,6 +1,6 @@
 
 import "../style/HomeStyle.css";
-import photo from "../img/india.jpg";
+// import photo from "../img/india.jpg";
 
 function HomePage({setName}) {
   setName("Home Page");
@@ -29,9 +29,15 @@ function HomePage({setName}) {
       <div>
        
       </div>
-      <img className="imge" src={photo} alt="" width=" 100%" />
+      <div className="imge">
+        <div className="titlename">AI POWERED INTELLIGENT BOPRDER SURVEILLANCE PLATFROM</div>
+        <div className="surname">TRINETRA Providing low Bandwidth Network, real-time Detaction,Tracking, Threat Detection, fast and real time response without expensive hardware </div>
+        <button className="titlebtn">GET STARTED</button>
+      </div>
+
+
+
       <div className="maincontain">
-        {" "}
         {/*main css class*/}
         <div className="det">Detection</div>
         <div>
