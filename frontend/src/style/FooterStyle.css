@@ -24,10 +24,14 @@
         color: white;
     }
 
-    .homebox:active {
-        background-color: aqua;
-        color: black;
+    .homebox:active{
+        background-color: rgb(245, 24, 24);
     }
+
+    /* .homebox:hover {
+        background-color: rgba(6, 205, 240, 0.466);
+        color: black;
+    } */
 
     .dashbox {
         border: 2px, solid #282c34;
@@ -37,12 +41,21 @@
         color: white;
     }
 
+    .dashbox:hover {
+        background-color: rgba(6, 205, 240, 0.466);
+        color: black;
+    }
+
     .monebox {
         border: 2px, solid #282c34;
         padding: 5px;
         border-radius: 20%;
         background-color: black;
         color: white;
+    }
+    .monebox:hover {
+        background-color: rgba(6, 205, 240, 0.466);
+        color: black;
     }
 
     .disbox {
@@ -52,6 +65,10 @@
         background-color: black;
         color: white;
     }
+    .disbox:hover {
+        background-color: rgba(6, 205, 240, 0.466);
+        color: black;
+    }
 
     .analbox {
         border: 2px, solid #282c34;
@@ -59,6 +76,10 @@
         border-radius: 20%;
         background-color: black;
         color: white;
+    }
+    .analbox:hover {
+        background-color: rgba(6, 205, 240, 0.466);
+        color: black;
     }
 }
 
@@ -94,7 +115,7 @@
         color: white;
     }
 
-    .homebox:active {
+    .homebox.box {
         background-color: aqua;
         color: black;
     }

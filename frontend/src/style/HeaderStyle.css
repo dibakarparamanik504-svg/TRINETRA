@@ -1,4 +1,5 @@
-.head {
+@media screen and (max-width:800px) {
+  .head {
     height: 50px;
     width: 100%;
     background-color: #282c34;
@@ -8,17 +9,50 @@
     align-items: center;
     font-size: 25px;
     z-index: 999;
+  }
+
+  .person {
+    margin-left: auto;
+    color: rgb(255, 255, 253);
+    font-size: 25px;
+    border: 5px solid rgb(31, 31, 30);
+    border-radius: 50%;
+  }
+
+  .mainname {
+    color: aqua;
+    padding: 10px;
+    padding-left: 30px;
+  }
 }
 
-.person{
-  margin-left: auto;
-  color: rgb(255, 255, 253);
-  font-size: 25px;
-  border: 5px solid rgb(31, 31, 30);
-  border-radius: 50%;
-}
 
-.mainname{
-      color: aqua;
-      padding: 10px;
+
+@media screen and (min-width: 1000px) {
+  .head {
+    height: 50px;
+    width: 100%;
+    background-color: #282c34;
+    position: fixed;
+    display: flex;
+    top: 0px;
+    align-items: center;
+    font-size: 25px;
+    z-index: 999;
+  }
+
+  .person {
+    margin-left: auto;
+    color: rgb(255, 255, 253);
+    font-size: 25px;
+    border: 5px solid rgb(31, 31, 30);
+    border-radius: 50%;
+  }
+
+  .mainname {
+    color: aqua;
+    padding: 10px;
+    padding-left: 50px;
+  }
+
 }

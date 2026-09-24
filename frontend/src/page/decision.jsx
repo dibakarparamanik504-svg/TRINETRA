@@ -1,6 +1,7 @@
 import "../style/decision.css"
 
-function Decision(){
+function Decision({setName}){
+    setName("Decision")
     return(
         <div className="maindeci">
             <h1>welcome Desision page</h1>

@@ -1,8 +1,9 @@
-import "../style/app"
+import "../style/analysis.css"
 
-function Analysis(){
+function Analysis({setName}){
+    setName("Analysis");
     return(
-        <div mainanal>
+        <div className="mainanal">
             <h1>welcome Analysis page</h1>
         </div>
     );

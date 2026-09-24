@@ -1,9 +1,10 @@
 import "../style/dashboard.css"
 
-function Dashboard(){
+function Dashboard({setName}){
+    setName("Dashboard");
     return(
         <div className="maindash">
-            welcome dashboard
+           <h1> welcome dashboard</h1>
         </div>
     );
 }

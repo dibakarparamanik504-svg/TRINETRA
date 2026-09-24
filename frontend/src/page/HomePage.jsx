@@ -1,9 +1,9 @@
-import Header from "./header";
-import Footer from "./footer";
+
 import "../style/HomeStyle.css";
 import photo from "../img/india.jpg";
 
-function HomePage() {
+function HomePage({setName}) {
+  setName("Home Page")
   let detect = [
     "Human Detect",
     "Face Detect",
@@ -27,7 +27,7 @@ function HomePage() {
   return (
     <div>
       <div>
-        <Header />
+       
       </div>
       <img className="imge" src={photo} alt="" width=" 100%" />
       <div className="maincontain">
@@ -55,7 +55,7 @@ function HomePage() {
         </div>
       </div>
       <div className="footernav">
-        <Footer />
+        
       </div>
     </div>
   );
