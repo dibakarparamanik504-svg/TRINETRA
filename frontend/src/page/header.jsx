@@ -1,5 +1,5 @@
 
-import "../style/HeaderStyle.css";
+import "./HeaderStyle.css";
 import { GoPerson } from "react-icons/go";
 
 function Header({name}) {

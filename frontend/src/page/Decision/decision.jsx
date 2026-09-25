@@ -1,4 +1,4 @@
-import "../style/decision.css"
+import "./decision.css"
 
 function Decision({setName}){
     setName("Decision")

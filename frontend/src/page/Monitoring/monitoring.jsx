@@ -1,4 +1,4 @@
-import "../style/monitoring.css"
+import "./monitoring.css"
 
 function Monitor({setName}){
     setName("AI Monitoring")

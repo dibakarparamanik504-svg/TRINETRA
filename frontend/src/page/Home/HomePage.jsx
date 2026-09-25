@@ -1,6 +1,4 @@
-
-import "../style/HomeStyle.css";
-// import photo from "../img/india.jpg";
+import "./HomeStyle.css";
 
 function HomePage({setName}) {
   setName("Home Page");

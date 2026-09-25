@@ -1,4 +1,4 @@
-import "../style/analysis.css"
+import "./analysis.css"
 
 function Analysis({setName}){
     setName("Analysis");

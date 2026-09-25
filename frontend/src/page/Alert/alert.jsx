@@ -1,7 +1,7 @@
-import "../style/dashboard.css"
+import "./alert.css"
 
 function Dashboard({setName}){
-    setName("Dashboard");
+    setName("Live Alert");
     return(
         <div className="maindash">
            <h1> welcome dashboard</h1>

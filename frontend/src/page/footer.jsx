@@ -1,4 +1,4 @@
-import "../style/FooterStyle.css";
+import "./FooterStyle.css";
 import { GoHome } from "react-icons/go";
 // import { AiFillAppstore } from "react-icons/ai";
 import { AiFillSignal } from "react-icons/ai";
@@ -13,7 +13,7 @@ function Footer({name}){
         <div className="foot">
             <div className={name === "Home Page" ?( "homebox Hactives") : ("homebox")}><Link to="/"><GoHome/></Link></div>
 
-            <div className={name === "Dashboard" ? ("dashbox Dactives") : ("dashbox")}><Link to="/dashboard"><FaBell/></Link></div>
+            <div className={name === " Live Alert" ? ("dashbox Dactives") : ("dashbox")}><Link to="/alert"><FaBell/></Link></div>
 
             <div className={name === "AI Monitoring" ? ("dashbox Mactives") : ("dashbox")}><Link to="/monitoring"><FaBrain/></Link></div>
 

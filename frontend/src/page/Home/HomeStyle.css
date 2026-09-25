@@ -58,7 +58,7 @@
 
     .imge {
         position: relative;
-        background-image: url("../img/india.jpg");
+        background-image: url("../../img/india.jpg");
         z-index: 2555;
         margin-top: 50px;
         height: 210px;
@@ -157,7 +157,7 @@
 
     .imge {
         position: relative;
-        background-image: url("../img/india.jpg");
+        background-image: url("../../img/india.jpg");
         z-index: 2;
         /* justify-content: center; */
         height: 400px;
