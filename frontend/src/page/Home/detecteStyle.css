@@ -1,0 +1,14 @@
+@media screen and (max-width:800px){
+    .maindetect{
+        color: bisque;
+        padding-top: 50px;
+    }
+
+}
+
+@media screen and (min-width: 1000px){
+    .maindetect{
+        color: bisque;
+    }
+    
+}

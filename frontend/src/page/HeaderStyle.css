@@ -22,7 +22,13 @@
   .mainname {
     color: aqua;
     padding: 10px;
-    padding-left: 30px;
+  }
+
+  .back{
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    background-color:white;
+    border-radius: 50px;
   }
 }
 

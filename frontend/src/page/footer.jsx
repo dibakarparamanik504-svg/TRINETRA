@@ -11,9 +11,9 @@ function Footer({name}){
     // let [active,setactive]=useState("home");
     return(
         <div className="foot">
-            <div className={name === "Home Page" ?( "homebox Hactives") : ("homebox")}><Link to="/"><GoHome/></Link></div>
+            <div className={name === "Home" || name === "Detection" || name === "Tracking" || name === "Camera Health"? ( "homebox Hactives") : ("homebox")}><Link to="/"><GoHome/></Link></div>
 
-            <div className={name === " Live Alert" ? ("dashbox Dactives") : ("dashbox")}><Link to="/alert"><FaBell/></Link></div>
+            <div className={name === "Live Alert" ? ("dashbox Dactives") : ("dashbox")}><Link to="/alert"><FaBell/></Link></div>
 
             <div className={name === "AI Monitoring" ? ("dashbox Mactives") : ("dashbox")}><Link to="/monitoring"><FaBrain/></Link></div>
 

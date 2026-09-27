@@ -4,54 +4,23 @@
         overflow-y: auto;
         padding-bottom: 50px;
         background-color: rgb(34, 32, 32);
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        gap: 20px;
+        padding-top: 10px;
     }
-
-    .det {
-        position: relative;
-        background-color: rgb(58, 52, 52);
-        width: fit-content;
-        padding: 5px;
-        top: 5px;
-        color: rgb(255, 253, 253);
-        margin-left: 5px;
-        font-size: 20px;
-        border: 5px solid rgb(17, 11, 11);
-        border-radius: 20px;
-
-    }
-
 
     .contener {
-        /* position: absolute; */
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
+        position: relative;
         padding: 2px;
         border: 5px solid rgb(223, 223, 223);
-        box-shadow: 50%;
-        margin: 2px;
-        margin-top: 10px;
         background-color: rgba(68, 59, 59, 0.726);
         border-radius: 20px;
-
-
-    }
-
-    .contbox {
-        border: 5px solid rgb(20, 16, 12);
-        height: fit-content;
-        width: fit-content;
-        margin: 5px;
-        /* position: relative; */
-        font-size: 20px;
-        text-align: center;
-        background-color: rgb(167, 212, 212);
-        border-radius: 50px;
-        display: flex;
-        align-items: center;
-        padding: 5px;
+        height: 150px;
+        margin-left: 10px;
+        margin-right: 10px;
 
 
     }
@@ -59,7 +28,7 @@
     .imge {
         position: relative;
         background-image: url("../../img/india.jpg");
-        z-index: 2555;
+        z-index: 1;
         margin-top: 50px;
         height: 210px;
         width: 100%;
@@ -73,7 +42,7 @@
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: rgb(255, 255, 255);
         font-style: oblique;
-        top: 130px;
+        top: 150px;
     }
     .surname{
         position: relative;
@@ -104,61 +73,38 @@
 @media screen and (min-width: 1000px) {
 
     .maincontain {
-        width: 100%;
-        height: 100%;
         position: absolute;
+        overflow-y: auto;
+        padding-bottom: 50px;
+        background-color: rgb(34, 32, 32);
         display: flex;
-        flex-direction: column;
-        align-items: center;
-         padding-left: 50px;
-    }
-    .contener {
-        width: fit-content;
         flex-direction: row;
+        height: 100%;
+        width: 100%;
+        gap: 20px;
+        padding-top: 10px;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .contener {
         position: relative;
-        display: flex;
-        justify-content: space-between;
         padding: 2px;
-        border: 5px solid rgb(211, 233, 250);
-        box-shadow: 50%;
-        flex-wrap: wrap;
-        border-radius: 20px;
+        border: 5px solid rgb(223, 223, 223);
         background-color: rgba(68, 59, 59, 0.726);
-
-
-    }
-    .contbox{
-        border: 5px solid rgb(20, 16, 12);
-        height: fit-content;
-        width: fit-content;
-        margin: 5px;
-        position: relative;
-        font-size: 20px;
-        text-align: center;
-        background-color: rgb(167, 212, 212);
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        padding: 5px;
-    }
-    .det{
-        position: relative;
-        margin: 10px;
-        background-color: rgb(58, 52, 52);
-        width: fit-content;
-        padding: 5px;
-        top: 5px;
-        color: rgb(250, 250, 253);
-        margin-left: 50px;
-        font-size: 20px;
-        border: 5px solid black;
         border-radius: 20px;
+        height: 150px;
+        width: 400px;
+        margin-left: 60px;
+        margin-right: 10px;
+
+
     }
 
     .imge {
         position: relative;
         background-image: url("../../img/india.jpg");
-        z-index: 2;
+        z-index: 1;
         /* justify-content: center; */
         height: 400px;
         width: 1300px;
