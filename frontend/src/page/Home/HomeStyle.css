@@ -21,6 +21,9 @@
         height: 150px;
         margin-left: 10px;
         margin-right: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
 
 
     }
@@ -34,6 +37,7 @@
         width: 100%;
         background-repeat: no-repeat;
         background-size: cover;
+        margin-bottom: 20px;
     }
     .titlename{
         position: relative;
@@ -44,26 +48,37 @@
         font-style: oblique;
         top: 150px;
     }
-    .surname{
-        position: relative;
-        font-size: 15px;
-        text-align: center;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        color: rgb(248, 163, 4);
-        font-style: italic;
-        top: 140px;
 
+    .firstcont{
+        display: flex;
+        flex-direction: column;
+        color: beige;
     }
-    .titlebtn{
-        position: relative;
-        color: black;
-        font-size: 10px;
-        background-color: gold;
-        border: 2px solid rgb(58, 24, 255);
-        border-radius: 20px;
+
+    .conticon{
+        font-size: 35px;
+        margin: 5px;
+        background-color: rgb(41, 51, 61);
+        color: white;
+        border: 2px ,solid, black;
+        border-radius: 10px;
         padding: 5px;
-        top: 130px;
-        left: 150px;
+    }
+    .conttitle{
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .contsubtitle{
+        font-size: 10px;
+        color: rgba(240, 255, 255, 0.719);
+    }
+    .secondcont{
+        width: max-content;
+        border: 2px,solid,rgb(195, 201, 173);
+        padding: 5px;
+        border-radius: 10px;
+        background-color: rgba(15, 12, 12, 0.651);
     }
 
 }

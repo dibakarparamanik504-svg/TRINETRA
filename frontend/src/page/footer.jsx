@@ -7,23 +7,58 @@ import { FaBrain } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 // import { useState } from "react";
 
-function Footer({name}){
-    // let [active,setactive]=useState("home");
-    return(
-        <div className="foot">
-            <div className={name === "Home" || name === "Detection" || name === "Tracking" || name === "Camera Health"? ( "homebox Hactives") : ("homebox")}><Link to="/"><GoHome/></Link></div>
+function Footer({ name }) {
+  // let [active,setactive]=useState("home");
 
-            <div className={name === "Live Alert" ? ("dashbox Dactives") : ("dashbox")}><Link to="/alert"><FaBell/></Link></div>
+  let navigations = [
+    {
+      clasatt:
+        name === "Home" ||
+        name === "Detection" ||
+        name === "Tracking" ||
+        name === "Camera Health",
+      link: "/",
+      icon:<GoHome />,
+    },
 
-            <div className={name === "AI Monitoring" ? ("dashbox Mactives") : ("dashbox")}><Link to="/monitoring"><FaBrain/></Link></div>
 
-            <div className={name === "Decision" ? ("dashbox Diactives") : ("dashbox")}><Link to="decision"><FaRobot/></Link></div>
+    {
+      clasatt:name === "Live Alert",
+      link:"/alert",
+      icon:<FaBell />,
+    },
 
-            <div className={name === "Analysis" ? ("dashbox Aactives") : ("dashbox")}><Link to="/analysis"><AiFillSignal/></Link></div>
-        </div>
+    {
+      clasatt:name === "AI Monitoring",
+      link:"/monitoring",
+      icon:<FaBrain />,
+    },
 
-    );
+    {
+      clasatt:name === "Decision",
+      link:"decision",
+      icon:<FaRobot />,
+    },
 
+    {
+      clasatt:name === "Analysis",
+      link:"/analysis",
+      icon:<AiFillSignal />,
+    },
+  ];
+  return (
+    <div className="foot">
+      {navigations.map((navigationitem,i) => {
+        return (
+          <div className={navigationitem.clasatt?  "navbox Hactives": "navbox"} key={i}>
+            <Link to={navigationitem.link}>
+              {navigationitem.icon}
+            </Link>
+          </div>
+        );
+      })}
+    </div>
+  );
 }
 
 export default Footer;

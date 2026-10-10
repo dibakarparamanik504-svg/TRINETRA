@@ -16,7 +16,7 @@
         z-index: 9999;
     }
 
-    .homebox {
+    .navbox {
         border: 2px, solid #282c34;
         padding: 5px;
         border-radius: 20%;
@@ -29,61 +29,7 @@
         color: black;
     }
 
-    /* .homebox:hover {
-        background-color: rgba(6, 205, 240, 0.466);
-        color: black;
-    } */
-
-    .dashbox {
-        border: 2px, solid #282c34;
-        padding: 5px;
-        border-radius: 20%;
-        background-color: black;
-        color: white;
-    }
-
-   .Dactives{
-        background-color: rgb(7, 226, 255);
-        color: black;
-    }
-
-    .monebox {
-        border: 2px, solid #282c34;
-        padding: 5px;
-        border-radius: 20%;
-        background-color: black;
-        color: white;
-    }
-   .Mactives{
-        background-color: rgb(7, 226, 255);
-        color: black;
-    }
-
-    .disbox {
-        border: 2px, solid #282c34;
-        padding: 5px;
-        border-radius: 20%;
-        background-color: black;
-        color: white;
-    }
-    .Diactives{
-        background-color: rgb(7, 226, 255);
-        color: black;
-    }
-
-    .analbox {
-        border: 2px, solid #282c34;
-        padding: 5px;
-        border-radius: 20%;
-        background-color: black;
-        color: white;
-    }
-    .Aactives{
-        background-color: rgb(7, 226, 255);
-        color: black;
-    }
 }
-
 /* desktop responsiable */
 
 @media screen and (min-width: 1000px) {
@@ -98,17 +44,16 @@
         left: 0px;
         top: 0px;
         flex-direction: column;
-        align-items: first baseline;
+        align-items: center;
         justify-content: flex-start;
-        font-size: 25px;
+        font-size: 30px;
         border-radius: 2px;
         z-index: 9999;
         gap: 20px;
         padding-top: 50px;
-        padding-left: 5px;
     }
 
-    .homebox {
+    .navbox {
         border: 2px, solid #282c34;
         padding: 5px;
         border-radius: 20%;
@@ -117,54 +62,6 @@
     }
 
     .Hactives{
-        background-color: rgb(7, 226, 255);
-        color: black;
-    }
-
-    .dashbox {
-        border: 2px, solid #282c34;
-        padding: 5px;
-        border-radius: 20%;
-        background-color: black;
-        color: white;
-    }
-    .Dactives{
-        background-color: rgb(7, 226, 255);
-        color: black;
-    }
-
-    .monebox {
-        border: 2px, solid #282c34;
-        padding: 5px;
-        border-radius: 20%;
-        background-color: black;
-        color: white;
-    }
-    .Mactives{
-        background-color: rgb(7, 226, 255);
-        color: black;
-    }
-
-    .disbox {
-        border: 2px, solid #282c34;
-        padding: 5px;
-        border-radius: 20%;
-        background-color: black;
-        color: white;
-    }
-    .Diactives{
-        background-color: rgb(7, 226, 255);
-        color: black;
-    }
-
-    .analbox {
-        border: 2px, solid #282c34;
-        padding: 5px;
-        border-radius: 20%;
-        background-color: black;
-        color: white;
-    }
-    .Aactives{
         background-color: rgb(7, 226, 255);
         color: black;
     }
