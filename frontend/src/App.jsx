@@ -8,9 +8,9 @@ import Dashboard from "./page/Alert/alert";
 import Monitor from "./page/Monitoring/monitoring";
 import Decision from "./page/Decision/decision";
 import Analysis from "./page/Analysis/analysis";
-import Detection from "./page/Home/detection";
-import Tracking from "./page/Home/tracking";
-import Camerahelth from "./page/Home/camera_helth";
+import Detection from "./page/Home/home_feature/detection";
+import Tracking from "./page/Home/home_feature/tracking";
+import Camerahelth from "./page/Home/home_feature/camera_helth";
 
 function App() {
   let [name, setName] = useState("Home Page");

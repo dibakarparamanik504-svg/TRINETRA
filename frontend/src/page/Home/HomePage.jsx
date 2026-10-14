@@ -23,7 +23,7 @@ function HomePage({ setName }) {
       title: "Tracking : ",
       subtitle: "MOVEMENT & TRAJECTORY ANALYSIS",
       description:
-        "Track people and vehicles across video frames to understand movement, direction, and trajectories.",
+        "Track people and vehicles across video frames to understand movement, direction & trajectories.",
     },
     {
       link: "/home/camerahealth",
