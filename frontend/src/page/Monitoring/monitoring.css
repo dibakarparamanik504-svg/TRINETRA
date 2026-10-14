@@ -1,10 +1,9 @@
 @media screen and (max-width:800px) {
     .mainmoni {
         width: 100%;
-        padding-top: 50px;
+        margin-top: 50px;
         position: absolute;
         margin-bottom: 50px;
-        padding-bottom: 50px;
     }
 
     .maincamera{
@@ -20,6 +19,7 @@
         position: fixed;
         background-color: rgb(17, 16, 15);
         z-index: 2000;
+        margin-top: 50px;
         
 
     }
@@ -32,7 +32,7 @@
     }
     .leftside{
         position: fixed;
-        top: 150px;
+        top: 200px;
         width: max-content;
         background-color: aliceblue;
         color: black;
@@ -43,7 +43,7 @@
     .rightside{
         position: fixed;
         width: max-content;
-        top: 150px;
+        top: 200px;
         right: 0px;
         /* margin-left: auto; */
         background-color: aliceblue;
@@ -60,21 +60,27 @@
         
     }
     .cameratitle{
-         position: relative;
+        position: fixed;
+        width:max-content;
         font-size: 20px;
-        background-color: rgba(0, 0, 0, 0.788);
-        padding: 5px;
-        border: 2px,solid,black;
+        background-color: rgba(192, 190, 190, 0.589);
+        padding: 2px;
+        border: 2px,solid,rgb(255, 255, 255);
         border-radius: 10px;
-        color: bisque;
+        color: rgb(22, 22, 21);
+        font-weight: bold;
+        margin: 5px;
+        z-index: 9999;
     }
+
     .monfeature{
-        top: 270px;
+        top: 300px;
         position: relative;
         display: grid;
         grid-template-columns: repeat(1,1fr);
         gap: 20px;
-        margin: 15px;
+        margin: 10px;
+        overflow: hidden;
 
     }
     .parentbox{
@@ -82,6 +88,13 @@
         border-radius: 20px;
         width: 100%;
         height: 200px;
+    }
+    .featurenane{
+        background-color: rgba(224, 223, 222, 0.842);
+        width: max-content;
+        border: 2px,solid,rgb(211, 206, 206);
+        border-radius: 10px;
+        padding: 5px;
     }
 }
 
