@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./monitoring.css";
 import { GoChevronLeft, GoChevronRight } from "react-icons/go";
 import { BiSolidCameraPlus } from "react-icons/bi";
+import {MdCancel} from "react-icons/md"
 
 function Monitor({ setName }) {
   setName("AI Monitoring");
@@ -12,6 +13,7 @@ function Monitor({ setName }) {
       icon: <BiSolidCameraPlus />,
       title: "Connect Camera ...",
       dis: " ",
+      class1:" "
     },
   ]);
 
@@ -26,6 +28,8 @@ function Monitor({ setName }) {
     id: index,
     icon: "",
     title: "Camera No " + cameras.length,
+    dis:<MdCancel/>,
+    class1:"cancle",
   };
 
   let iconclick = () => {
@@ -38,21 +42,34 @@ function Monitor({ setName }) {
   let monifeature = [
     {
       id: 1,
-      name:" Camera details",
+      name: " Camera details",
     },
     {
       id: 2,
-      name:"Detection Feature",
+      name: "Detection Feature",
     },
     {
       id: 3,
-      name:"",
+      name: "",
     },
     {
       id: 4,
-      name:"",
-    }
+      name: "",
+    },
   ];
+
+  // let removecamegra=(id)=>{
+  //   return(
+  //     setCamera((prevcam)=>{
+  //       prevcam.filter((camera)=>{
+  //         return(
+  //           camera.id !== id  
+  //         );
+  //       })
+  //     })
+
+  //   );
+  // }
 
   return (
     <div className="mainmoni">
@@ -61,7 +78,11 @@ function Monitor({ setName }) {
         .map((camera, i) => {
           return (
             <div className="control">
-              <div className="cameratitle">{camera.title}</div>
+              <div>
+              <div className="cameratitle" key={i}>{camera.title}</div>
+              <div className={camera.class1}>{camera.dis}</div>
+              {index}
+              </div>
               <div className="maincamera">
                 <div key={i}>
                   <div className="cameraicon" onClick={iconclick}>
@@ -92,8 +113,8 @@ function Monitor({ setName }) {
         </div>
       </div>
 
-      <div className="contboxdesign">
-        {monifeature.map((feature_item,i) => {
+      <div>
+        {monifeature.map((feature_item, i) => {
           return (
             <div className="monfeature">
               <div className="featurenane">{feature_item.name}</div>
