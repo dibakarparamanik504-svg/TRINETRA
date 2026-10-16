@@ -1,7 +1,49 @@
 @media screen and (max-width:800px) {
     .maindash {
         padding-top: 50px;
+        width: 100%;
         color: red;
+    }
+    .mainaleheader{
+        border: 2px solid rgb(19, 18, 17);
+        background-color: rgba(251, 253, 255, 0.15);
+        border-radius: 20px;
+    }
+    .cls1aleheader{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content:space-around;
+        margin: 5px;
+        padding: 5px;
+        gap: 5px;
+       
+    }
+    .aleheader{
+        width: 160px;
+        height: 100px;
+        border: 2px solid bisque;
+        border-radius: 20px;
+    }
+    .title1{
+        width: max-content;
+        padding: 5px;
+        border: 2px solid rgb(19, 18, 17);
+        background-color: rgba(175, 177, 179, 0.76);
+        border-radius: 20px;
+        margin: 5px;
+        padding: 8px;
+        color: black;
+        font-weight: bold;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+
+    }
+    .title1 div{
+        color: red;
+        font-size: 25px;
     }
 }
 
