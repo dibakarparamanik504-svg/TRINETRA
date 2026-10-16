@@ -6,6 +6,7 @@ import {MdCancel} from "react-icons/md"
 
 function Monitor({ setName }) {
   setName("AI Monitoring");
+  let [cameralength,setcameralength] = useState(0);
   let [index, setIndex] = useState(0);
   let [cameras, setCamera] = useState([
     {
@@ -18,16 +19,20 @@ function Monitor({ setName }) {
   ]);
 
   let leftsidebar = (prev) => {
-    return (prev - 1 + cameras.length) % cameras.length;
+    return(
+       setIndex(prev > 0 ? prev-1:cameralength)
+    );
   };
 
   let rightsidebar = (prev) => {
-    return (prev + 1) % cameras.length;
+    return (
+      setIndex(prev < cameralength ? prev + 1 :0)
+    );
   };
   let newcamera = {
     id: index,
     icon: "",
-    title: "Camera No " + cameras.length,
+    title: "Camera No " + (cameralength +1),
     dis:<MdCancel/>,
     class1:"cancle",
   };
@@ -35,7 +40,8 @@ function Monitor({ setName }) {
   let iconclick = () => {
     return (
       setCamera((newcam) => [...newcam, newcamera]),
-      setIndex(cameras.length)
+      setcameralength(cameralength +1),
+      setIndex(cameralength+1)
     );
   };
 
@@ -58,18 +64,23 @@ function Monitor({ setName }) {
     },
   ];
 
-  // let removecamegra=(id)=>{
-  //   return(
-  //     setCamera((prevcam)=>{
-  //       prevcam.filter((camera)=>{
-  //         return(
-  //           camera.id !== id  
-  //         );
-  //       })
-  //     })
+  let removecamegra=(id)=>{
+    return(
+      setCamera((revio)=>{
+        return(
+        [...revio.slice(0,id),
+          ...revio.slice(id+1)
+        ]
+        // 
+        // 
+        );
 
-  //   );
-  // }
+      }),
+      setIndex(cameralength-1),
+      setcameralength(cameralength-1)
+
+    );
+  }
 
   return (
     <div className="mainmoni">
@@ -80,12 +91,11 @@ function Monitor({ setName }) {
             <div className="control">
               <div>
               <div className="cameratitle" key={i}>{camera.title}</div>
-              <div className={camera.class1}>{camera.dis}</div>
-              {index}
+              <div className={camera.class1} onClick={()=>removecamegra(index)}>{camera.dis}</div>
               </div>
               <div className="maincamera">
                 <div key={i}>
-                  <div className="cameraicon" onClick={iconclick}>
+                  <div className="cameraicon" onClick={()=>iconclick()}>
                     {camera.icon}
                   </div>
                 </div>
