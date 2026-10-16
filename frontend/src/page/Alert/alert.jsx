@@ -3,7 +3,7 @@ import alerts from "./alerts.json";
 import { MdSecurity } from "react-icons/md";
 import { BiSolidBellRing } from "react-icons/bi";
 import { RiAlertFill } from "react-icons/ri";
-import { FaRegClock, FaCheckCircle } from "react-icons/fa";
+import { FaRegClock, FaCheckCircle ,FaImages} from "react-icons/fa";
 
 function Dashboard({ setName }) {
   setName("Live Alert");
@@ -33,12 +33,8 @@ function Alertcomponent() {
       {alerts.map((alertsitem, i) => {
         return (
           <div className="fullcont">
-            <div>
-              <img
-                src={alertsitem.imag}
-                alt={alertsitem.id}
-                className="imagesclas"
-              />
+            <div className="imagesclas">
+              <FaImages/>
             </div>
             <div className="description">
               <div className="decriptitle">{alertsitem.title}</div>

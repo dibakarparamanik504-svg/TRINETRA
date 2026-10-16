@@ -180,10 +180,14 @@
 
     }
     .imagesclas{
-        width: 70px;
-        height: 100px;
+        width: 60px;
         object-fit: cover;
         border-radius: 20px;
+        font-size: 50px;
+        text-align: center;
+        padding: 5px;
+        color: rgb(219, 216, 216);
+        background-color: rgb(41, 35, 35);
     }
 
 

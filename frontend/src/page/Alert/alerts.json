@@ -10,9 +10,8 @@
     "severity": "Critical",
     "confidence": 75,
     "status": "New",
-    "assignedTo": "Operator 01",
-    "imag" : "/DemoData/img1.jpg"
-  },
+    "assignedTo": "Operator 01"
+    },
   {
     "id": "ALT-1002",
     "title": "Virtual Line Crossing",
@@ -24,8 +23,7 @@
     "severity": "Low",
     "confidence": 82,
     "status": "Resolved",
-    "assignedTo": "Operator 03",
-    "imag" : "/DemoData/img2.jpg"
+    "assignedTo": "Operator 03"
 
   },
   {
@@ -39,9 +37,7 @@
     "severity": "Medium",
     "confidence": 89,
     "status": "Under Review",
-    "assignedTo": "Unassigned",
-    "imag" : "/DemoData/img3.jpg"
-
+    "assignedTo": "Unassigned"
   },
   {
     "id": "ALT-1004",
@@ -54,9 +50,7 @@
     "severity": "High",
     "confidence": 96,
     "status": "Acknowledged",
-    "assignedTo": "Operator 02",
-    "imag" : "/DemoData/img4.jpg"
-
+    "assignedTo": "Operator 02"
   },
   {
     "id": "ALT-1005",
@@ -69,9 +63,8 @@
     "severity": "High",
     "confidence": 78,
     "status": "New",
-    "assignedTo": "Operator 04",
-    "imag" : "/DemoData/img3%20(5).jpg"
-  },
+    "assignedTo": "Operator 04"
+    },
   {
     "id": "ALT-1006",
     "title": "Camera Offline",
@@ -83,9 +76,8 @@
     "severity": "Critical",
     "confidence": null,
     "status": "New",
-    "assignedTo": "Operator 01",
-    "imag" : "/DemoData/img3%20(6).jpg"
-  },
+    "assignedTo": "Operator 01"
+    },
   {
     "id": "ALT-1007",
     "title": "Unusual Motion Detected",
@@ -97,8 +89,7 @@
     "severity": "Low",
     "confidence": 92,
     "status": "Resolved",
-    "assignedTo": "Operator 03",
-    "imag" : "/DemoData/img3%20(7).jpg"
+    "assignedTo": "Operator 03"
 
   },
   {
@@ -112,9 +103,7 @@
     "severity": "Medium",
     "confidence": 99,
     "status": "Under Review",
-    "assignedTo": "Unassigned",
-    "imag" : "/DemoData/img3%20(8).jpg"
-
+    "assignedTo": "Unassigned"
   },
   {
     "id": "ALT-1009",
@@ -127,9 +116,7 @@
     "severity": "Medium",
     "confidence": 81,
     "status": "Acknowledged",
-    "assignedTo": "Operator 02",
-    "imag" : "/DemoData/img3%20(9).jpg"
-
+    "assignedTo": "Operator 02"
   },
   {
     "id": "ALT-1010",
@@ -142,9 +129,7 @@
     "severity": "High",
     "confidence": null,
     "status": "New",
-    "assignedTo": "Operator 04",
-    "imag" : "/DemoData/img3%20(10).jpg"
-
+    "assignedTo": "Operator 04"
   },
   {
     "id": "ALT-1011",
@@ -157,9 +142,7 @@
     "severity": "Critical",
     "confidence": 95,
     "status": "New",
-    "assignedTo": "Operator 01",
-    "imag" : "/DemoData/img3%20(11).jpg"
-
+    "assignedTo": "Operator 01"
   },
   {
     "id": "ALT-1012",
@@ -172,9 +155,7 @@
     "severity": "Low",
     "confidence": 77,
     "status": "Resolved",
-    "assignedTo": "Operator 03",
-    "imag" : "/DemoData/img3%20(12).jpg"
-
+    "assignedTo": "Operator 03"
   },
   {
     "id": "ALT-1013",
@@ -187,9 +168,7 @@
     "severity": "Low",
     "confidence": 84,
     "status": "Under Review",
-    "assignedTo": "Unassigned",
-    "imag" : "/DemoData/img3%20(13).jpg"
-
+    "assignedTo": "Unassigned"
   },
   {
     "id": "ALT-1014",
@@ -202,9 +181,7 @@
     "severity": "Medium",
     "confidence": 91,
     "status": "Acknowledged",
-    "assignedTo": "Operator 02",
-    "imag" : "/DemoData/img3%20(14).jpg"
-
+    "assignedTo": "Operator 02"
   },
   {
     "id": "ALT-1015",
@@ -217,9 +194,7 @@
     "severity": "High",
     "confidence": 98,
     "status": "New",
-    "assignedTo": "Operator 04",
-    "imag" : "/DemoData/img3%20(15).jpg"
-
+    "assignedTo": "Operator 04"
   },
   {
     "id": "ALT-1016",
@@ -232,9 +207,7 @@
     "severity": "Critical",
     "confidence": 80,
     "status": "New",
-    "assignedTo": "Operator 01",
-    "imag" : "/DemoData/img3%20(16).jpg"
-
+    "assignedTo": "Operator 01"
   },
   {
     "id": "ALT-1017",
@@ -247,9 +220,7 @@
     "severity": "Critical",
     "confidence": 87,
     "status": "Resolved",
-    "assignedTo": "Operator 03",
-    "imag" : "/DemoData/img3%20(17).jpg"
-    
+    "assignedTo": "Operator 03"    
   },
   {
     "id": "ALT-1018",
@@ -262,9 +233,7 @@
     "severity": "Low",
     "confidence": null,
     "status": "Under Review",
-    "assignedTo": "Unassigned",
-    "imag" : "/DemoData/img3%20(18).jpg"
-
+    "assignedTo": "Unassigned"
   },
   {
     "id": "ALT-1019",
@@ -277,9 +246,7 @@
     "severity": "Medium",
     "confidence": null,
     "status": "Acknowledged",
-    "assignedTo": "Operator 02",
-    "imag" : "/DemoData/img3%20(19).jpg"
-
+    "assignedTo": "Operator 02"
   },
   {
     "id": "ALT-1020",
@@ -292,9 +259,7 @@
     "severity": "High",
     "confidence": 83,
     "status": "New",
-    "assignedTo": "Operator 04",
-    "imag" : "/DemoData/img3%20(20).jpg"
-
+    "assignedTo": "Operator 04"
   },
   {
     "id": "ALT-1021",
@@ -307,9 +272,7 @@
     "severity": "High",
     "confidence": 90,
     "status": "New",
-    "assignedTo": "Operator 01",
-    "imag" : "/DemoData/img3%20(21).jpg"
-
+    "assignedTo": "Operator 01"
   },
   {
     "id": "ALT-1022",
@@ -322,9 +285,7 @@
     "severity": "Critical",
     "confidence": 97,
     "status": "Resolved",
-    "assignedTo": "Operator 03",
-    "imag" : "/DemoData/img3%20(22).jpg"
-
+    "assignedTo": "Operator 03"
   },
   {
     "id": "ALT-1023",
@@ -337,9 +298,7 @@
     "severity": "Low",
     "confidence": 79,
     "status": "Under Review",
-    "assignedTo": "Unassigned",
-    "imag" : "/DemoData/img3%20(23).jpg"
-
+    "assignedTo": "Unassigned"
   },
   {
     "id": "ALT-1024",
@@ -352,9 +311,7 @@
     "severity": "Medium",
     "confidence": null,
     "status": "Acknowledged",
-    "assignedTo": "Operator 02",
-    "imag" : "/DemoData/img3%20(24).jpg"
-
+    "assignedTo": "Operator 02"
   },
   {
     "id": "ALT-1025",
@@ -367,9 +324,7 @@
     "severity": "Medium",
     "confidence": 93,
     "status": "New",
-    "assignedTo": "Operator 04",
-    "imag" : "/DemoData/img3%20(25).jpg"
-
+    "assignedTo": "Operator 04"
   },
   {
     "id": "ALT-1026",
@@ -382,9 +337,7 @@
     "severity": "High",
     "confidence": 75,
     "status": "New",
-    "assignedTo": "Operator 01",
-    "imag" : "/DemoData/img3%20(26).jpg"
-
+    "assignedTo": "Operator 01"
   },
   {
     "id": "ALT-1027",
@@ -397,9 +350,7 @@
     "severity": "Critical",
     "confidence": 82,
     "status": "Resolved",
-    "assignedTo": "Operator 03",
-    "imag" : "/DemoData/img3%20(27).jpg"
-
+    "assignedTo": "Operator 03"
   },
   {
     "id": "ALT-1028",
@@ -412,9 +363,7 @@
     "severity": "Low",
     "confidence": null,
     "status": "Under Review",
-    "assignedTo": "Unassigned",
-    "imag" : "/DemoData/img3%20(28).jpg"
-
+    "assignedTo": "Unassigned"
   },
   {
     "id": "ALT-1029",
@@ -427,9 +376,7 @@
     "severity": "Low",
     "confidence": 96,
     "status": "Acknowledged",
-    "assignedTo": "Operator 02",
-    "imag" : "/DemoData/img3%20(29).jpg"
-
+    "assignedTo": "Operator 02"
   },
   {
     "id": "ALT-1030",
@@ -442,9 +389,7 @@
     "severity": "Medium",
     "confidence": 78,
     "status": "New",
-    "assignedTo": "Operator 04",
-    "imag" : "/DemoData/img3%20(30).jpg"
-
+    "assignedTo": "Operator 04"
   },
   {
     "id": "ALT-1031",
@@ -457,9 +402,8 @@
     "severity": "High",
     "confidence": 85,
     "status": "New",
-    "assignedTo": "Operator 01",
-    "imag" : "/DemoData/img3%20(31).jpg"
-  },
+    "assignedTo": "Operator 01"
+    },
   {
     "id": "ALT-1032",
     "title": "Low Light Warning",
@@ -471,9 +415,7 @@
     "severity": "Critical",
     "confidence": null,
     "status": "Resolved",
-    "assignedTo": "Operator 03",
-    "imag" : "/DemoData/img3%20(32).jpg"
-
+    "assignedTo": "Operator 03"
   },
   {
     "id": "ALT-1033",
@@ -486,9 +428,7 @@
     "severity": "Critical",
     "confidence": null,
     "status": "Under Review",
-    "assignedTo": "Unassigned",
-    "imag" : "/DemoData/img3%20(33).jpg"
-    
+    "assignedTo": "Unassigned"    
   },
   {
     "id": "ALT-1034",
@@ -501,9 +441,7 @@
     "severity": "Low",
     "confidence": 81,
     "status": "Acknowledged",
-    "assignedTo": "Operator 02",
-    "imag" : "/DemoData/img3%20(34).jpg"
-
+    "assignedTo": "Operator 02"
   },
   {
     "id": "ALT-1035",
@@ -516,9 +454,7 @@
     "severity": "Medium",
     "confidence": 88,
     "status": "New",
-    "assignedTo": "Operator 04",
-    "imag" : "/DemoData/img3%20(35).jpg"
-
+    "assignedTo": "Operator 04"
   },
   {
     "id": "ALT-1036",
@@ -531,9 +467,7 @@
     "severity": "High",
     "confidence": 95,
     "status": "New",
-    "assignedTo": "Operator 01",
-    "imag" : "/DemoData/img3%20(36).jpg"
-
+    "assignedTo": "Operator 01"
   },
   {
     "id": "ALT-1037",
@@ -546,9 +480,7 @@
     "severity": "High",
     "confidence": null,
     "status": "Resolved",
-    "assignedTo": "Operator 03",
-    "imag" : "/DemoData/img3%20(37).jpg"
-
+    "assignedTo": "Operator 03"
   },
   {
     "id": "ALT-1038",
@@ -561,9 +493,7 @@
     "severity": "Critical",
     "confidence": null,
     "status": "Under Review",
-    "assignedTo": "Unassigned",
-    "imag" : "/DemoData/img3%20(38).jpg"
-
+    "assignedTo": "Unassigned"
   },
   {
     "id": "ALT-1039",
@@ -576,9 +506,7 @@
     "severity": "Low",
     "confidence": null,
     "status": "Acknowledged",
-    "assignedTo": "Operator 02",
-    "imag" : "/DemoData/img3%20(39).jpg"
-
+    "assignedTo": "Operator 02"
   },
   {
     "id": "ALT-1040",
@@ -591,9 +519,7 @@
     "severity": "Medium",
     "confidence": 98,
     "status": "New",
-    "assignedTo": "Operator 04",
-    "imag" : "/DemoData/img3%20(40).jpg"
-
+    "assignedTo": "Operator 04"
   },
   {
     "id": "ALT-1041",
@@ -606,9 +532,7 @@
     "severity": "Medium",
     "confidence": 80,
     "status": "New",
-    "assignedTo": "Operator 01",
-    "imag" : "/DemoData/img3%20(41).jpg"
-
+    "assignedTo": "Operator 01"
   },
   {
     "id": "ALT-1042",
@@ -621,9 +545,7 @@
     "severity": "High",
     "confidence": 87,
     "status": "Resolved",
-    "assignedTo": "Operator 03",
-    "imag" : "/DemoData/img3%20(42).jpg"
-
+    "assignedTo": "Operator 03"
   },
   {
     "id": "ALT-1043",
