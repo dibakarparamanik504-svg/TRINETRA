@@ -8,6 +8,20 @@ import { TbVirusSearch } from "react-icons/tb";
 function HomePage({ setName }) {
   setName("Home");
 
+  return (
+    <div>
+      <div>
+        <Images />
+      </div>
+      <div>
+        <Mostfeature />
+      </div>
+    </div>
+  );
+}
+export default HomePage;
+
+function Mostfeature() {
   let conts = [
     {
       link: "/home/detection",
@@ -34,35 +48,34 @@ function HomePage({ setName }) {
         "Explore a smarter surveillance ecosystem with secure event logs, environmental monitoring.",
     },
   ];
-
   return (
-    <div>
-      <div></div>
-      <div className="imge">
-        <div className="titlename">
-          AI POWERED INTELLIGENT BOPRDER SURVEILLANCE PLATFROM
-        </div>
-      </div>
-
-      <div className="maincontain">
-        {conts.map((cont, i) => {
-          return (
-            <Link to={cont.link}>
-              <div className="contener" key={i}>
-                <div className="conticon">{cont.icon}</div>
-                <div className="firstcont">
-                  <div className="secondcont">
-                    <div className="conttitle">{cont.title}</div>
-                    <div className="contsubtitle">{cont.subtitle}</div>
-                  </div>
-                  <div className="contdescribe">{cont.description}</div>
+    <div className="maincontain">
+      {conts.map((cont, i) => {
+        return (
+          <Link to={cont.link}>
+            <div className="contener" key={i}>
+              <div className="conticon">{cont.icon}</div>
+              <div className="firstcont">
+                <div className="secondcont">
+                  <div className="conttitle">{cont.title}</div>
+                  <div className="contsubtitle">{cont.subtitle}</div>
                 </div>
+                <div className="contdescribe">{cont.description}</div>
               </div>
-            </Link>
-          );
-        })}
+            </div>
+          </Link>
+        );
+      })}
+    </div>
+  );
+}
+
+function Images() {
+  return (
+    <div className="imge">
+      <div className="titlename">
+        AI POWERED INTELLIGENT BOPRDER SURVEILLANCE PLATFROM
       </div>
     </div>
   );
 }
-export default HomePage;

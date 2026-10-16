@@ -3,12 +3,12 @@
         width: 100%;
         margin-top: 50px;
         position: absolute;
-        padding-bottom: 350px;
+        padding-bottom: 400px;
     }
     .control{
         background-color: rgb(56, 52, 52);
         position: fixed;
-        height: 300px;
+        height: 320px;
         width: 100%;
         z-index: 3000;
     }
@@ -93,7 +93,7 @@
     }
 
     .monfeature{
-        top: 300px;
+        top: 320px;
         position: relative;
         display: grid;
         grid-template-columns: repeat(1,1fr);

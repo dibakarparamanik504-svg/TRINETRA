@@ -6,9 +6,29 @@ import {MdCancel} from "react-icons/md"
 
 function Monitor({ setName }) {
   setName("AI Monitoring");
+  
+
+  return (
+    <div className="mainmoni">
+      <div>
+        <CameraBox/>
+      </div>
+      <div>
+        <MonitoringObject/>
+      </div>
+    </div>
+  );
+}
+
+export default Monitor;
+
+// camera function create hare
+
+
+function CameraBox(){
   let [cameralength,setcameralength] = useState(0);
   let [index, setIndex] = useState(0);
-  let [cameras, setCamera] = useState([
+   let [cameras, setCamera] = useState([
     {
       id: 0,
       icon: <BiSolidCameraPlus />,
@@ -17,6 +37,7 @@ function Monitor({ setName }) {
       class1:" "
     },
   ]);
+  
 
   let leftsidebar = (prev) => {
     return(
@@ -44,26 +65,6 @@ function Monitor({ setName }) {
       setIndex(cameralength+1)
     );
   };
-
-  let monifeature = [
-    {
-      id: 1,
-      name: " Camera details",
-    },
-    {
-      id: 2,
-      name: "Detection Feature",
-    },
-    {
-      id: 3,
-      name: "",
-    },
-    {
-      id: 4,
-      name: "",
-    },
-  ];
-
   let removecamegra=(id)=>{
     return(
       setCamera((revio)=>{
@@ -71,8 +72,6 @@ function Monitor({ setName }) {
         [...revio.slice(0,id),
           ...revio.slice(id+1)
         ]
-        // 
-        // 
         );
 
       }),
@@ -81,9 +80,8 @@ function Monitor({ setName }) {
 
     );
   }
-
-  return (
-    <div className="mainmoni">
+  return(
+    <div>
       {cameras
         .filter((item, i) => i === index)
         .map((camera, i) => {
@@ -104,7 +102,7 @@ function Monitor({ setName }) {
           );
         })}
 
-      <div className="sidebar">
+        <div className="sidebar">
         <div
           className="leftside"
           onClick={() => {
@@ -123,7 +121,34 @@ function Monitor({ setName }) {
         </div>
       </div>
 
-      <div>
+    </div>
+  );
+}
+
+// Monitoring all feature box hare ...
+
+function MonitoringObject(){
+  let monifeature = [
+    {
+      id: 1,
+      name: " Camera details",
+    },
+    {
+      id: 2,
+      name: "Detection Feature",
+    },
+    {
+      id: 3,
+      name: "",
+    },
+    {
+      id: 4,
+      name: "",
+    },
+  ];
+
+  return(
+    <div>
         {monifeature.map((feature_item, i) => {
           return (
             <div className="monfeature">
@@ -133,8 +158,5 @@ function Monitor({ setName }) {
           );
         })}
       </div>
-    </div>
   );
 }
-
-export default Monitor;
