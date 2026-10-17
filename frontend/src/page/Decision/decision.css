@@ -1,12 +1,154 @@
 @media screen and (max-width:800px) {
     .maindeci {
+        width: 100%;
         padding-top: 50px;
         color: blue;
+        margin-bottom: 250px;
+    }
+    .disiheadermain{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: center;
+        position: fixed;
+        z-index: 1000;
+        background-color: black;
+    }
+
+    .disiheader {
+        width: 90px;
+        height: 120px;
+        border: 2px solid black;
+        border-radius: 20px;
+        background-color: rgba(179, 179, 179, 0.568);
+        text-align: center;
+        padding: 5px;
+    }
+    .headtitle{
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+        font-weight: bold;
+        background-color: rgb(231, 120, 207);
+        border: 2px solid black;
+        border-radius: 20px;
+        padding: 5px;
+    }
+    .logonum{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 5px;
+        gap: 5px;
+    }
+    .headlogo{
+        color: rgb(255, 0, 0);
+        font-size: 30px;
+        
+    }
+    .headnum{
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        font-weight: bold;
+
+    }
+
+
+    /* .history{
+        width: max-content;
+        border:  2px solid rgb(3, 3, 3);
+        background-color: rgb(163, 149, 149);
+        border-radius: 20px;
+        font-size: 25px;
+        padding: 5px;
+
+    } */
+
+
+    /* Queue start  */
+
+    .mainqueue{
+        position: relative;
+        top: 120px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 5px;
+        flex-wrap: wrap;
+        
+    }
+    .parentque{
+        width: 95%;
+        border:  2px solid rgb(3, 3, 3);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 5px;
+        background-color: rgb(85, 80, 80);
+        border-radius: 20px;
+        flex-wrap: wrap;
+
+    }
+    .childque{
+        margin: 5px;
+        height: 120px;
+        border: 2px solid blanchedalmond;
+        background-color: rgba(36, 37, 37, 0.651);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+        gap: 20px;
+        align-items: center;
+        
+
+    }
+    .childlogo{
+        font-size: 30px;
+        color: beige;
+    }
+
+
+
+    .que1{
+        color: rgb(3, 3, 3);
+        font-size: 20px;
+        border: 2px solid blanchedalmond;
+        background-color: rgba(243, 250, 250, 0.651);
+        border-radius: 20px;
+        text-align: center;
+
+    }
+    .que2{
+        color: rgb(186, 188, 189);
+    }
+    .que3{
+        color: rgb(234, 236, 238);
+    }
+    .child2{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    .que4{
+        color: black;
+        border: 2px solid rgb(0, 0, 0);
+        background-color: rgba(243, 250, 250, 0.651);
+        border-radius: 20px;
+        padding: 5px;
+
+    }
+    .que5{
+        color: black;
+        border: 2px solid rgb(0, 0, 0);
+        background-color: rgba(243, 250, 250, 0.651);
+        border-radius: 20px;
+        padding: 5px;
     }
 }
 
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1000px) {
     .maindeci {
         padding-top: 50px;
         color: blue;
