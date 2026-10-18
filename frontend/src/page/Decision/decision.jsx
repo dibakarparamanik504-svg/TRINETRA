@@ -1,11 +1,10 @@
 import "./decision.css";
 import Queues from "../Alert/alerts.json";
-import {FiAlertTriangle} from "react-icons/fi";
-import {IoPeopleSharp} from "react-icons/io5";
-import {GoCheckCircle,GoCpu} from "react-icons/go";
-import {AiFillOpenAI} from "react-icons/ai";
-
-
+import { FiAlertTriangle } from "react-icons/fi";
+import { IoPeopleSharp } from "react-icons/io5";
+import { GoCheckCircle, GoCpu } from "react-icons/go";
+import { AiFillOpenAI } from "react-icons/ai";
+import { IoMdCreate } from "react-icons/io";
 
 function Decision({ setName }) {
   setName("Decision");
@@ -15,27 +14,40 @@ function Decision({ setName }) {
         <Decisionhead />
       </div>
       <div>
-        <DecisionQueue/>
+        <DecisionQueue />
+      </div>
+      <div>
+        <Makedici />
       </div>
     </div>
   );
 }
 
 export default Decision;
-function DecisionQueue(){
-  return(
+function Makedici() {
+  return (
+    <div className="makedici">
+      <div className="makedicilogo"><IoMdCreate/></div>
+      <div className="makediciname">Make a dicission</div>
+    </div>
+  );
+}
+function DecisionQueue() {
+  return (
     <div className="mainqueue">
-        {/* <div className="history">History</div>  */}
-        <div className="parentque">
-        {Queues.map(( queue,i)=>{
-          return(
+      {/* <div className="history">History</div>  */}
+      <div className="parentque">
+        {Queues.map((queue, i) => {
+          return (
             <div className="childque">
               <div className="childlogo">
-                <AiFillOpenAI/>
+                <AiFillOpenAI />
               </div>
               <div className="child1">
                 <div className="que1">{queue.id}</div>
-                <div className="que2">{queue.camera} • {queue.zone}</div>
+                <div className="que2">
+                  {queue.camera} • {queue.zone}
+                </div>
                 <div className="que3">{queue.title}</div>
               </div>
               <div className="child2">
@@ -45,7 +57,7 @@ function DecisionQueue(){
             </div>
           );
         })}
-        </div>
+      </div>
     </div>
   );
 }
@@ -54,26 +66,26 @@ function Decisionhead() {
     {
       id: 0,
       headtitle: "Panding Decisions",
-      headlogo:<GoCpu/>,
-      headnum:"25",
+      headlogo: <GoCpu />,
+      headnum: "25",
     },
     {
       id: 1,
       headtitle: "High Priority",
-      headlogo:<FiAlertTriangle/>,
-      headnum:"8",
+      headlogo: <FiAlertTriangle />,
+      headnum: "8",
     },
     {
       id: 2,
       headtitle: "Assigned Cases",
-      headlogo:<IoPeopleSharp/>,
-      headnum:"10",
+      headlogo: <IoPeopleSharp />,
+      headnum: "10",
     },
     {
       id: 3,
       headtitle: "Resolved Today",
-      headlogo:<GoCheckCircle/>,
-      headnum:"15",
+      headlogo: <GoCheckCircle />,
+      headnum: "15",
     },
   ];
   return (

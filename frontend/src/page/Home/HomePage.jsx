@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./HomeStyle.css";
-import { MdPersonSearch } from "react-icons/md";
+import { MdPersonSearch,MdMemory } from "react-icons/md";
 import { LuScanSearch } from "react-icons/lu";
 import { TbVirusSearch } from "react-icons/tb";
 // import Detection from "./detection";
@@ -38,6 +38,14 @@ function Mostfeature() {
       subtitle: "MOVEMENT & TRAJECTORY ANALYSIS",
       description:
         "Track people and vehicles across video frames to understand movement, direction & trajectories.",
+    },
+    {
+       link: "/home/bordermanage",
+      icon: <MdMemory />,
+      title: "Border Memory: ",
+      subtitle: "INTELLIGENT EVENT ANALYSIS ",
+      description:
+        "Manage, prioritize and track surveillance events,evidence records in real time.",
     },
     {
       link: "/home/camerahealth",
