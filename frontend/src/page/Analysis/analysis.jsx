@@ -78,10 +78,15 @@ function Module(){
       {modules.map((module)=>{
         return(
           <div className="parentmodul">
-            <div>{module.modullogo}</div>
             <div>
-              <div>{module.modulname}</div>
-              <div>{module.modulsub}</div>
+
+            <div className="modulelogo">{module.modullogo}</div>
+            <div></div>
+            </div>
+
+            <div className="managenamelogo">
+              <div className="modulename">{module.modulname}</div>
+              <div className="modulesub">{module.modulsub}</div>
             </div>
           </div>
 

@@ -13,6 +13,7 @@
         background-color: rgba(88, 88, 87, 0.959);
         position: fixed;
         z-index: 299999;
+        padding: 5px;
     }
     .anacls2{
         display: flex;
@@ -31,7 +32,7 @@
         color: rgb(235, 235, 231);
         font-size: 20px;
         padding: 5px;
-        background-color: rgb(88, 88, 87);
+        background-color: rgb(126, 126, 124);
         width: max-content;
         border-radius: 20px;
 
@@ -73,13 +74,13 @@
 
 
     .headcont{
-        top: 150px;
+        top: 160px;
         position: relative;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         margin: 5px;
-        gap: 10px;
+        gap: 2px;
         align-items: center;
         justify-content: center;
         z-index: 20;
@@ -124,7 +125,7 @@
         width: 98%;
         height: 250px;
         border: 2px solid black;
-        background-color: rgb(37, 35, 35);
+        background-color: rgba(119, 117, 117, 0.671);
         align-self: center;
 
     }
@@ -132,7 +133,7 @@
 
 
     .mainmodule{
-        top: 150px;
+        top: 165px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -146,15 +147,31 @@
         border-radius: 20px;
     }
     .parentmodul{
-        width: 170px;
+        width: 165px;
         height: 200px;
         border: 2px solid blanchedalmond;
         border-radius: 20px;
         background-color: rgba(40, 41, 43, 0.712);
         text-align: center;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        padding: 5px;
+    }
+
+    .modulelogo{
+        font-size: 30px;
+    }
+    .modulename{
+        color: rgba(240, 248, 255, 0.986);
+        font-size: 20px;
+        font-weight: bold;
+        background-color: rgb(84, 87, 88);
+        border-radius: 20px;
+    }
+
+    .modulesub{
+        color: aliceblue;
     }
 }
 
