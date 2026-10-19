@@ -81,7 +81,7 @@
         flex-wrap: wrap;
         margin: 5px;
         gap: 2px;
-        align-items: center;
+        /* align-items: center; */
         justify-content: center;
         z-index: 20;
     }
