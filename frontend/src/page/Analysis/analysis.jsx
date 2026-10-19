@@ -3,14 +3,12 @@ import { FaMapMarkedAlt } from "react-icons/fa";
 import { LuScanSearch, LuBrainCircuit } from "react-icons/lu";
 import { MdEventAvailable, MdLinkedCamera } from "react-icons/md";
 
-import {GiBrain } from "react-icons/gi";
-import {RiGlobalLine } from "react-icons/ri";
-import {IoIosPeople } from "react-icons/io";
-import {MdNetworkCheck,MdHealthAndSafety } from "react-icons/md";
-import {GrAction } from "react-icons/gr";
-import {GoCodeSquare,GoDatabase } from "react-icons/go";
-
-
+import { GiBrain } from "react-icons/gi";
+import { RiGlobalLine } from "react-icons/ri";
+import { IoIosPeople } from "react-icons/io";
+import { MdNetworkCheck, MdHealthAndSafety } from "react-icons/md";
+import { GrAction } from "react-icons/gr";
+import { GoCodeSquare, GoDatabase ,GoArrowUpRight} from "react-icons/go";
 
 function Analysis({ setName }) {
   setName("Analysis");
@@ -23,77 +21,73 @@ function Analysis({ setName }) {
         <Contbox />
       </div>
       <div>
-    <Module/>
+        <Module />
       </div>
     </div>
   );
 }
 
 export default Analysis;
-function Module(){
-  let modules=[
+function Module() {
+  let modules = [
     {
-      modulname:"Spatial Intelligent",
-      modullogo:<RiGlobalLine/>,
-      modulsub:"3D terrain,camera coverage& movement analysis",
+      modulname: "Spatial Intelligent",
+      modullogo: <RiGlobalLine />,
+      modulsub: "3D terrain,camera coverage& movement analysis",
     },
     {
-      modulname:"Predictive Analytics",
-      modullogo:<GiBrain />,
-      modulsub:" AI trends, anomaly detection & forecasting",
+      modulname: "Predictive Analytics",
+      modullogo: <GiBrain />,
+      modulsub: " AI trends, anomaly detection & forecasting",
     },
     {
-      modulname:"Behaviour Analysis",
-      modullogo:<IoIosPeople/>,
-      modulsub:"Object tracking, event patterns & correlation",
+      modulname: "Behaviour Analysis",
+      modullogo: <IoIosPeople />,
+      modulsub: "Object tracking, event patterns & correlation",
     },
     {
-      modulname:"Network Testing",
-      modullogo:<MdNetworkCheck/>,
-      modulsub:"Analysis real time network issue",
+      modulname: "Network Testing",
+      modullogo: <MdNetworkCheck />,
+      modulsub: "Analysis real time network issue",
     },
     {
-      modulname:"Environmental Analysis",
-      modullogo:<GrAction/>,
-      modulsub:"Low light, visibility & video quality",
+      modulname: "Environmental Analysis",
+      modullogo: <GrAction />,
+      modulsub: "Low light, visibility & video quality",
     },
     {
-      modulname:"Evisence Intelligence",
-      modullogo:<GoCodeSquare/>,
-      modulsub:"Explainable findings hashes & audit history",
+      modulname: "Evisence Intelligence",
+      modullogo: <GoCodeSquare />,
+      modulsub: "Explainable findings hashes & audit history",
     },
     {
-      modulname:"Model Performance",
-      modullogo:<GoDatabase/>,
-      modulsub:"Precision,recall,confidence & model drift",
+      modulname: "Model Performance",
+      modullogo: <GoDatabase />,
+      modulsub: "Precision, recall, confidence & model drift",
     },
     {
-      modulname:"Infrastructure Health",
-      modullogo:<MdHealthAndSafety/>,
-      modulsub:"Camera availability,latency,&frame drops",
-    }
-  ]
-  return(
+      modulname: "Infrastructure Health",
+      modullogo: <MdHealthAndSafety />,
+      modulsub: "Camera availability,latency,& frame drops",
+    },
+  ];
+  return (
     <div className="mainmodule">
-      {modules.map((module)=>{
-        return(
+      {modules.map((module) => {
+        return (
           <div className="parentmodul">
-            <div>
-
-            <div className="modulelogo">{module.modullogo}</div>
-            <div></div>
+            <div className="combinelogo">
+              <div className="modulelogo">{module.modullogo}</div>
+              <div className="modulelogo2"><GoArrowUpRight/></div>
             </div>
-
             <div className="managenamelogo">
               <div className="modulename">{module.modulname}</div>
               <div className="modulesub">{module.modulsub}</div>
             </div>
           </div>
-
         );
       })}
     </div>
-
   );
 }
 function Contbox() {
