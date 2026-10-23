@@ -1,4 +1,3 @@
-import React from 'react'
 import "./camerahelthStyle.css"
 function Camerahelth({setName}) {
   setName("Camera Health")

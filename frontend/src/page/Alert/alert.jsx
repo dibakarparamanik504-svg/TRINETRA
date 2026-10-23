@@ -1,9 +1,12 @@
 import "./alert.css";
-import alerts from "./alerts.json";
+import { Link } from "react-router-dom";
+import alerts from "./alert_feature/alerts.json";
 import { MdSecurity } from "react-icons/md";
 import { BiSolidBellRing } from "react-icons/bi";
 import { RiAlertFill } from "react-icons/ri";
-import { FaRegClock, FaCheckCircle ,FaImages} from "react-icons/fa";
+import { FaRegClock, FaCheckCircle, FaImages } from "react-icons/fa";
+import Alertanalysis from "./alert_feature/sequrityalert/alertanalysis";
+import { useState } from "react";
 
 function Dashboard({ setName }) {
   setName("Live Alert");
@@ -28,33 +31,46 @@ function Dashboard({ setName }) {
 export default Dashboard;
 
 function Alertcomponent() {
+  let [title, setDescipt] = useState();
+  <Alertanalysis title={title} />;
+  console.log(title);
   return (
     <div className="mainalertbox">
       {alerts.map((alertsitem, i) => {
         return (
-          <div className="fullcont">
-            <div className="imagesclas">
-              <FaImages/>
-            </div>
-            <div className="description">
-              <div className="decriptitle">{alertsitem.title}</div>
-              <div className="descripcamera">
-                {alertsitem.camera} • {alertsitem.zone}
+          <Link to="/alert/alertanalysis">
+            <div className="fullcont">
+              <div className="imagesclas">
+                <FaImages />
               </div>
-              <div className="descripdate">{alertsitem.date}</div>
-              <div className="descripcamera">{alertsitem.time}</div>
-            </div>
-            <div className="alertscore">
-              <div>
-                <div className="securityscore2">Priority</div>
-                <div className="securityscore1">{alertsitem.severity}</div>
+              <div className="description">
+                <div
+                  className="decriptitle"
+                  onClick={() => {
+                    setDescipt(i);
+                  }}
+                >
+                  {alertsitem.title}
+                </div>
+
+                <div className="descripcamera">
+                  {alertsitem.camera} • {alertsitem.zone}
+                </div>
+                <div className="descripdate">{alertsitem.date}</div>
+                <div className="descripcamera">{alertsitem.time}</div>
               </div>
-              <div>
-                <div className="securityscore3">Risk</div>
-                <div className="securityscore1">{alertsitem.confidence}</div>
+              <div className="alertscore">
+                <div>
+                  <div className="securityscore2">Priority</div>
+                  <div className="securityscore1">{alertsitem.severity}</div>
+                </div>
+                <div>
+                  <div className="securityscore3">Risk</div>
+                  <div className="securityscore1">{alertsitem.confidence}</div>
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
         );
       })}
     </div>
@@ -118,6 +134,7 @@ function SecurityAlert() {
       altnum: "26",
       feedback: "Today's Alert",
       logoclass: "clslable1logo1",
+      link: "/monitoring/totalalert",
     },
     {
       id: 1,
@@ -126,6 +143,7 @@ function SecurityAlert() {
       altnum: "05",
       feedback: "Review First",
       logoclass: "clslable1logo2",
+      link: "/monitoring/critical",
     },
     {
       id: 2,
@@ -134,6 +152,7 @@ function SecurityAlert() {
       altnum: "07",
       feedback: "Begin Verify",
       logoclass: "clslable1logo3",
+      link: "/monitoring/underreview",
     },
     {
       id: 3,
@@ -142,6 +161,7 @@ function SecurityAlert() {
       altnum: "14",
       feedback: "Closed Today",
       logoclass: "clslable1logo4",
+      link: "/monitoring/resolve",
     },
   ];
   return (
@@ -155,16 +175,20 @@ function SecurityAlert() {
       <div className="cls1aleheader">
         {aleheaders.map((aleheader, i) => {
           return (
-            <div key={i} className="aleheader">
-              <div className="clslable1">
-                <div className={aleheader.logoclass}>{aleheader.headlogo}</div>
+            <Link to={aleheader.link}>
+              <div key={i} className="aleheader">
+                <div className="clslable1">
+                  <div className={aleheader.logoclass}>
+                    {aleheader.headlogo}
+                  </div>
+                </div>
+                <div clslable2>
+                  <div className="clslablename1">{aleheader.headname}</div>
+                  <div className="clslablename2">{aleheader.altnum}</div>
+                  <div className="clslablename3">{aleheader.feedback}</div>
+                </div>
               </div>
-              <div clslable2>
-                <div className="clslablename1">{aleheader.headname}</div>
-                <div className="clslablename2">{aleheader.altnum}</div>
-                <div className="clslablename3">{aleheader.feedback}</div>
-              </div>
-            </div>
+            </Link>
           );
         })}
       </div>

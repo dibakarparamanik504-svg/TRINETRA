@@ -3,7 +3,6 @@ import "./HomeStyle.css";
 import { MdPersonSearch,MdMemory } from "react-icons/md";
 import { LuScanSearch } from "react-icons/lu";
 import { TbVirusSearch } from "react-icons/tb";
-// import Detection from "./detection";
 
 function HomePage({ setName }) {
   setName("Home");

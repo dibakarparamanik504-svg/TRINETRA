@@ -1,0 +1,13 @@
+@media screen and (max-width:800px) {
+    .mainModel_Performance {
+        color: red;
+        padding-top: 50px;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .mainModel_Performance {
+        color: red;
+    }
+
+}

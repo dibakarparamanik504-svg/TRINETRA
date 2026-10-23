@@ -16,7 +16,8 @@ function Footer({ name }) {
         name === "Home" ||
         name === "Detection" ||
         name === "Tracking" ||
-        name === "Camera Health",
+        name === "Camera Health"||
+        name === "Border Memory",
       link: "/",
       icon:<GoHome />,
     },

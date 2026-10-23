@@ -1,0 +1,13 @@
+@media screen and (max-width:800px) {
+    .mainunderreview {
+        color: red;
+        padding-top: 50px;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .mainunderreview {
+        color: red;
+    }
+
+}

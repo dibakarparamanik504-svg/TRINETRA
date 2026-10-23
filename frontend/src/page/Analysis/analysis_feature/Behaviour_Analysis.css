@@ -1,0 +1,13 @@
+@media screen and (max-width:800px) {
+    .mainBehaviour_Analysis {
+        color: red;
+        padding-top: 50px;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .mainBehaviour_Analysis {
+        color: red;
+    }
+
+}

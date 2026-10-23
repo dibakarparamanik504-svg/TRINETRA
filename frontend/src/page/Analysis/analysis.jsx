@@ -9,6 +9,7 @@ import { IoIosPeople } from "react-icons/io";
 import { MdNetworkCheck, MdHealthAndSafety } from "react-icons/md";
 import { GrAction } from "react-icons/gr";
 import { GoCodeSquare, GoDatabase ,GoArrowUpRight} from "react-icons/go";
+import { Link } from "react-router-dom";
 
 function Analysis({ setName }) {
   setName("Analysis");
@@ -34,47 +35,62 @@ function Module() {
       modulname: "Spatial Intelligent",
       modullogo: <RiGlobalLine />,
       modulsub: "3D terrain,camera coverage& movement analysis",
+      modeLink:"/analysis/spatialintelligent",
+
     },
     {
       modulname: "Predictive Analytics",
       modullogo: <GiBrain />,
       modulsub: " AI trends, anomaly detection & forecasting",
+      modeLink:"/analysis/predictiveanalytics",
+
     },
     {
       modulname: "Behaviour Analysis",
       modullogo: <IoIosPeople />,
       modulsub: "Object tracking, event patterns & correlation",
+      modeLink:"/analysis/behaviouranalysis",
+
     },
     {
       modulname: "Network Testing",
       modullogo: <MdNetworkCheck />,
       modulsub: "Analysis real time network issue",
+      modeLink:"/analysis/networktesting",
+
     },
     {
       modulname: "Environmental Analysis",
       modullogo: <GrAction />,
       modulsub: "Low light, visibility & video quality",
+      modeLink:"/analysis/environmentalanalysis",
+
     },
     {
       modulname: "Evisence Intelligence",
       modullogo: <GoCodeSquare />,
       modulsub: "Explainable findings hashes & audit history",
+      modeLink:"/analysis/evisenceintelligence",
+
     },
     {
       modulname: "Model Performance",
       modullogo: <GoDatabase />,
       modulsub: "Precision, recall, confidence & model drift",
+      modeLink:"/analysis/modelperformance"
     },
     {
       modulname: "Infrastructure Health",
       modullogo: <MdHealthAndSafety />,
       modulsub: "Camera availability,latency,& frame drops",
+      modeLink:"/analysis/infrastructurehealth",
     },
   ];
   return (
     <div className="mainmodule">
-      {modules.map((module) => {
+      {modules.map((module,i) => {
         return (
+          <Link to={module.modeLink} key={i}>
           <div className="parentmodul">
             <div className="combinelogo">
               <div className="modulelogo">{module.modullogo}</div>
@@ -85,6 +101,7 @@ function Module() {
               <div className="modulesub">{module.modulsub}</div>
             </div>
           </div>
+          </Link>
         );
       })}
     </div>
@@ -97,23 +114,27 @@ function Contbox() {
       logoopt: <MdEventAvailable />,
       nameopt: "Event Analysed",
       subnam: "Selected Period",
+      Links:"/analysis/event",
     },
     {
       number: 32,
       logoopt: <LuScanSearch />,
       nameopt: "Flagged",
+      Links:"/analysis/flagged",
       subnam: "Human verification",
     },
     {
       number: "24/26",
       logoopt: <MdLinkedCamera />,
       nameopt: "Camera Availablity",
+      Links:"/analysis/cameraavailablity",
       subnam: "2 Unavailable",
     },
     {
       number: "94.2%",
       logoopt: <LuBrainCircuit />,
       nameopt: "Sample Precision",
+      Links:"/analysis/sampleprecision",
       subnam: "Illustrative Evaluation",
     },
   ];
@@ -121,6 +142,7 @@ function Contbox() {
     <div className="headcont">
       {headoptions.map((headoption, i) => {
         return (
+          <Link to={headoption.Links} key={i}>
           <div className="boxheadcont">
             <div className="headname">{headoption.nameopt}</div>
             <div className="controlhead">
@@ -129,6 +151,7 @@ function Contbox() {
             </div>
             <div>{headoption.subnam}</div>
           </div>
+          </Link>
         );
       })}
       <div className="ananame">Analysis Overview</div>
@@ -183,8 +206,8 @@ function Anahead() {
           <select className="anadate">
             {dateopt.map((dateitm, i) => {
               return (
-                <div>
-                  <option value={dateitm.dates} key={i}>
+                <div  key={i}>
+                  <option value={dateitm.dates}>
                     {dateitm.dates}
                   </option>
                 </div>

@@ -1,0 +1,13 @@
+
+@media screen and (max-width:800px) {
+    .mainbordermemory{
+        padding-top: 50px;
+        color: azure;
+    }
+}
+@media screen and (min-width: 1000px){
+    .mainbordermemory{
+        color: azure;
+    }
+
+}
