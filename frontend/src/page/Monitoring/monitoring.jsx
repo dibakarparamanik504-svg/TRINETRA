@@ -4,9 +4,10 @@ import "./monitoring.css";
 import { GoChevronLeft, GoChevronRight } from "react-icons/go";
 import { BiSolidCameraPlus } from "react-icons/bi";
 import { MdCancel } from "react-icons/md";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
+import monitorfeaturelist from "./motitorfeature/detection_feature.json";
 
-function Monitor({ setName }) {
+function Monitor({ setName ,cameradetails,setcameradetails}) {
   setName("AI Monitoring");
 
   return (
@@ -15,7 +16,7 @@ function Monitor({ setName }) {
         <CameraBox />
       </div>
       <div>
-        <MonitoringObject />
+        <MonitoringObject cameradetails={cameradetails} setcameradetails={setcameradetails}/>
       </div>
     </div>
   );
@@ -139,11 +140,7 @@ function MonitoringObject() {
     },
     {
       id: 3,
-      name: "",
-    },
-    {
-      id: 4,
-      name: "",
+      name: "Core Inovation",
     },
   ];
 
@@ -158,6 +155,8 @@ function MonitoringObject() {
                 <Monitoringcont />
               ) : feature_item.name === "Detection Feature" ? (
                 <DetectionFeature />
+              ) : feature_item.name === "Core Inovation" ? (
+                <Coreinovation />
               ) : (
                 ""
               )}
@@ -170,41 +169,9 @@ function MonitoringObject() {
 }
 
 function DetectionFeature() {
-  let monitorfeaturelist = [
-    {
-      monifeature: "",
-    },
-    {
-      monifeature: "",
-    },
-    {
-      monifeature: "",
-    },
-    {
-      monifeature: "",
-    },
-    {
-      monifeature: "",
-    },
-    {
-      monifeature: "",
-    },
-    {
-      monifeature: "",
-    },
-    {
-      monifeature: "",
-    },
-    {
-      monifeature: "",
-    },
-    {
-      monifeature: "",
-    },
-  ];
   return (
     <div className="featurelist">
-      {monitorfeaturelist.map((feature,i) => {
+      {monitorfeaturelist.map((feature, i) => {
         return <div className="parentfeaturelist" key={i}></div>;
       })}
     </div>
@@ -224,6 +191,45 @@ function Monitoringcont({ indexs }) {
             </div>
           );
         })}
+    </div>
+  );
+}
+
+function Coreinovation() {
+  let innovations = [
+    {
+      id: 1,
+      name: "Bandwidth-Aware AI",
+      details: "Process fewer frames on weak networks",
+    },
+    {
+      id: 2,
+      name: "False-Alert Reduction",
+      details: "Combine confidence checks with duplicate filtering",
+    },
+    {
+      id: 3,
+      name: "Unified Object Tracking",
+      details: "Link object IDs across detection events",
+    },
+    {
+      id: 4,
+      name: "Tamper-Evident Audit",
+      details: "Use cryptographic hashes to verify records",
+    },
+  ];
+  return (
+    <div className="inovation">
+      {innovations.map(() => {
+        return (
+        <div className="childinovation">
+          <div></div>
+          <div></div>
+          <div></div>
+
+        </div>
+        );
+      })}
     </div>
   );
 }

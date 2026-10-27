@@ -39,6 +39,7 @@ import InfrastructureHealth from "./page/Analysis/analysis_feature/Infrastructur
 
 function App() {
   let [name, setName] = useState("Home Page");
+  let [cameradetails,setcameradetails]=useState();
   return (
     <div className="App">
       <BrowserRouter>
@@ -49,7 +50,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage setName={setName} />} />
             <Route path="/alert" element={<Dashboard setName={setName} />} />
-            <Route path="/monitoring" element={<Monitor setName={setName} />} />
+            <Route path="/monitoring" element={<Monitor setName={setName} cameradetails={cameradetails} setcameradetails={setcameradetails} />} />
             <Route path="/decision" element={<Decision setName={setName} />} />
             <Route path="/analysis" element={<Analysis setName={setName} />} />
             <Route
@@ -145,18 +146,38 @@ function App() {
               element={<Simpleprecision setName={setName} />}
             />
 
-
-            <Route path="/analysis/spatialintelligent" element={<SpatialIntelligent setName={setName} />}/>
-            <Route path="/analysis/predictiveanalytics" element={<PredictiveAnalytics setName={setName} />}/>
-            <Route path="/analysis/behaviouranalysis" element={<BehaviourAnalysis setName={setName} />}/>
-            <Route path="/analysis/networktesting" element={<NetworkTesting setName={setName} />}/>
-            <Route path="/analysis/environmentalanalysis" element={<EnvironmentalAnalysis setName={setName} />}/>
-            <Route path="/analysis/evisenceintelligence" element={<EvisenceIntelligence setName={setName} />}/>
-            <Route path="/analysis/modelperformance" element={<ModelPerformance setName={setName} />}/>
-            <Route path="/analysis/infrastructurehealth" element={<InfrastructureHealth setName={setName} />}/>
-
-
-
+            <Route
+              path="/analysis/spatialintelligent"
+              element={<SpatialIntelligent setName={setName} />}
+            />
+            <Route
+              path="/analysis/predictiveanalytics"
+              element={<PredictiveAnalytics setName={setName} />}
+            />
+            <Route
+              path="/analysis/behaviouranalysis"
+              element={<BehaviourAnalysis setName={setName} />}
+            />
+            <Route
+              path="/analysis/networktesting"
+              element={<NetworkTesting setName={setName} />}
+            />
+            <Route
+              path="/analysis/environmentalanalysis"
+              element={<EnvironmentalAnalysis setName={setName} />}
+            />
+            <Route
+              path="/analysis/evisenceintelligence"
+              element={<EvisenceIntelligence setName={setName} />}
+            />
+            <Route
+              path="/analysis/modelperformance"
+              element={<ModelPerformance setName={setName} />}
+            />
+            <Route
+              path="/analysis/infrastructurehealth"
+              element={<InfrastructureHealth setName={setName} />}
+            />
           </Routes>
           <div>
             <Footer name={name} />
