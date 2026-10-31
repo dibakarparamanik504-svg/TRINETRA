@@ -17,7 +17,7 @@ import Criticul from "./page/Alert/alert_feature/sequrityalert/criticul";
 import Underreview from "./page/Alert/alert_feature/sequrityalert/underreview";
 import Resolved from "./page/Alert/alert_feature/sequrityalert/resolved";
 import Alertanalysis from "./page/Alert/alert_feature/sequrityalert/alertanalysis";
-import Cameradetails from "./page/Monitoring/motitorfeature/cameradetails";
+// import Cameradetails from "./page/Monitoring/motitorfeature/cameradetails";
 import Alertdicision from "./page/Decision/dicision_feature/alert_dicision";
 import Makedicision from "./page/Decision/dicision_feature/make_dicision";
 import Pandingdicision from "./page/Decision/dicision_feature/panding_dicision";
