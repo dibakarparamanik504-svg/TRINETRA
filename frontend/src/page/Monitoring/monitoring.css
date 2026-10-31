@@ -98,6 +98,7 @@
         display: grid;
         grid-template-columns: repeat(1,1fr);
         margin: 10px;
+        gap: 5px;
 
     }
     .parentbox{
@@ -120,20 +121,77 @@
 
 
     .featurelist{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+       display: grid;
+       grid-template-columns: repeat(2,157px);
+       grid-template-rows: repeat(10,180px);
+       padding: 2px;
+       gap: 5px;
         margin: 5px;
-        gap: 5px;
-        align-items: center;
     }
     .parentfeaturelist{
-        width: 155px;
-        height: 100px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
         border: 2px solid black;
         border-radius: 20px;
         background-color: rgba(147, 147, 148, 0.63);
+        padding: 2px;
     }
+    .featurename{
+        font-size: 20px;
+        text-align: center;
+        color: rgb(214, 213, 212);
+        font-weight: bold;
+        background-color: rgba(0, 0, 0, 0.514);
+        border-radius: 20px;
+        border: 2px solid black;
+    }
+    .featuredetails{
+        text-align: center;
+        color: aliceblue;
+    }
+
+
+
+    .camerafulinfo{
+        padding: 5px;
+        /* text-align: center; */
+        display: flex;
+        flex-direction: row;
+    }
+
+    .infocameraid{
+        color: azure;
+        display: flex;
+        flex-direction: row;
+    }
+    .infocameraid div {
+        color: rgb(218, 241, 85);
+    }
+    .infoondetails{
+        color: aliceblue;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .infoobject{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .infoobjectsingnal{
+        background-color: beige;
+        padding: 5px;
+        border-radius: 20px;
+    }
+    .infoobjectrisk{
+        background-color: rgb(216, 216, 215);
+        padding: 5px;
+        border-radius: 20px;
+    }
+    
 
 
 

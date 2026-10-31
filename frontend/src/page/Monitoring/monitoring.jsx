@@ -4,19 +4,20 @@ import "./monitoring.css";
 import { GoChevronLeft, GoChevronRight } from "react-icons/go";
 import { BiSolidCameraPlus } from "react-icons/bi";
 import { MdCancel } from "react-icons/md";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import monitorfeaturelist from "./motitorfeature/detection_feature.json";
 
-function Monitor({ setName ,cameradetails,setcameradetails}) {
+function Monitor({ setName }) {
   setName("AI Monitoring");
+  let [cameradetails, setcameradetails] = useState(0);
 
   return (
     <div className="mainmoni">
       <div>
-        <CameraBox />
+        <CameraBox setcameradetails={setcameradetails} />
       </div>
       <div>
-        <MonitoringObject cameradetails={cameradetails} setcameradetails={setcameradetails}/>
+        <MonitoringObject cameradetails={cameradetails} />
       </div>
     </div>
   );
@@ -26,7 +27,7 @@ export default Monitor;
 
 // camera function create hare
 
-function CameraBox() {
+function CameraBox({ setcameradetails }) {
   let [cameralength, setcameralength] = useState(0);
   let [index, setIndex] = useState(0);
   let [cameras, setCamera] = useState([
@@ -38,11 +39,9 @@ function CameraBox() {
       class1: " ",
     },
   ]);
-  // console.log(index);
-  // <Monitoringcont indexs={index}/>
-
   let leftsidebar = (prev) => {
     return setIndex(prev > 0 ? prev - 1 : cameralength);
+    // setcameradetails(prev > 0 ? prev - 1 : cameralength)
   };
 
   let rightsidebar = (prev) => {
@@ -60,8 +59,9 @@ function CameraBox() {
     // console.log(2)
     return (
       setCamera((newcam) => [...newcam, newcamera]),
+      setIndex(cameralength + 1),
       setcameralength(cameralength + 1),
-      setIndex(cameralength + 1)
+      setcameradetails(cameralength + 1)
     );
   };
   let removecamegra = (id) => {
@@ -92,13 +92,13 @@ function CameraBox() {
                 </div>
               </div>
               <div className="maincamera">
-                <Link to="/monitoring/cameradetails">
-                  <div key={i}>
-                    <div className="cameraicon" onClick={() => iconclick()}>
-                      {camera.icon}
-                    </div>
+                {/* <Link to="/monitoring/cameradetails"> */}
+                <div key={i}>
+                  <div className="cameraicon" onClick={() => iconclick()}>
+                    {camera.icon}
                   </div>
-                </Link>
+                </div>
+                {/* </Link> */}
               </div>
             </div>
           );
@@ -108,7 +108,10 @@ function CameraBox() {
         <div
           className="leftside"
           onClick={() => {
-            return setIndex(leftsidebar);
+            return (
+              setcameradetails(index > 0 ? index - 1 : cameralength),
+              setIndex(leftsidebar)
+            );
           }}
         >
           <GoChevronLeft />
@@ -116,7 +119,10 @@ function CameraBox() {
         <div
           className="rightside"
           onClick={() => {
-            return setIndex(rightsidebar);
+            return (
+              setcameradetails(index < cameralength ? index + 1 : 0),
+              setIndex(rightsidebar)
+            );
           }}
         >
           <GoChevronRight />
@@ -128,7 +134,7 @@ function CameraBox() {
 
 // Monitoring all feature box hare ...
 
-function MonitoringObject() {
+function MonitoringObject({ cameradetails }) {
   let monifeature = [
     {
       id: 1,
@@ -152,7 +158,7 @@ function MonitoringObject() {
             <div className="featurenane">{feature_item.name}</div>
             <div className="parentbox">
               {feature_item.name === "Camera details" ? (
-                <Monitoringcont />
+                <Monitoringcont cameradetails={cameradetails} />
               ) : feature_item.name === "Detection Feature" ? (
                 <DetectionFeature />
               ) : feature_item.name === "Core Inovation" ? (
@@ -172,22 +178,58 @@ function DetectionFeature() {
   return (
     <div className="featurelist">
       {monitorfeaturelist.map((feature, i) => {
-        return <div className="parentfeaturelist" key={i}></div>;
+        return (
+          <div className="parentfeaturelist" key={i}>
+            <div className="featurename">{feature.name}</div>
+            <div className="featurecount">
+              <div></div>
+              <div>{feature.count}</div>
+            </div>
+            <div className="featuredetails">{feature.details}</div>
+          </div>
+        );
       })}
     </div>
   );
 }
 
-function Monitoringcont({ indexs }) {
+function Monitoringcont({ cameradetails }) {
   return (
     <div>
-      {/* {console.log(indexs)} */}
       {cameras_info
-        .filter((information, num) => num === indexs)
-        .map(() => {
+        .filter((inform, num) => num === cameradetails)
+        .map((information, i) => {
+          console.log(cameradetails);
           return (
-            <div>
-              <div></div>
+            <div key={i}>
+              {cameradetails === 0 ? (
+                <div className="infoondetails"> No camera Details Available</div>
+              ) : (
+                <div className="camerafulinfo">
+                  <div>
+                    <div className="infocameraid">
+                      Camera ID : <div>{information.cameraId}</div>
+                    </div>
+                    <div className="infocameraid">
+                      Sector : <div>{information.name}</div>
+                    </div>
+                    <div className="infocameraid">
+                      Camera Location :<div>{information.location}</div>
+                    </div>
+                    <div className="infocameraid">
+                      FPS :<div>{information.fps}</div> Latency :
+                      <div>{information.latency}</div>
+                    </div>
+                    <div className="infocameraid">
+                      Camera Type :<div>{information.type}</div>
+                    </div>
+                  </div>
+                  <div className="infoobject">
+                    <div className="infoobjectsingnal">{information.signal}</div>
+                    <div className="infoobjectrisk">{information.risk}</div>
+                  </div>
+                </div>
+              )}
             </div>
           );
         })}
@@ -220,14 +262,12 @@ function Coreinovation() {
   ];
   return (
     <div className="inovation">
-      {innovations.map(() => {
+      {innovations.map((inovation, i) => {
         return (
-        <div className="childinovation">
-          <div></div>
-          <div></div>
-          <div></div>
-
-        </div>
+          <div key={i} className="childinovation">
+            <div className="inovationame">{inovation.name}</div>
+            <div className="inovationdetails">{inovation.details}</div>
+          </div>
         );
       })}
     </div>

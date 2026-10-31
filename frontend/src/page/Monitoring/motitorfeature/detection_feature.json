@@ -3,139 +3,159 @@
   "name": "Person Detection",
   "cameraId": "CAM-8472",
   "count": 58,
-  "details": "Identify humans in border areas"
+  "details": "Identify humans in border areas",
+  "logo":""
 },
 {
   "id": 2,
   "name": "Vehicle Detection",
   "cameraId": "CAM-1936",
   "count": 29,
-  "details": "Classify cars, trucks and bikes"
+  "details": "Classify cars, trucks and bikes",
+  "logo":""
 },
 {
   "id": 3,
   "name": "Object Tracking",
   "cameraId": "CAM-5629",
   "count": 21,
-  "details": "Assign unique IDs to moving objects"
+  "details": "Assign unique IDs to moving objects",
+  "logo":""
 },
 {
   "id": 4,
   "name": "Motion Detection",
   "cameraId": "CAM-7204",
   "count": 16,
-  "details": "Detect movement in monitored zones"
+  "details": "Detect movement in monitored zones",
+  "logo":""
 },
 {
   "id": 5,
   "name": "Zone Intrusion",
   "cameraId": "CAM-3817",
   "count": 8,
-  "details": "Flag entry into restricted areas"
+  "details": "Flag entry into restricted areas",
+  "logo":""
 },
 {
   "id": 6,
   "name": "Loitering Detection",
   "cameraId": "CAM-9053",
   "count": 7,
-  "details": "Flag unusually long stays"
+  "details": "Flag unusually long stays",
+  "logo":""
 },
 {
   "id": 7,
   "name": "Camera Tampering",
   "cameraId": "CAM-2468",
   "count": 2,
-  "details": "Detect blocked or shifted camera views"
+  "details": "Detect blocked or shifted camera views",
+  "logo":""
 },
 {
   "id": 8,
   "name": "Low-Bandwidth AI",
   "cameraId": "CAM-6185",
   "count": 24,
-  "details": "Adjust processing when networks slow down"
+  "details": "Adjust processing when networks slow down",
+  "logo":""
 },
 {
   "id": 9,
   "name": "False-Positive Filter",
   "cameraId": "CAM-4391",
   "count": 5,
-  "details": "Remove duplicate or unreliable alerts"
+  "details": "Remove duplicate or unreliable alerts",
+  "logo":""
 },
 {
   "id": 10,
   "name": "Event Logging",
   "cameraId": "CAM-7526",
   "count": 137,
-  "details": "Store timestamps and detection records"
+  "details": "Store timestamps and detection records",
+  "logo":""
 },
 {
   "id": 11,
   "name": "Suspicious Activity",
   "cameraId": "CAM-2864",
   "count": 4,
-  "details": "Flag unusual movement patterns"
+  "details": "Flag unusual movement patterns",
+  "logo":""
 },
 {
   "id": 12,
   "name": "Night Movement",
   "cameraId": "CAM-6308",
   "count": 6,
-  "details": "Monitor movement in low-light scenes"
+  "details": "Monitor movement in low-light scenes",
+  "logo":""
 },
 {
   "id": 13,
   "name": "Face Detection",
   "cameraId": "CAM-1749",
   "count": 11,
-  "details": "Locate visible faces in video frames"
+  "details": "Locate visible faces in video frames",
+  "logo":""
 },
 {
   "id": 14,
   "name": "ANPR",
   "cameraId": "CAM-8251",
   "count": 9,
-  "details": "Extract readable vehicle plate numbers"
+  "details": "Extract readable vehicle plate numbers",
+  "logo":""
 },
 {
   "id": 15,
   "name": "Connectivity Monitor",
   "cameraId": "CAM-3417",
   "count": 24,
-  "details": "Flag disconnected camera streams"
+  "details": "Flag disconnected camera streams",
+  "logo":""
 },
 {
   "id": 16,
   "name": "Alert Management",
   "cameraId": "CAM-5902",
   "count": 6,
-  "details": "Track alerts from pending to resolved"
+  "details": "Track alerts from pending to resolved",
+  "logo":""
 },
 {
   "id": 17,
   "name": "Incident History",
   "cameraId": "CAM-4683",
   "count": 18,
-  "details": "Review incident timelines and outcomes"
+  "details": "Review incident timelines and outcomes",
+  "logo":""
 },
 {
   "id": 18,
   "name": "Blockchain Audit",
   "cameraId": "CAM-7135",
   "count": 12,
-  "details": "Verify records have not been altered"
+  "details": "Verify records have not been altered",
+  "logo":""
 },
 {
   "id": 19,
   "name": "Camera Health",
   "cameraId": "CAM-9527",
   "count": 24,
-  "details": "Track FPS, latency and camera uptime"
+  "details": "Track FPS, latency and camera uptime",
+  "logo":""
 },
 {
   "id": 20,
   "name": "Access Control",
   "cameraId": "CAM-2076",
   "count": 3,
-  "details": "Restrict dashboard access by user role"
+  "details": "Restrict dashboard access by user role",
+  "logo":""
 }
 ]

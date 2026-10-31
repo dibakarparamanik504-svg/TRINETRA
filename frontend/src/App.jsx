@@ -39,7 +39,7 @@ import InfrastructureHealth from "./page/Analysis/analysis_feature/Infrastructur
 
 function App() {
   let [name, setName] = useState("Home Page");
-  let [cameradetails,setcameradetails]=useState();
+  // let [cameradetails,setcameradetails]=useState();
   return (
     <div className="App">
       <BrowserRouter>
@@ -50,7 +50,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage setName={setName} />} />
             <Route path="/alert" element={<Dashboard setName={setName} />} />
-            <Route path="/monitoring" element={<Monitor setName={setName} cameradetails={cameradetails} setcameradetails={setcameradetails} />} />
+            <Route path="/monitoring" element={<Monitor setName={setName}/>} />
             <Route path="/decision" element={<Decision setName={setName} />} />
             <Route path="/analysis" element={<Analysis setName={setName} />} />
             <Route
@@ -95,10 +95,10 @@ function App() {
 
             {/* monitoring start */}
 
-            <Route
+            {/* <Route
               path="/monitoring/cameradetails"
               element={<Cameradetails setName={setName} />}
-            />
+            /> */}
 
             {/* Dicidion start */}
 

@@ -1,5 +1,8 @@
 [
   {
+
+},
+  {
     "cameraId": "CAM-01",
     "name": "North Sector Camera",
     "sector": "North Sector",
@@ -9,7 +12,8 @@
     "signal": "Strong",
     "fps": 25,
     "latency": 120,
-    "health": "Healthy"
+    "health": "Healthy",
+    "risk":"20%"
   },
   {
     "cameraId": "CAM-02",
@@ -21,7 +25,9 @@
     "signal": "Strong",
     "fps": 24,
     "latency": 115,
-    "health": "Healthy"
+    "health": "Healthy",
+    "risk":"15%"
+
   },
   {
     "cameraId": "CAM-03",
@@ -33,7 +39,8 @@
     "signal": "Weak",
     "fps": 18,
     "latency": 180,
-    "health": "Warning"
+    "health": "Warning",
+    "risk":"85%"
   },
   {
     "cameraId": "CAM-04",
@@ -45,7 +52,9 @@
     "signal": "No Signal",
     "fps": 0,
     "latency": 0,
-    "health": "Offline"
+    "health": "Offline",
+    "risk":"90%"
+
   },
   {
     "cameraId": "CAM-05",
@@ -57,7 +66,8 @@
     "signal": "Strong",
     "fps": 30,
     "latency": 90,
-    "health": "Healthy"
+    "health": "Healthy",
+    "risk":"30%"
   },
   {
     "cameraId": "CAM-06",
@@ -69,7 +79,9 @@
     "signal": "Medium",
     "fps": 22,
     "latency": 135,
-    "health": "Healthy"
+    "health": "Healthy",
+    "risk":"50%"
+
   },
   {
     "cameraId": "CAM-07",
@@ -81,7 +93,8 @@
     "signal": "Weak",
     "fps": 17,
     "latency": 195,
-    "health": "Warning"
+    "health": "Warning",
+    "risk":"84%"
   },
   {
     "cameraId": "CAM-08",
@@ -93,7 +106,9 @@
     "signal": "Strong",
     "fps": 26,
     "latency": 108,
-    "health": "Healthy"
+    "health": "Healthy",
+    "risk":"30%"
+
   },
   {
     "cameraId": "CAM-09",
@@ -105,7 +120,9 @@
     "signal": "Strong",
     "fps": 28,
     "latency": 98,
-    "health": "Healthy"
+    "health": "Healthy",
+    "risk":"02%"
+
   },
   {
     "cameraId": "CAM-10",
@@ -117,7 +134,9 @@
     "signal": "Medium",
     "fps": 21,
     "latency": 142,
-    "health": "Healthy"
+    "health": "Healthy",
+    "risk":"97%"
+
   },
   {
     "cameraId": "CAM-11",
@@ -129,7 +148,8 @@
     "signal": "Strong",
     "fps": 29,
     "latency": 100,
-    "health": "Healthy"
+    "health": "Healthy",
+    "risk":"29%"
   },
   {
     "cameraId": "CAM-12",
@@ -141,7 +161,9 @@
     "signal": "Weak",
     "fps": 16,
     "latency": 210,
-    "health": "Warning"
+    "health": "Warning",
+    "risk":"94%"
+
   },
   {
     "cameraId": "CAM-13",
@@ -153,7 +175,9 @@
     "signal": "Strong",
     "fps": 27,
     "latency": 112,
-    "health": "Healthy"
+    "health": "Healthy",
+    "risk":"34%"
+
   },
   {
     "cameraId": "CAM-14",
@@ -165,7 +189,9 @@
     "signal": "Medium",
     "fps": 20,
     "latency": 155,
-    "health": "Healthy"
+    "health": "Healthy",
+    "risk":"75%"
+
   },
   {
     "cameraId": "CAM-15",
@@ -177,7 +203,9 @@
     "signal": "No Signal",
     "fps": 0,
     "latency": 0,
-    "health": "Offline"
+    "health": "Offline",
+    "risk":"83%"
+
   },
   {
     "cameraId": "CAM-16",
@@ -189,7 +217,9 @@
     "signal": "Strong",
     "fps": 30,
     "latency": 95,
-    "health": "Healthy"
+    "health": "Healthy",
+    "risk":"16%"
+
   },
   {
     "cameraId": "CAM-17",
@@ -201,7 +231,9 @@
     "signal": "Medium",
     "fps": 23,
     "latency": 128,
-    "health": "Healthy"
+    "health": "Healthy",
+    "risk":"32%"
+
   },
   {
     "cameraId": "CAM-18",
@@ -213,7 +245,9 @@
     "signal": "Weak",
     "fps": 15,
     "latency": 225,
-    "health": "Warning"
+    "health": "Warning",
+    "risk":"79%"
+
   },
   {
     "cameraId": "CAM-19",
@@ -225,7 +259,9 @@
     "signal": "Strong",
     "fps": 25,
     "latency": 118,
-    "health": "Healthy"
+    "health": "Healthy",
+    "risk":"87%"
+
   },
   {
     "cameraId": "CAM-20",
@@ -237,6 +273,8 @@
     "signal": "Strong",
     "fps": 28,
     "latency": 102,
-    "health": "Healthy"
+    "health": "Healthy",
+    "risk":"37%"
+
   }
 ]
