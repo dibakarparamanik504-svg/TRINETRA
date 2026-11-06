@@ -3,6 +3,7 @@ import "./HomeStyle.css";
 import { MdPersonSearch,MdMemory } from "react-icons/md";
 import { LuScanSearch } from "react-icons/lu";
 import { TbVirusSearch } from "react-icons/tb";
+import {LuActivity} from "react-icons/lu"
 
 function HomePage({ setName }) {
   setName("Home");
@@ -42,9 +43,18 @@ function Mostfeature() {
        link: "/home/bordermanage",
       icon: <MdMemory />,
       title: "Border Memory: ",
-      subtitle: "INTELLIGENT EVENT ANALYSIS ",
+      subtitle: "PREVIOUS MEMORY SERVILENCE ",
       description:
         "Manage, prioritize and track surveillance events,evidence records in real time.",
+    },
+    {
+      link: "/home/eventlog",
+      icon: <LuActivity />,
+      title: "Event Management: ",
+      subtitle: "INTELLIGENT EVENT ANALYSIS ",
+      description:
+      "Manage, prioritize and track surveillance events,evidence records in real time.",
+
     },
     {
       link: "/home/camerahealth",

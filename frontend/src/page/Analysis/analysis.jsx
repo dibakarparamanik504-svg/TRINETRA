@@ -8,7 +8,7 @@ import { RiGlobalLine } from "react-icons/ri";
 import { IoIosPeople } from "react-icons/io";
 import { MdNetworkCheck, MdHealthAndSafety } from "react-icons/md";
 import { GrAction } from "react-icons/gr";
-import { GoCodeSquare, GoDatabase ,GoArrowUpRight} from "react-icons/go";
+import { GoCodeSquare, GoDatabase, GoArrowUpRight } from "react-icons/go";
 import { Link } from "react-router-dom";
 
 function Analysis({ setName }) {
@@ -22,8 +22,20 @@ function Analysis({ setName }) {
         <Contbox />
       </div>
       <div>
+        <Overview/>
+      </div>
+      <div>
         <Module />
       </div>
+    </div>
+  );
+}
+
+function Overview() {
+  return (
+    <div className="overviewcl">
+      <div className="ananame">Analysis Overview</div>
+      <div className="overview"></div>
     </div>
   );
 }
@@ -35,72 +47,68 @@ function Module() {
       modulname: "Spatial Intelligent",
       modullogo: <RiGlobalLine />,
       modulsub: "3D terrain,camera coverage& movement analysis",
-      modeLink:"/analysis/spatialintelligent",
-
+      modeLink: "/analysis/spatialintelligent",
     },
     {
       modulname: "Predictive Analytics",
       modullogo: <GiBrain />,
       modulsub: " AI trends, anomaly detection & forecasting",
-      modeLink:"/analysis/predictiveanalytics",
-
+      modeLink: "/analysis/predictiveanalytics",
     },
     {
       modulname: "Behaviour Analysis",
       modullogo: <IoIosPeople />,
       modulsub: "Object tracking, event patterns & correlation",
-      modeLink:"/analysis/behaviouranalysis",
-
+      modeLink: "/analysis/behaviouranalysis",
     },
     {
       modulname: "Network Testing",
       modullogo: <MdNetworkCheck />,
       modulsub: "Analysis real time network issue",
-      modeLink:"/analysis/networktesting",
-
+      modeLink: "/analysis/networktesting",
     },
     {
       modulname: "Environmental Analysis",
       modullogo: <GrAction />,
       modulsub: "Low light, visibility & video quality",
-      modeLink:"/analysis/environmentalanalysis",
-
+      modeLink: "/analysis/environmentalanalysis",
     },
     {
       modulname: "Evisence Intelligence",
       modullogo: <GoCodeSquare />,
       modulsub: "Explainable findings hashes & audit history",
-      modeLink:"/analysis/evisenceintelligence",
-
+      modeLink: "/analysis/evisenceintelligence",
     },
     {
       modulname: "Model Performance",
       modullogo: <GoDatabase />,
       modulsub: "Precision, recall, confidence & model drift",
-      modeLink:"/analysis/modelperformance"
+      modeLink: "/analysis/modelperformance",
     },
     {
       modulname: "Infrastructure Health",
       modullogo: <MdHealthAndSafety />,
       modulsub: "Camera availability,latency,& frame drops",
-      modeLink:"/analysis/infrastructurehealth",
+      modeLink: "/analysis/infrastructurehealth",
     },
   ];
   return (
     <div className="mainmodule">
-      {modules.map((module,i) => {
+      {modules.map((module, i) => {
         return (
           <Link to={module.modeLink} key={i}>
-          <div className="parentmodul">
-            <div className="combinelogo">
-              <div className="modulelogo">{module.modullogo}</div>
-              <div className="modulelogo2"><GoArrowUpRight/></div>
+            <div className="parentmodul">
+              <div className="combinelogo">
+                <div className="modulelogo">{module.modullogo}</div>
+                <div className="modulelogo2">
+                  <GoArrowUpRight />
+                </div>
+              </div>
+              <div className="managenamelogo">
+                <div className="modulename">{module.modulname}</div>
+                <div className="modulesub">{module.modulsub}</div>
+              </div>
             </div>
-            <div className="managenamelogo">
-              <div className="modulename">{module.modulname}</div>
-              <div className="modulesub">{module.modulsub}</div>
-            </div>
-          </div>
           </Link>
         );
       })}
@@ -114,49 +122,47 @@ function Contbox() {
       logoopt: <MdEventAvailable />,
       nameopt: "Event Analysed",
       subnam: "Selected Period",
-      Links:"/analysis/event",
+      Links: "/analysis/event",
     },
     {
       number: 32,
       logoopt: <LuScanSearch />,
       nameopt: "Flagged",
-      Links:"/analysis/flagged",
+      Links: "/analysis/flagged",
       subnam: "Human verification",
     },
     {
       number: "24/26",
       logoopt: <MdLinkedCamera />,
       nameopt: "Camera Availablity",
-      Links:"/analysis/cameraavailablity",
+      Links: "/analysis/cameraavailablity",
       subnam: "2 Unavailable",
     },
     {
       number: "94.2%",
       logoopt: <LuBrainCircuit />,
       nameopt: "Sample Precision",
-      Links:"/analysis/sampleprecision",
+      Links: "/analysis/sampleprecision",
       subnam: "Illustrative Evaluation",
     },
   ];
   return (
-    <div className="headcont">
-      {headoptions.map((headoption, i) => {
-        return (
-          <Link to={headoption.Links} key={i}>
-          <div className="boxheadcont">
-            <div className="headname">{headoption.nameopt}</div>
-            <div className="controlhead">
-              <div className="headlogo1">{headoption.logoopt}</div>
-              <div className="headnum1">{headoption.number}</div>
-            </div>
-            <div>{headoption.subnam}</div>
-          </div>
-          </Link>
-        );
-      })}
-      <div className="ananame">Analysis Overview</div>
-      <div className="overview"></div>
-    </div>
+      <div className="headcont">
+        {headoptions.map((headoption, i) => {
+          return (
+            <Link to={headoption.Links} key={i}>
+              <div className="boxheadcont">
+                <div className="headname">{headoption.nameopt}</div>
+                <div className="controlhead">
+                  <div className="headlogo1">{headoption.logoopt}</div>
+                  <div className="headnum1">{headoption.number}</div>
+                </div>
+                <div>{headoption.subnam}</div>
+              </div>
+            </Link>
+          );
+        })}
+      </div>
   );
 }
 
@@ -199,17 +205,15 @@ function Anahead() {
           <input
             type="text"
             className="anasearch"
-            placeholder=" Search Camera ID ,"
+            placeholder=" Search Camera ID"
           />
         </div>
         <div>
           <select className="anadate">
             {dateopt.map((dateitm, i) => {
               return (
-                <div  key={i}>
-                  <option value={dateitm.dates}>
-                    {dateitm.dates}
-                  </option>
+                <div key={i}>
+                  <option value={dateitm.dates}>{dateitm.dates}</option>
                 </div>
               );
             })}

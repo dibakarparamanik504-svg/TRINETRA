@@ -1,0 +1,549 @@
+{
+  "page": {
+    "id": "border-memory",
+    "title": "Border Memory",
+    "subtitle": "Historical Intelligence & Memory Management",
+    "version": "1.0.0",
+    "status": "active",
+    "theme": "dark",
+    "logo": {
+      "type": "react-icon",
+      "library": "react-icons/lu",
+      "name": "LuShieldCheck",
+      "size": 32,
+      "color": "#38BDF8",
+      "background": "#12304A",
+      "brand": "IBVAP"
+    }
+  },
+  "header": {
+    "title": "IBVAP",
+    "module": "Border Memory",
+    "systemStatus": "ONLINE",
+    "showNotifications": true,
+    "showSettings": true,
+    "showGlobalSearch": true,
+    "searchPlaceholder": "Search events, records, cameras...",
+    "actions": [
+      {
+        "id": "notifications",
+        "label": "Notifications",
+        "icon": "LuBell"
+      },
+      {
+        "id": "settings",
+        "label": "Settings",
+        "icon": "LuSettings"
+      },
+      {
+        "id": "refresh",
+        "label": "Refresh",
+        "icon": "LuRefreshCw"
+      }
+    ]
+  },
+  "navigation": [
+    { "id": "overview", "title": "Overview", "icon": "LuLayoutDashboard" },
+    { "id": "history", "title": "Event History", "icon": "LuHistory" },
+    { "id": "search", "title": "Smart Search", "icon": "LuSearch" },
+    { "id": "entities", "title": "Entity Records", "icon": "LuUsers" },
+    {
+      "id": "correlation",
+      "title": "Event Correlation",
+      "icon": "LuGitBranch"
+    },
+    {
+      "id": "patterns",
+      "title": "Pattern Analysis",
+      "icon": "LuChartNoAxesCombined"
+    },
+    { "id": "evidence", "title": "Evidence Vault", "icon": "LuArchive" },
+    { "id": "audit", "title": "Audit Trail", "icon": "LuClipboardCheck" },
+    { "id": "sync", "title": "Sync Center", "icon": "LuRefreshCw" },
+    { "id": "reports", "title": "Reports", "icon": "LuFileChartColumn" },
+    { "id": "archive", "title": "Archive Manager", "icon": "LuDatabase" },
+    {
+      "id": "retention",
+      "title": "Retention Settings",
+      "icon": "LuCalendarClock"
+    }
+  ],
+  "statistics": [
+    {
+      "id": "total-records",
+      "title": "Total Records",
+      "value": 24850,
+      "icon": "LuDatabase",
+      "color": "blue",
+      "trend": "+12.5%",
+      "description": "Total archived metadata records"
+    },
+    {
+      "id": "security-events",
+      "title": "Security Events",
+      "value": 348,
+      "icon": "LuShieldAlert",
+      "color": "orange",
+      "trend": "+4.2%",
+      "description": "Recorded security-related events"
+    },
+    {
+      "id": "camera-sources",
+      "title": "Camera Sources",
+      "value": 126,
+      "icon": "LuCamera",
+      "color": "purple",
+      "trend": "Stable",
+      "description": "Registered CCTV sources"
+    },
+    {
+      "id": "integrity",
+      "title": "Data Integrity",
+      "value": 98.6,
+      "unit": "%",
+      "icon": "LuShieldCheck",
+      "color": "green",
+      "trend": "+0.8%",
+      "description": "Illustrative integrity metric"
+    }
+  ],
+  "search": {
+    "enabled": true,
+    "placeholder": "Search memory records...",
+    "searchFields": [
+      "id",
+      "eventType",
+      "category",
+      "cameraId",
+      "zoneId",
+      "caseId",
+      "tags"
+    ],
+    "filters": [
+      {
+        "id": "category",
+        "label": "Event Category",
+        "type": "select",
+        "options": [
+          "All",
+          "Movement",
+          "Vehicle",
+          "Camera Health",
+          "Perimeter",
+          "Other"
+        ]
+      },
+      {
+        "id": "riskLevel",
+        "label": "Risk Level",
+        "type": "select",
+        "options": ["All", "HIGH", "MEDIUM", "LOW"]
+      },
+      {
+        "id": "status",
+        "label": "Review Status",
+        "type": "select",
+        "options": ["All", "UNDER_REVIEW", "RESOLVED", "ARCHIVED"]
+      },
+      {
+        "id": "date",
+        "label": "Date Range",
+        "type": "date-range"
+      },
+      {
+        "id": "cameraId",
+        "label": "Camera Source",
+        "type": "text"
+      },
+      {
+        "id": "zoneId",
+        "label": "Zone Reference",
+        "type": "text"
+      }
+    ],
+    "savedSearches": [],
+    "searchHistory": []
+  },
+  "events": [
+    {
+      "id": "BM-10241",
+      "eventType": "Unusual Movement",
+      "category": "Movement",
+      "cameraId": "CAM-001",
+      "zoneId": "ZONE-A",
+      "timestamp": "2026-11-05T18:42:12",
+      "riskLevel": "HIGH",
+      "status": "UNDER_REVIEW",
+      "confidence": 94.5,
+      "verified": false,
+      "caseId": "CASE-2026-001",
+      "evidenceId": "EV-10241",
+      "entityReferences": ["ENT-001"],
+      "tags": ["movement", "review-required"],
+      "description": "Illustrative movement detection event",
+      "reviewNotes": [],
+      "bookmarked": false
+    },
+    {
+      "id": "BM-10240",
+      "eventType": "Camera Anomaly",
+      "category": "Camera Health",
+      "cameraId": "CAM-008",
+      "zoneId": "ZONE-B",
+      "timestamp": "2026-11-05T18:30:45",
+      "riskLevel": "MEDIUM",
+      "status": "RESOLVED",
+      "confidence": 91.2,
+      "verified": true,
+      "caseId": "CASE-2026-002",
+      "evidenceId": "EV-10240",
+      "entityReferences": [],
+      "tags": ["camera", "anomaly"],
+      "description": "Illustrative camera health anomaly",
+      "reviewNotes": [],
+      "bookmarked": false
+    },
+    {
+      "id": "BM-10239",
+      "eventType": "Vehicle Detection",
+      "category": "Vehicle",
+      "cameraId": "CAM-012",
+      "zoneId": "ZONE-C",
+      "timestamp": "2026-11-05T18:15:09",
+      "riskLevel": "LOW",
+      "status": "ARCHIVED",
+      "confidence": 97.1,
+      "verified": true,
+      "caseId": null,
+      "evidenceId": "EV-10239",
+      "entityReferences": ["ENT-002"],
+      "tags": ["vehicle", "detection"],
+      "description": "Illustrative vehicle detection event",
+      "reviewNotes": [],
+      "bookmarked": false
+    },
+    {
+      "id": "BM-10238",
+      "eventType": "Perimeter Event",
+      "category": "Perimeter",
+      "cameraId": "CAM-004",
+      "zoneId": "ZONE-A",
+      "timestamp": "2026-11-05T17:55:21",
+      "riskLevel": "HIGH",
+      "status": "UNDER_REVIEW",
+      "confidence": 89.4,
+      "verified": false,
+      "caseId": "CASE-2026-003",
+      "evidenceId": "EV-10238",
+      "entityReferences": [],
+      "tags": ["perimeter", "review"],
+      "description": "Illustrative perimeter event",
+      "reviewNotes": [],
+      "bookmarked": true
+    }
+  ],
+  "entities": [
+    {
+      "id": "ENT-001",
+      "entityType": "PERSON",
+      "referenceId": "TRACK-1001",
+      "firstSeen": "2026-11-01T10:20:00",
+      "lastSeen": "2026-11-05T18:42:12",
+      "linkedEvents": 5,
+      "recordStatus": "ARCHIVED",
+      "identityVerified": false,
+      "linkedEventIds": ["BM-10241"]
+    },
+    {
+      "id": "ENT-002",
+      "entityType": "VEHICLE",
+      "referenceId": "TRACK-2001",
+      "firstSeen": "2026-11-02T09:10:00",
+      "lastSeen": "2026-11-05T17:15:00",
+      "linkedEvents": 3,
+      "recordStatus": "ARCHIVED",
+      "identityVerified": false,
+      "linkedEventIds": ["BM-10239"]
+    }
+  ],
+  "analytics": {
+    "period": "LAST_7_DAYS",
+    "eventDistribution": [
+      { "category": "Movement", "count": 78, "color": "#38BDF8" },
+      { "category": "Camera Health", "count": 42, "color": "#A78BFA" },
+      { "category": "Perimeter", "count": 61, "color": "#F59E0B" },
+      { "category": "Other", "count": 28, "color": "#34D399" }
+    ],
+    "riskDistribution": [
+      { "level": "HIGH", "count": 45, "color": "#EF4444" },
+      { "level": "MEDIUM", "count": 120, "color": "#F59E0B" },
+      { "level": "LOW", "count": 183, "color": "#34D399" }
+    ],
+    "dailyEvents": [
+      { "date": "2026-10-30", "count": 32 },
+      { "date": "2026-10-31", "count": 45 },
+      { "date": "2026-11-01", "count": 38 },
+      { "date": "2026-11-02", "count": 52 },
+      { "date": "2026-11-03", "count": 41 },
+      { "date": "2026-11-04", "count": 60 },
+      { "date": "2026-11-05", "count": 48 }
+    ]
+  },
+  "patterns": [
+    {
+      "id": "PAT-001",
+      "patternName": "Repeated Event Category",
+      "category": "Movement",
+      "occurrences": 28,
+      "period": "7_DAYS",
+      "trend": "INCREASING",
+      "confidence": 88.4
+    },
+    {
+      "id": "PAT-002",
+      "patternName": "Camera Health Anomaly",
+      "category": "Camera Health",
+      "occurrences": 12,
+      "period": "7_DAYS",
+      "trend": "STABLE",
+      "confidence": 95.1
+    }
+  ],
+  "correlations": [
+    {
+      "id": "COR-001",
+      "eventIds": ["BM-10241", "BM-10238"],
+      "relationship": "SHARED_CATEGORY",
+      "confidence": 82.5,
+      "reviewStatus": "PENDING"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "EV-10241",
+      "eventId": "BM-10241",
+      "fileName": "event_10241_metadata.json",
+      "fileType": "application/json",
+      "fileSize": 24576,
+      "hashAlgorithm": "SHA-256",
+      "fileHash": "PLACEHOLDER_HASH_001",
+      "verificationStatus": "PENDING",
+      "storageStatus": "ARCHIVED",
+      "createdAt": "2026-11-05T18:42:15",
+      "accessLevel": "AUTHORIZED"
+    },
+    {
+      "id": "EV-10240",
+      "eventId": "BM-10240",
+      "fileName": "event_10240_metadata.json",
+      "fileType": "application/json",
+      "fileSize": 18432,
+      "hashAlgorithm": "SHA-256",
+      "fileHash": "PLACEHOLDER_HASH_002",
+      "verificationStatus": "PENDING",
+      "storageStatus": "ARCHIVED",
+      "createdAt": "2026-11-05T18:30:50",
+      "accessLevel": "AUTHORIZED"
+    }
+  ],
+  "auditRecords": [
+    {
+      "id": "AUD-001",
+      "recordId": "BM-10241",
+      "action": "RECORD_CREATED",
+      "performedBy": "SYSTEM",
+      "timestamp": "2026-11-05T18:42:15",
+      "previousHash": null,
+      "currentHash": "PLACEHOLDER_AUDIT_HASH_001",
+      "integrityStatus": "NOT_VERIFIED"
+    },
+    {
+      "id": "AUD-002",
+      "recordId": "BM-10240",
+      "action": "RECORD_REVIEWED",
+      "performedBy": "AUTHORIZED_REVIEWER",
+      "timestamp": "2026-11-05T18:40:00",
+      "previousHash": "PLACEHOLDER_AUDIT_HASH_002",
+      "currentHash": "PLACEHOLDER_AUDIT_HASH_003",
+      "integrityStatus": "NOT_VERIFIED"
+    }
+  ],
+  "sync": {
+    "connectionStatus": "ONLINE",
+    "syncMode": "LOW_BANDWIDTH",
+    "pendingRecords": 18,
+    "syncedRecords": 1250,
+    "failedRecords": 2,
+    "lastSync": "2026-11-05T18:40:00",
+    "autoSync": true,
+    "compressionEnabled": true,
+    "retryEnabled": true,
+    "conflictResolution": "MANUAL_REVIEW",
+    "queue": []
+  },
+  "retentionPolicies": [
+    {
+      "id": "RET-001",
+      "recordType": "ROUTINE_METADATA",
+      "retentionDays": 90,
+      "autoArchive": true,
+      "autoDelete": false,
+      "enabled": true
+    },
+    {
+      "id": "RET-002",
+      "recordType": "VERIFIED_INCIDENTS",
+      "retentionDays": 365,
+      "autoArchive": true,
+      "autoDelete": false,
+      "enabled": true
+    },
+    {
+      "id": "RET-003",
+      "recordType": "AUDIT_RECORDS",
+      "retentionDays": 730,
+      "autoArchive": true,
+      "autoDelete": false,
+      "enabled": true
+    }
+  ],
+  "reports": {
+    "formats": ["PDF", "CSV", "JSON"],
+    "availableReports": [
+      "EVENT_SUMMARY",
+      "RISK_DISTRIBUTION",
+      "CAMERA_HEALTH",
+      "ARCHIVE_INTEGRITY",
+      "AUDIT_HISTORY",
+      "SYNC_PERFORMANCE"
+    ]
+  },
+  "accessControl": {
+    "roles": [
+      {
+        "id": "ADMIN",
+        "permissions": [
+          "VIEW",
+          "SEARCH",
+          "EXPORT",
+          "MANAGE",
+          "AUDIT",
+          "RETENTION"
+        ]
+      },
+      {
+        "id": "ANALYST",
+        "permissions": ["VIEW", "SEARCH", "ANALYZE", "EXPORT"]
+      },
+      {
+        "id": "REVIEWER",
+        "permissions": ["VIEW", "SEARCH", "REVIEW", "ADD_NOTES"]
+      },
+      {
+        "id": "VIEWER",
+        "permissions": ["VIEW", "SEARCH"]
+      }
+    ]
+  },
+  "features": [
+    { "id": 1, "name": "Centralized Memory Repository", "enabled": true },
+    { "id": 2, "name": "Historical Event Timeline", "enabled": true },
+    { "id": 3, "name": "Advanced Memory Search", "enabled": true },
+    { "id": 4, "name": "Multi-Parameter Filtering", "enabled": true },
+    { "id": 5, "name": "Anonymous Person Tracking Records", "enabled": true },
+    { "id": 6, "name": "Vehicle Detection History", "enabled": true },
+    { "id": 7, "name": "Camera-Wise History", "enabled": true },
+    { "id": 8, "name": "Zone-Wise Records", "enabled": true },
+    { "id": 9, "name": "Event Relationship Mapping", "enabled": true },
+    { "id": 10, "name": "Repeated Event Detection", "enabled": true },
+    { "id": 11, "name": "Historical Movement Records", "enabled": true },
+    { "id": 12, "name": "Incident Comparison", "enabled": true },
+    { "id": 13, "name": "Pattern Recognition", "enabled": true },
+    { "id": 14, "name": "Historical Risk Analysis", "enabled": true },
+    { "id": 15, "name": "Hourly Event Analytics", "enabled": true },
+    { "id": 16, "name": "Daily Event Analytics", "enabled": true },
+    { "id": 17, "name": "Monthly Event Analytics", "enabled": true },
+    { "id": 18, "name": "Event Frequency Analysis", "enabled": true },
+    { "id": 19, "name": "False Positive Archive", "enabled": true },
+    { "id": 20, "name": "Verified Incident Archive", "enabled": true },
+    { "id": 21, "name": "Evidence Vault", "enabled": true },
+    { "id": 22, "name": "Evidence Hash Verification", "enabled": true },
+    { "id": 23, "name": "Blockchain Audit References", "enabled": true },
+    { "id": 24, "name": "Append-Only Audit Trail", "enabled": true },
+    { "id": 25, "name": "Record Version History", "enabled": true },
+    { "id": 26, "name": "Investigator Notes", "enabled": true },
+    { "id": 27, "name": "Incident Bookmarking", "enabled": true },
+    { "id": 28, "name": "Case Management Integration", "enabled": true },
+    { "id": 29, "name": "PDF Report Export", "enabled": true },
+    { "id": 30, "name": "CSV Data Export", "enabled": true },
+    { "id": 31, "name": "JSON Data Export", "enabled": true },
+    { "id": 32, "name": "Automatic Archive Backup", "enabled": true },
+    { "id": 33, "name": "Configurable Data Retention", "enabled": true },
+    { "id": 34, "name": "Automatic Record Archiving", "enabled": true },
+    { "id": 35, "name": "Duplicate Record Detection", "enabled": true },
+    { "id": 36, "name": "Memory Integrity Monitoring", "enabled": true },
+    { "id": 37, "name": "Offline Memory Access", "enabled": true },
+    { "id": 38, "name": "Low-Bandwidth Synchronization", "enabled": true },
+    {
+      "id": 39,
+      "name": "Synchronization Conflict Resolution",
+      "enabled": true
+    },
+    { "id": 40, "name": "Role-Based Access Control", "enabled": true },
+    { "id": 41, "name": "Archive Access History", "enabled": true },
+    { "id": 42, "name": "Alert-to-Memory Linking", "enabled": true },
+    { "id": 43, "name": "Historical Camera Health Records", "enabled": true },
+    { "id": 44, "name": "Incident Resolution Tracking", "enabled": true },
+    { "id": 45, "name": "AI Event Summarization", "enabled": true },
+    { "id": 46, "name": "Natural Language Memory Search", "enabled": true },
+    { "id": 47, "name": "Memory Statistics Dashboard", "enabled": true },
+    { "id": 48, "name": "Secure Archive Lock", "enabled": true },
+    { "id": 49, "name": "Data Integrity Reports", "enabled": true },
+    { "id": 50, "name": "Cross-Camera Event Correlation", "enabled": true },
+    { "id": 51, "name": "Event Tag Management", "enabled": true },
+    { "id": 52, "name": "Saved Search Queries", "enabled": true },
+    { "id": 53, "name": "Event Priority Management", "enabled": true },
+    { "id": 54, "name": "Historical Anomaly Comparison", "enabled": true },
+    { "id": 55, "name": "Audit Log Search", "enabled": true },
+    { "id": 56, "name": "Evidence Access Permissions", "enabled": true },
+    { "id": 57, "name": "Automatic Evidence Verification", "enabled": true },
+    { "id": 58, "name": "Archive Storage Monitoring", "enabled": true },
+    { "id": 59, "name": "Scheduled Archive Maintenance", "enabled": true },
+    { "id": 60, "name": "Metadata Management", "enabled": true }
+  ],
+  "ui": {
+    "layout": "sidebar-dashboard",
+    "responsive": true,
+    "sidebar": {
+      "collapsible": true,
+      "defaultExpanded": true
+    },
+    "table": {
+      "pagination": true,
+      "pageSize": 10,
+      "sortable": true,
+      "selectable": true
+    },
+    "eventDetails": {
+      "displayMode": "drawer",
+      "showAuditHistory": true,
+      "showEvidenceReferences": true,
+      "showRelatedEvents": true
+    },
+    "notifications": {
+      "enabled": true,
+      "types": ["SYNC_ERROR", "INTEGRITY_WARNING", "ARCHIVE_WARNING"]
+    },
+    "emptyState": {
+      "title": "No memory records found",
+      "description": "Try changing your search or filters.",
+      "icon": "LuDatabase"
+    }
+  },
+  "dataInfo": {
+    "environment": "DEMO",
+    "isMockData": true,
+    "generatedAt": "2026-11-05T18:42:00",
+    "warning": "Illustrative data only. Replace with verified backend data. Placeholder hashes are not valid integrity proofs."
+  }
+}

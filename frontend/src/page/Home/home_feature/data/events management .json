@@ -1,0 +1,513 @@
+{
+  "page": {
+    "title": "Events Management",
+    "subtitle": "IBVAP / Operations / Event Intelligence",
+    "systemStatus": "LIVE SYSTEM",
+    "engineStatus": "Event engine operational",
+    "actions": [
+      {
+        "id": "export",
+        "label": "Export",
+        "icon": "LuDownload"
+      },
+      {
+        "id": "sync",
+        "label": "Synchronize Events",
+        "icon": "LuRefreshCw"
+      }
+    ],
+    "connectivity": {
+      "label": "Network & Low Bandwidth",
+      "status": "Connected",
+      "icon": "LuWifi",
+      "connected": true
+    },
+    "offlineQueue": {
+      "label": "Offline Queue",
+      "count": 5,
+      "icon": "LuDatabase"
+    },
+    "lastSync": {
+      "label": "Last Sync",
+      "value": "19:34:52",
+      "icon": "LuClock"
+    },
+    "workspace": {
+      "title": "Event Workspace",
+      "totalFeatures": 50,
+      "description": "50 MANAGEMENT FEATURES"
+    }
+  },
+  "categories": [
+    "All Features",
+    "Event Detection",
+    "Event Classification",
+    "Event Prioritization",
+    "Alert Management",
+    "Incident Management",
+    "Network & Offline",
+    "Intelligence & Analytics",
+    "Audit & Security"
+  ],
+  "features": [
+    {
+      "id": "EVT-001",
+      "name": "Real-Time Event Detection",
+      "category": "Event Detection",
+      "description": "Detect security-related events from existing CCTV infrastructure.",
+      "icon": "LuEye",
+      "status": "active",
+      "priority": "critical"
+    },
+    {
+      "id": "EVT-002",
+      "name": "AI-Based Event Recognition",
+      "category": "Event Detection",
+      "description": "Recognize suspicious activities using AI-based video analytics.",
+      "icon": "LuBrainCircuit",
+      "status": "active",
+      "priority": "high"
+    },
+    {
+      "id": "EVT-003",
+      "name": "Person Detection Event",
+      "category": "Event Detection",
+      "description": "Generate events when persons are detected in monitored zones.",
+      "icon": "LuUsers",
+      "status": "active",
+      "priority": "high"
+    },
+    {
+      "id": "EVT-004",
+      "name": "Vehicle Detection Event",
+      "category": "Event Detection",
+      "description": "Identify vehicle-related activities and generate event records.",
+      "icon": "LuCar",
+      "status": "active",
+      "priority": "high"
+    },
+    {
+      "id": "EVT-005",
+      "name": "Intrusion Detection",
+      "category": "Event Detection",
+      "description": "Detect unauthorized entry into restricted surveillance zones.",
+      "icon": "LuShield",
+      "status": "active",
+      "priority": "critical"
+    },
+    {
+      "id": "EVT-006",
+      "name": "Loitering Detection",
+      "category": "Event Detection",
+      "description": "Identify objects or persons remaining in a monitored area beyond configured thresholds.",
+      "icon": "LuTimer",
+      "status": "active",
+      "priority": "high"
+    },
+    {
+      "id": "EVT-007",
+      "name": "Camera Tampering Detection",
+      "category": "Event Detection",
+      "description": "Generate events for camera obstruction, disconnection or view changes.",
+      "icon": "LuCamera",
+      "status": "active",
+      "priority": "critical"
+    },
+    {
+      "id": "EVT-008",
+      "name": "Restricted Zone Event",
+      "category": "Event Detection",
+      "description": "Monitor configured restricted geographical zones.",
+      "icon": "LuMapPin",
+      "status": "active",
+      "priority": "critical"
+    },
+    {
+      "id": "EVT-009",
+      "name": "Unusual Movement Detection",
+      "category": "Event Detection",
+      "description": "Identify movement patterns that deviate from configured baselines.",
+      "icon": "LuActivity",
+      "status": "active",
+      "priority": "medium"
+    },
+    {
+      "id": "EVT-010",
+      "name": "Multi-Camera Event Detection",
+      "category": "Event Detection",
+      "description": "Correlate related event records from multiple CCTV sources.",
+      "icon": "LuVideo",
+      "status": "active",
+      "priority": "high"
+    },
+    {
+      "id": "EVT-011",
+      "name": "Automatic Event Classification",
+      "category": "Event Classification",
+      "description": "Automatically classify detected events by event type.",
+      "icon": "LuLayers",
+      "status": "active",
+      "priority": "high"
+    },
+    {
+      "id": "EVT-012",
+      "name": "Threat Category Assignment",
+      "category": "Event Classification",
+      "description": "Assign standardized threat categories to generated events.",
+      "icon": "LuTarget",
+      "status": "active",
+      "priority": "high"
+    },
+    {
+      "id": "EVT-013",
+      "name": "Event Severity Classification",
+      "category": "Event Classification",
+      "description": "Classify events into critical, high, medium and low severity.",
+      "icon": "LuAlertTriangle",
+      "status": "active",
+      "priority": "critical"
+    },
+    {
+      "id": "EVT-014",
+      "name": "Confidence Score Assignment",
+      "category": "Event Classification",
+      "description": "Attach model confidence scores to detection records.",
+      "icon": "LuGauge",
+      "status": "active",
+      "priority": "medium"
+    },
+    {
+      "id": "EVT-015",
+      "name": "False Positive Filtering",
+      "category": "Event Classification",
+      "description": "Filter duplicate and low-confidence detections using configurable validation rules.",
+      "icon": "LuFilter",
+      "status": "active",
+      "priority": "high"
+    },
+    {
+      "id": "EVT-016",
+      "name": "Event Deduplication",
+      "category": "Event Classification",
+      "description": "Identify repeated event records within configured time windows.",
+      "icon": "LuWorkflow",
+      "status": "active",
+      "priority": "medium"
+    },
+    {
+      "id": "EVT-017",
+      "name": "Priority-Based Event Queue",
+      "category": "Event Prioritization",
+      "description": "Organize incoming events according to operational priority.",
+      "icon": "LuList",
+      "status": "active",
+      "priority": "high"
+    },
+    {
+      "id": "EVT-018",
+      "name": "Critical Event Escalation",
+      "category": "Event Prioritization",
+      "description": "Escalate critical events through configured notification workflows.",
+      "icon": "LuTrendingUp",
+      "status": "active",
+      "priority": "critical"
+    },
+    {
+      "id": "EVT-019",
+      "name": "Event Correlation",
+      "category": "Event Prioritization",
+      "description": "Connect related events using timestamps, zones and event metadata.",
+      "icon": "LuNetwork",
+      "status": "active",
+      "priority": "high"
+    },
+    {
+      "id": "EVT-020",
+      "name": "Risk-Based Prioritization",
+      "category": "Event Prioritization",
+      "description": "Rank events using configured risk and severity factors.",
+      "icon": "LuShieldCheck",
+      "status": "active",
+      "priority": "high"
+    },
+    {
+      "id": "EVT-021",
+      "name": "Event Assignment",
+      "category": "Event Prioritization",
+      "description": "Assign events to authorized operational personnel.",
+      "icon": "LuUsers",
+      "status": "active",
+      "priority": "medium"
+    },
+    {
+      "id": "EVT-022",
+      "name": "SLA Monitoring",
+      "category": "Event Prioritization",
+      "description": "Monitor event acknowledgement and resolution deadlines.",
+      "icon": "LuClock",
+      "status": "active",
+      "priority": "medium"
+    },
+    {
+      "id": "EVT-023",
+      "name": "Instant Event Notifications",
+      "category": "Alert Management",
+      "description": "Generate notifications when configured event conditions occur.",
+      "icon": "LuBell",
+      "status": "active",
+      "priority": "high"
+    },
+    {
+      "id": "EVT-024",
+      "name": "Critical Alert Management",
+      "category": "Alert Management",
+      "description": "Manage critical security alerts in a dedicated alert workspace.",
+      "icon": "LuAlertTriangle",
+      "status": "active",
+      "priority": "critical"
+    },
+    {
+      "id": "EVT-025",
+      "name": "Alert Acknowledgement",
+      "category": "Alert Management",
+      "description": "Record authorized operator acknowledgement of alerts.",
+      "icon": "LuCheckCircle",
+      "status": "active",
+      "priority": "high"
+    },
+    {
+      "id": "EVT-026",
+      "name": "Alert Escalation Workflow",
+      "category": "Alert Management",
+      "description": "Escalate unacknowledged alerts according to configured rules.",
+      "icon": "LuWorkflow",
+      "status": "active",
+      "priority": "high"
+    },
+    {
+      "id": "EVT-027",
+      "name": "Alert History",
+      "category": "Alert Management",
+      "description": "Maintain searchable historical alert records.",
+      "icon": "LuHistory",
+      "status": "active",
+      "priority": "medium"
+    },
+    {
+      "id": "EVT-028",
+      "name": "Alert Suppression Rules",
+      "category": "Alert Management",
+      "description": "Suppress repeated or maintenance-related alerts using approved rules.",
+      "icon": "LuXCircle",
+      "status": "active",
+      "priority": "medium"
+    },
+    {
+      "id": "EVT-029",
+      "name": "Multi-Channel Notifications",
+      "category": "Alert Management",
+      "description": "Support configured notification channels subject to network availability.",
+      "icon": "LuSend",
+      "status": "active",
+      "priority": "medium"
+    },
+    {
+      "id": "EVT-030",
+      "name": "Incident Creation",
+      "category": "Incident Management",
+      "description": "Convert validated security events into incident records.",
+      "icon": "LuFileText",
+      "status": "active",
+      "priority": "high"
+    },
+    {
+      "id": "EVT-031",
+      "name": "Incident Tracking",
+      "category": "Incident Management",
+      "description": "Track incident status from creation to closure.",
+      "icon": "LuClipboardList",
+      "status": "active",
+      "priority": "high"
+    },
+    {
+      "id": "EVT-032",
+      "name": "Incident Timeline",
+      "category": "Incident Management",
+      "description": "Maintain chronological incident activities and updates.",
+      "icon": "LuHistory",
+      "status": "active",
+      "priority": "medium"
+    },
+    {
+      "id": "EVT-033",
+      "name": "Evidence Association",
+      "category": "Incident Management",
+      "description": "Associate authorized video snapshots and metadata with incidents.",
+      "icon": "LuArchive",
+      "status": "active",
+      "priority": "high"
+    },
+    {
+      "id": "EVT-034",
+      "name": "Incident Resolution",
+      "category": "Incident Management",
+      "description": "Record resolution details and authorized closure information.",
+      "icon": "LuCheckCircle",
+      "status": "active",
+      "priority": "medium"
+    },
+    {
+      "id": "EVT-035",
+      "name": "Incident Report Generation",
+      "category": "Incident Management",
+      "description": "Generate structured incident reports for operational review.",
+      "icon": "LuFileText",
+      "status": "active",
+      "priority": "medium"
+    },
+    {
+      "id": "EVT-036",
+      "name": "Low Bandwidth Event Processing",
+      "category": "Network & Offline",
+      "description": "Reduce event communication payloads for bandwidth-constrained networks.",
+      "icon": "LuGauge",
+      "status": "active",
+      "priority": "critical"
+    },
+    {
+      "id": "EVT-037",
+      "name": "Offline Event Queue",
+      "category": "Network & Offline",
+      "description": "Temporarily queue event metadata during network interruptions.",
+      "icon": "LuDatabase",
+      "status": "active",
+      "priority": "critical"
+    },
+    {
+      "id": "EVT-038",
+      "name": "Automatic Event Synchronization",
+      "category": "Network & Offline",
+      "description": "Synchronize queued events when connectivity is restored.",
+      "icon": "LuRefreshCw",
+      "status": "active",
+      "priority": "high"
+    },
+    {
+      "id": "EVT-039",
+      "name": "Bandwidth-Aware Synchronization",
+      "category": "Network & Offline",
+      "description": "Control synchronization frequency and payload size according to network conditions.",
+      "icon": "LuWifi",
+      "status": "active",
+      "priority": "high"
+    },
+    {
+      "id": "EVT-040",
+      "name": "Network Health Monitoring",
+      "category": "Network & Offline",
+      "description": "Monitor connectivity status, latency and synchronization health.",
+      "icon": "LuNetwork",
+      "status": "active",
+      "priority": "high"
+    },
+    {
+      "id": "EVT-041",
+      "name": "Event Retry Mechanism",
+      "category": "Network & Offline",
+      "description": "Retry failed synchronization operations with controlled backoff.",
+      "icon": "LuRefreshCw",
+      "status": "active",
+      "priority": "medium"
+    },
+    {
+      "id": "EVT-042",
+      "name": "Conflict Resolution",
+      "category": "Network & Offline",
+      "description": "Identify and resolve conflicting event updates during synchronization.",
+      "icon": "LuWorkflow",
+      "status": "active",
+      "priority": "high"
+    },
+    {
+      "id": "EVT-043",
+      "name": "Event Analytics Dashboard",
+      "category": "Intelligence & Analytics",
+      "description": "Display event distribution, severity and operational trends.",
+      "icon": "LuChartNoAxesCombined",
+      "status": "active",
+      "priority": "high"
+    },
+    {
+      "id": "EVT-044",
+      "name": "Event Trend Analysis",
+      "category": "Intelligence & Analytics",
+      "description": "Analyze event frequency across configurable time periods.",
+      "icon": "LuTrendingUp",
+      "status": "active",
+      "priority": "medium"
+    },
+    {
+      "id": "EVT-045",
+      "name": "Geographical Event Analysis",
+      "category": "Intelligence & Analytics",
+      "description": "Analyze event distribution using available location metadata.",
+      "icon": "LuMapPin",
+      "status": "active",
+      "priority": "high"
+    },
+    {
+      "id": "EVT-046",
+      "name": "Event Search & Filtering",
+      "category": "Intelligence & Analytics",
+      "description": "Search events by ID, category, severity, camera and time range.",
+      "icon": "LuSearch",
+      "status": "active",
+      "priority": "medium"
+    },
+    {
+      "id": "EVT-047",
+      "name": "Blockchain Audit Trail",
+      "category": "Audit & Security",
+      "description": "Maintain tamper-evident records of event-related audit actions.",
+      "icon": "LuLock",
+      "status": "active",
+      "priority": "critical"
+    },
+    {
+      "id": "EVT-048",
+      "name": "Role-Based Access Control",
+      "category": "Audit & Security",
+      "description": "Restrict event operations according to authorized user roles.",
+      "icon": "LuShieldCheck",
+      "status": "active",
+      "priority": "critical"
+    },
+    {
+      "id": "EVT-049",
+      "name": "Operator Activity Logs",
+      "category": "Audit & Security",
+      "description": "Record operator actions and event management activities.",
+      "icon": "LuFileSearch",
+      "status": "active",
+      "priority": "high"
+    },
+    {
+      "id": "EVT-050",
+      "name": "Secure Event Export",
+      "category": "Audit & Security",
+      "description": "Export authorized event records with integrity and access controls.",
+      "icon": "LuDownload",
+      "status": "active",
+      "priority": "high"
+    }
+  ],
+
+  "statistics": {
+    "totalFeatures": 50,
+    "activeFeatures": 50,
+    "inactiveFeatures": 0,
+    "criticalFeatures": 8,
+    "categories": 9,
+    "offlineQueue": 5
+  }
+}

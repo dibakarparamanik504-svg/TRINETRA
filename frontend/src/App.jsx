@@ -36,6 +36,7 @@ import EnvironmentalAnalysis from "./page/Analysis/analysis_feature/Environmenta
 import EvisenceIntelligence from "./page/Analysis/analysis_feature/Evisence_Intelligence";
 import ModelPerformance from "./page/Analysis/analysis_feature/Model_Performance";
 import InfrastructureHealth from "./page/Analysis/analysis_feature/Infrastructure_Health";
+import Eventlog from "./page/Home/home_feature/eventlog";
 
 function App() {
   let [name, setName] = useState("Home Page");
@@ -65,6 +66,7 @@ function App() {
               path="/home/bordermanage"
               element={<Bordermemory setName={setName} />}
             />
+            <Route path="/home/eventlog" element={<Eventlog setName={setName}/>}/>
             <Route
               path="/home/camerahealth"
               element={<Camerahelth setName={setName} />}

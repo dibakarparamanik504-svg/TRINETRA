@@ -1,0 +1,409 @@
+{
+  "page": {
+    "id": "other-management",
+    "title": "Other Management",
+    "subtitle": "IBVAP / Operations / Other Intelligence",
+    "status": "LIVE SYSTEM",
+    "icon": "MdOutlineDashboard"
+  },
+
+  "dashboard": {
+    "totalFeatures": 50,
+    "activeFeatures": 42,
+    "offlineFeatures": 5,
+    "disabledFeatures": 3,
+    "systemHealth": "98.6%",
+    "icon": "MdAnalytics"
+  },
+
+  "network": {
+    "status": "Connected",
+    "offlineQueue": 5,
+    "lastSync": "19:34:52",
+    "synchronization": "Pending",
+    "bandwidthOptimization": true,
+    "offlineMode": true,
+    "icon": "MdOutlineWifi"
+  },
+
+  "actions": [
+    { "id": "export", "label": "Export", "icon": "MdDownload" },
+    { "id": "sync", "label": "Synchronize Data", "icon": "MdSync" },
+    { "id": "configure", "label": "Configure", "icon": "MdSettings" },
+    { "id": "add", "label": "Add Feature", "icon": "MdAdd" }
+  ],
+
+  "filters": [
+    { "id": "all", "label": "All Features", "icon": "MdApps" },
+    { "id": "active", "label": "Active", "icon": "MdCheckCircle" },
+    { "id": "offline", "label": "Offline", "icon": "MdWifiOff" },
+    { "id": "disabled", "label": "Disabled", "icon": "MdBlock" }
+  ],
+
+  "categories": [
+    {
+      "id": "intelligence-integration",
+      "name": "Intelligence & Integration",
+      "icon": "MdHub",
+      "features": [
+        {
+          "id": 1,
+          "name": "Multi-Source Intelligence",
+          "icon": "MdLayers",
+          "status": "active"
+        },
+        {
+          "id": 2,
+          "name": "Sensor Integration",
+          "icon": "MdSensors",
+          "status": "active"
+        },
+        {
+          "id": 3,
+          "name": "CCTV Health Monitoring",
+          "icon": "MdVideocam",
+          "status": "active"
+        },
+        {
+          "id": 4,
+          "name": "Camera Configuration",
+          "icon": "MdCameraAlt",
+          "status": "active"
+        },
+        {
+          "id": 5,
+          "name": "Device Management",
+          "icon": "MdDevices",
+          "status": "active"
+        },
+        {
+          "id": 40,
+          "name": "Integration Hub",
+          "icon": "MdHub",
+          "status": "active"
+        },
+        {
+          "id": 41,
+          "name": "API Management",
+          "icon": "MdApi",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "network-connectivity",
+      "name": "Network & Connectivity",
+      "icon": "MdNetworkCheck",
+      "features": [
+        {
+          "id": 6,
+          "name": "Network Diagnostics",
+          "icon": "MdNetworkCheck",
+          "status": "active"
+        },
+        {
+          "id": 7,
+          "name": "Bandwidth Optimization",
+          "icon": "MdSpeed",
+          "status": "active"
+        },
+        {
+          "id": 8,
+          "name": "Offline Operations",
+          "icon": "MdWifiOff",
+          "status": "active"
+        },
+        {
+          "id": 9,
+          "name": "Data Synchronization",
+          "icon": "MdSync",
+          "status": "offline"
+        },
+        {
+          "id": 10,
+          "name": "Edge Processing",
+          "icon": "MdMemory",
+          "status": "active"
+        },
+        {
+          "id": 36,
+          "name": "Communication Center",
+          "icon": "MdForum",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "ai-predictive",
+      "name": "AI & Predictive Intelligence",
+      "icon": "MdPsychology",
+      "features": [
+        {
+          "id": 11,
+          "name": "AI Model Management",
+          "icon": "MdPsychology",
+          "status": "active"
+        },
+        {
+          "id": 12,
+          "name": "Model Performance",
+          "icon": "MdQueryStats",
+          "status": "active"
+        },
+        {
+          "id": 13,
+          "name": "Threat Intelligence",
+          "icon": "MdGppMaybe",
+          "status": "active"
+        },
+        {
+          "id": 14,
+          "name": "Risk Assessment",
+          "icon": "MdWarning",
+          "status": "active"
+        },
+        {
+          "id": 15,
+          "name": "Anomaly Intelligence",
+          "icon": "MdManageSearch",
+          "status": "active"
+        },
+        {
+          "id": 45,
+          "name": "Predictive Intelligence",
+          "icon": "MdAutoGraph",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "geo-border",
+      "name": "Geo & Border Management",
+      "icon": "MdMap",
+      "features": [
+        {
+          "id": 16,
+          "name": "Geospatial Intelligence",
+          "icon": "MdPublic",
+          "status": "active"
+        },
+        {
+          "id": 17,
+          "name": "Digital Border Map",
+          "icon": "MdMap",
+          "status": "active"
+        },
+        {
+          "id": 18,
+          "name": "Zone Management",
+          "icon": "MdLocationOn",
+          "status": "active"
+        },
+        {
+          "id": 19,
+          "name": "Perimeter Management",
+          "icon": "MdRadar",
+          "status": "active"
+        },
+        {
+          "id": 20,
+          "name": "Patrol Coordination",
+          "icon": "MdRoute",
+          "status": "active"
+        },
+        {
+          "id": 21,
+          "name": "Mission Management",
+          "icon": "MdTrackChanges",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "incident-evidence",
+      "name": "Incident & Evidence",
+      "icon": "MdFolderSpecial",
+      "features": [
+        {
+          "id": 22,
+          "name": "Incident Management",
+          "icon": "MdAssignment",
+          "status": "active"
+        },
+        {
+          "id": 23,
+          "name": "Evidence Management",
+          "icon": "MdFolderSpecial",
+          "status": "active"
+        },
+        {
+          "id": 24,
+          "name": "Digital Forensics",
+          "icon": "MdFindInPage",
+          "status": "active"
+        },
+        {
+          "id": 25,
+          "name": "Audit Trail",
+          "icon": "MdHistory",
+          "status": "active"
+        },
+        {
+          "id": 26,
+          "name": "Blockchain Verification",
+          "icon": "MdToken",
+          "status": "active"
+        },
+        {
+          "id": 31,
+          "name": "Automated Reporting",
+          "icon": "MdAssessment",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "security-access",
+      "name": "Security & Access Control",
+      "icon": "MdSecurity",
+      "features": [
+        {
+          "id": 27,
+          "name": "Access Control",
+          "icon": "MdKey",
+          "status": "active"
+        },
+        {
+          "id": 28,
+          "name": "Role Permissions",
+          "icon": "MdManageAccounts",
+          "status": "active"
+        },
+        {
+          "id": 29,
+          "name": "Cybersecurity Center",
+          "icon": "MdSecurity",
+          "status": "active"
+        },
+        {
+          "id": 42,
+          "name": "User Activity Monitoring",
+          "icon": "MdPersonSearch",
+          "status": "active"
+        },
+        {
+          "id": 43,
+          "name": "Compliance Management",
+          "icon": "MdVerifiedUser",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "command-response",
+      "name": "Command & Response",
+      "icon": "MdMilitaryTech",
+      "features": [
+        {
+          "id": 32,
+          "name": "Intelligence Dashboard",
+          "icon": "MdDashboard",
+          "status": "active"
+        },
+        {
+          "id": 33,
+          "name": "Command Coordination",
+          "icon": "MdCellTower",
+          "status": "active"
+        },
+        {
+          "id": 34,
+          "name": "Emergency Response",
+          "icon": "MdEmergency",
+          "status": "active"
+        },
+        {
+          "id": 35,
+          "name": "Alert Escalation",
+          "icon": "MdNotificationsActive",
+          "status": "active"
+        },
+        {
+          "id": 48,
+          "name": "System Notifications",
+          "icon": "MdNotifications",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "system-infrastructure",
+      "name": "System & Infrastructure",
+      "icon": "MdSettings",
+      "features": [
+        {
+          "id": 30,
+          "name": "System Health",
+          "icon": "MdMonitorHeart",
+          "status": "active"
+        },
+        {
+          "id": 37,
+          "name": "Data Retention",
+          "icon": "MdStorage",
+          "status": "active"
+        },
+        {
+          "id": 38,
+          "name": "Backup & Recovery",
+          "icon": "MdBackup",
+          "status": "active"
+        },
+        {
+          "id": 39,
+          "name": "System Configuration",
+          "icon": "MdSettings",
+          "status": "active"
+        },
+        {
+          "id": 44,
+          "name": "Performance Analytics",
+          "icon": "MdShowChart",
+          "status": "active"
+        },
+        {
+          "id": 46,
+          "name": "Weather Intelligence",
+          "icon": "MdWbSunny",
+          "status": "offline"
+        },
+        {
+          "id": 47,
+          "name": "Environmental Monitoring",
+          "icon": "MdThermostat",
+          "status": "offline"
+        },
+        {
+          "id": 49,
+          "name": "Maintenance Scheduler",
+          "icon": "MdCalendarMonth",
+          "status": "disabled"
+        },
+        {
+          "id": 50,
+          "name": "Configuration History",
+          "icon": "MdHistory",
+          "status": "disabled"
+        }
+      ]
+    }
+  ],
+
+  "activity": {
+    "featureServices": "Operational",
+    "securityMonitoring": "Enabled",
+    "offlineSynchronization": "Pending",
+    "auditLogging": "Enabled",
+    "icon": "MdTimeline"
+  }
+}
