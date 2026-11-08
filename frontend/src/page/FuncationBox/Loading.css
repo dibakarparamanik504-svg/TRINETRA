@@ -1,0 +1,63 @@
+@media screen and (max-width:800px) {
+    .loading {
+        color: red;
+        padding-top: 50px;
+        justify-self: center;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        margin-top: 350px;
+    }
+    .loadingname{
+        font-size: 40px;
+        color: white;
+        font-weight: bold;
+    }
+
+    .loadinglogo {
+        width: 70px;
+        height: 70px;
+        /* border-top: 10px dotted white; */
+        border-radius:100%;
+        animation-name: loading;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes loading {
+        0% {
+            border-right: none;
+            border-top: 10px solid white;
+            border-left: none;
+            border-bottom: none;
+        }
+
+        25% {
+            border-right: 10px solid white;
+            border-top: none;
+            border-left: none;
+            border-bottom: none;
+        }
+
+        50% {
+            border-right: none;
+            border-top: none;
+            border-left: none;
+            border-bottom: 10px solid white;
+        }
+
+        100% {
+           border-right: none;
+            border-top: none;
+            border-left: 10px solid white;
+            border-bottom: none;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .loading {
+        color: red;
+    }
+
+}

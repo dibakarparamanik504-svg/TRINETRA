@@ -7,7 +7,7 @@ import { AiFillOpenAI } from "react-icons/ai";
 import { IoMdCreate } from "react-icons/io";
 import { Link } from "react-router-dom";
 
-function Decision({ setName }) {
+function Decision({ setName, setLoadingpath }) {
   setName("Decision");
   return (
     <div className="maindeci">
@@ -15,19 +15,19 @@ function Decision({ setName }) {
         <Decisionhead />
       </div>
       <div>
-        <DecisionQueue />
+        <DecisionQueue setLoadingpath={setLoadingpath} />
       </div>
       <div>
-        <Makedici />
+        <Makedici setLoadingpath={setLoadingpath}/>
       </div>
     </div>
   );
 }
 
 export default Decision;
-function Makedici() {
+function Makedici({setLoadingpath}) {
   return (
-    <Link to="/dicision/create/dicision">
+    <Link to="/decision/alert/dicision" onClick={()=> {setLoadingpath("Create a Decision")}}>
       <div className="makedici">
         <div className="makedicilogo">
           <IoMdCreate />
@@ -37,14 +37,17 @@ function Makedici() {
     </Link>
   );
 }
-function DecisionQueue() {
+function DecisionQueue({ setLoadingpath }) {
   return (
     <div className="mainqueue">
       {/* <div className="history">History</div>  */}
       <div className="parentque">
         {Queues.map((queue, i) => {
           return (
-            <Link to="/decision/alert/dicision">
+            <Link
+              to="/decision/alert/dicision"
+              onClick={() => {setLoadingpath(queue.type)}}
+            >
               <div className="childque">
                 <div className="childlogo">
                   <AiFillOpenAI />

@@ -1,11 +1,11 @@
-import "./alertanalysis.css";
+import "./small_window.css";
 import {IoIosCloseCircleOutline} from "react-icons/io"
 
-function Alertanalysis({title,body,check,setCheck}) {
+function Smallwindow({title,body,check,setCheck}) {
   return (
     <div>
       {check === true ?
-      <div className="mainalertanalysis">
+      <div className="smallwindow">
         <div className="header">
           <div className="title"> {title} </div>
           <div className="logo" onClick={()=>setCheck(false)}><IoIosCloseCircleOutline/></div>
@@ -19,4 +19,4 @@ function Alertanalysis({title,body,check,setCheck}) {
     </div>
   );
 }
-export default Alertanalysis;
+export default Smallwindow;

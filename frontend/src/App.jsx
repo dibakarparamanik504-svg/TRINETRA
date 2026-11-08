@@ -9,9 +9,9 @@ import Monitor from "./page/Monitoring/monitoring";
 import Decision from "./page/Decision/decision";
 import Analysis from "./page/Analysis/analysis";
 import Detection from "./page/Home/home_feature/detection";
-// import Alertanalysis from "./page/Alert/alert_feature/sequrityalert/alertanalysis";
+import Alertanalysis from "./page/Alert/alert_feature/alertanalysis";
 // import Cameradetails from "./page/Monitoring/motitorfeature/cameradetails";
-import Alertdicision from "./page/Decision/dicision_feature/alert_dicision";
+import Loading from "./page/FuncationBox/Loading";
 import Eventanalysis from "./page/Analysis/analysis_feature/event_analysis";
 import Flagged from "./page/Analysis/analysis_feature/flagged";
 import Cameraavailblity from "./page/Analysis/analysis_feature/camera_availblity";
@@ -29,10 +29,11 @@ function App() {
   let [name, setName] = useState("Home Page");
   let [headroute, setHeadroute] = useState([]);
   let [routedata, setRoutedata] = useState([]);
-  let[title,setTitle]=useState("");
-  let[body,setBody]=useState("");
-  let[check,setCheck] = useState(false);
-  // let [title1, setTitle1] = useState();
+  // let[title,setTitle]=useState("");
+  // let[body,setBody]=useState("");
+  // let[check,setCheck] = useState(false);
+  let[loadingpath, setLoadingpath] = useState("");
+  let [title1, setTitle1] = useState();
   // let [cameradetails,setcameradetails]=useState();
   return (
     <div className="App">
@@ -49,14 +50,14 @@ function App() {
                   setName={setName}
                   setRoutedata={setRoutedata}
                   setHeadroute={setHeadroute}
-                  // setTitle1={setTitle1}
+                  setTitle1={setTitle1}
                 />
               }
             />
-            <Route path="/alert" element={<Dashboard setName={setName} setTitle={setTitle} setBody={setBody} setCheck={setCheck} title={title} body={body} check={check}/>} />
-            <Route path="/monitoring" element={<Monitor setName={setName} />} />
-            <Route path="/decision" element={<Decision setName={setName} />} />
-            <Route path="/analysis" element={<Analysis setName={setName} />} />
+            <Route path="/alert" element={<Dashboard setName={setName}/>} />
+            <Route path="/monitoring" element={<Monitor setName={setName} setLoadingpath={setLoadingpath}/>} />
+            <Route path="/decision" element={<Decision setName={setName} setLoadingpath={setLoadingpath}/>}/>
+            <Route path="/analysis" element={<Analysis setName={setName} setLoadingpath={setLoadingpath}/>} />
             <Route
               path="/home/detection"
               element={
@@ -64,16 +65,16 @@ function App() {
                   setName={setName}
                   routedata={routedata}
                   headroute={headroute}
-                  // title1={title1}
+                  title1={title1}
                 />
               }
             />
             {/* sequrity alert start */}
-{/* 
+
             <Route
               path="/alert/alertanalysis"
-              element={<Alertanalysis />}
-            /> */}
+              element={<Alertanalysis setName={setName}/>}
+            />
 
             {/* monitoring start */}
 
@@ -86,7 +87,7 @@ function App() {
 
             <Route
               path="/decision/alert/dicision"
-              element={<Alertdicision setName={setName} />}
+              element={<Loading setName={setName} loadingpath={loadingpath}/>}
             />
 
 

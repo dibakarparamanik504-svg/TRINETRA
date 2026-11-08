@@ -11,7 +11,7 @@ import { GrAction } from "react-icons/gr";
 import { GoCodeSquare, GoDatabase, GoArrowUpRight } from "react-icons/go";
 import { Link } from "react-router-dom";
 
-function Analysis({ setName }) {
+function Analysis({ setName ,setLoadingpath}) {
   setName("Analysis");
   return (
     <div className="mainanal">
@@ -19,13 +19,13 @@ function Analysis({ setName }) {
         <Anahead />
       </div>
       <div>
-        <Contbox />
+        <Contbox setLoadingpath={setLoadingpath}/>
       </div>
       <div>
-        <Overview/>
+        <Overview />
       </div>
       <div>
-        <Module />
+        <Module setLoadingpath={setLoadingpath}/>
       </div>
     </div>
   );
@@ -41,7 +41,7 @@ function Overview() {
 }
 
 export default Analysis;
-function Module() {
+function Module({setLoadingpath}) {
   let modules = [
     {
       modulname: "Spatial Intelligent",
@@ -96,7 +96,7 @@ function Module() {
     <div className="mainmodule">
       {modules.map((module, i) => {
         return (
-          <Link to={module.modeLink} key={i}>
+          <Link to="/decision/alert/dicision" key={i} onClick={()=> {setLoadingpath(module.modulname)}}>
             <div className="parentmodul">
               <div className="combinelogo">
                 <div className="modulelogo">{module.modullogo}</div>
@@ -115,7 +115,7 @@ function Module() {
     </div>
   );
 }
-function Contbox() {
+function Contbox({setLoadingpath}) {
   let headoptions = [
     {
       number: 1284,
@@ -150,7 +150,7 @@ function Contbox() {
       <div className="headcont">
         {headoptions.map((headoption, i) => {
           return (
-            <Link to={headoption.Links} key={i}>
+            <Link to="/decision/alert/dicision" onClick={()=> {setLoadingpath(headoption.nameopt)}} key={i}>
               <div className="boxheadcont">
                 <div className="headname">{headoption.nameopt}</div>
                 <div className="controlhead">

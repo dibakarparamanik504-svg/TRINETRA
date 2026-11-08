@@ -36,18 +36,22 @@ import {
   IoMdPeople,
   IoMdFiling,
 } from "react-icons/io";
+import { Link } from "react-router-dom";
 
-function Monitor({ setName }) {
+function Monitor({ setName ,setLoadingpath}) {
   setName("AI Monitoring");
   let [cameradetails, setcameradetails] = useState(0);
 
   return (
     <div className="mainmoni">
       <div>
-        <CameraBox setcameradetails={setcameradetails}  cameradetails={cameradetails}/>
+        <CameraBox
+          setcameradetails={setcameradetails}
+          cameradetails={cameradetails}
+        />
       </div>
       <div>
-        <MonitoringObject cameradetails={cameradetails} />
+        <MonitoringObject cameradetails={cameradetails} setLoadingpath={setLoadingpath}/>
       </div>
     </div>
   );
@@ -57,7 +61,7 @@ export default Monitor;
 
 // camera function create hare
 
-function CameraBox({ setcameradetails,cameradetails }) {
+function CameraBox({ setcameradetails, cameradetails }) {
   let [cameralength, setcameralength] = useState(0);
   let [index, setIndex] = useState(0);
   let [cameras, setCamera] = useState([
@@ -165,7 +169,7 @@ function CameraBox({ setcameradetails,cameradetails }) {
 
 // Monitoring all feature box hare ...
 
-function MonitoringObject({ cameradetails }) {
+function MonitoringObject({ cameradetails ,setLoadingpath}) {
   let monifeature = [
     {
       id: 1,
@@ -185,26 +189,27 @@ function MonitoringObject({ cameradetails }) {
     <div>
       {monifeature.map((feature_item, i) => {
         return (
-          <div className="monfeature" key={i}>
-            <div className="featurenane">{feature_item.name}</div>
-            <div className="parentbox">
-              {feature_item.name === "Camera details" ? (
-                <Monitoringcont cameradetails={cameradetails} />
-              ) : feature_item.name === "Detection Feature" ? (
-                <DetectionFeature />
-              ) : feature_item.name === "Core Inovation" ? (
-                <Coreinovation />
-              ) : (
-                ""
-              )}
+          
+            <div className="monfeature" key={i}>
+              <div className="featurenane">{feature_item.name}</div>
+              <div className="parentbox">
+                {feature_item.name === "Camera details" ? (
+                  <Monitoringcont cameradetails={cameradetails} />
+                ) : feature_item.name === "Detection Feature" ? (
+                  <DetectionFeature setLoadingpath={setLoadingpath}/>
+                ) : feature_item.name === "Core Inovation" ? (
+                  <Coreinovation setLoadingpath={setLoadingpath}/>
+                ) : (
+                  ""
+                )}
+              </div>
             </div>
-          </div>
         );
       })}
     </div>
   );
 }
-function DetectionFeature() {
+function DetectionFeature({setLoadingpath}) {
   let logoname = [
     <FiUser />,
     <FiTruck />,
@@ -232,6 +237,7 @@ function DetectionFeature() {
     <div className="featurelist">
       {monitorfeaturelist.map((feature, i) => {
         return (
+          <Link to="/decision/alert/dicision" onClick={()=> {setLoadingpath(feature.name)}}>
           <div className="parentfeaturelist" key={i}>
             <div className="featurename">{feature.name}</div>
             <div className="featurecount">
@@ -240,6 +246,7 @@ function DetectionFeature() {
             </div>
             <div className="featuredetails">{feature.details}</div>
           </div>
+          </Link>
         );
       })}
     </div>
@@ -256,9 +263,7 @@ function Monitoringcont({ cameradetails }) {
           return (
             <div key={i}>
               {cameradetails === 0 ? (
-                <div className="infoondetails">
-                  No camera Details Available
-                </div>
+                <div className="infoondetails">No camera Details Available</div>
               ) : (
                 <div className="camerafulinfo">
                   <div>
@@ -294,7 +299,7 @@ function Monitoringcont({ cameradetails }) {
   );
 }
 
-function Coreinovation() {
+function Coreinovation({setLoadingpath}) {
   let innovations = [
     {
       id: 1,
@@ -325,6 +330,7 @@ function Coreinovation() {
     <div className="inovation">
       {innovations.map((inovation, i) => {
         return (
+          <Link to="/decision/alert/dicision" onClick={()=> {setLoadingpath(inovation.name)}}>
           <div key={i} className="childinovation">
             <div className="inovationlogo">{inovation.logo}</div>
             <div>
@@ -332,6 +338,7 @@ function Coreinovation() {
               <div className="inovationdetails">{inovation.details}</div>
             </div>
           </div>
+          </Link>
         );
       })}
     </div>

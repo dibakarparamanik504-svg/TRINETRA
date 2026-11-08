@@ -4,7 +4,8 @@ import { MdSecurity } from "react-icons/md";
 import { BiSolidBellRing } from "react-icons/bi";
 import { RiAlertFill } from "react-icons/ri";
 import { FaRegClock, FaCheckCircle, FaImages } from "react-icons/fa";
-import Alertanalysis from "./alert_feature/sequrityalert/alertanalysis";
+import Alertanalysis from "../FuncationBox/small_window";
+import { Link } from "react-router-dom";
 
 function Dashboard({
   setName,
@@ -16,7 +17,6 @@ function Dashboard({
   check,
 }) {
   setName("Live Alert");
-  
 
   return (
     <div className="maindash">
@@ -49,31 +49,13 @@ function Dashboard({
 
 export default Dashboard;
 
-
-function Hello(){
-  return(
-    <div>
-      hello
-    </div>
-  );
-}
-
-function Alertcomponent({ setTitle, setBody, setCheck,setCompo }) {
+function Alertcomponent({ setTitle }) {
   return (
     <div className="mainalertbox">
       {alerts.map((alertsitem, i) => {
         return (
-          <div
-            className="fullcont"
-            onClick={() => {
-              return (
-                setCheck(true),
-                setTitle(alertsitem.title),
-                setBody(alertsitem.type),
-                setCompo(<Hello/>)
-              );
-            }}
-          >
+          <Link to="/alert/alertanalysis" key={i}>
+          <div className="fullcont">
             <div className="imagesclas">
               <FaImages />
             </div>
@@ -97,6 +79,7 @@ function Alertcomponent({ setTitle, setBody, setCheck,setCompo }) {
               </div>
             </div>
           </div>
+          </Link>
         );
       })}
     </div>
