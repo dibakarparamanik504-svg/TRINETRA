@@ -6,6 +6,29 @@ import { BiSolidCameraPlus } from "react-icons/bi";
 import { MdCancel } from "react-icons/md";
 // import { Link } from "react-router-dom";
 import monitorfeaturelist from "./motitorfeature/detection_feature.json";
+import {
+  FiUser,
+  FiTruck,
+  FiPackage,
+  FiActivity,
+  FiCrosshair,
+  FiMapPin,
+  FiCamera,
+  FiWifi,
+  FiAlertTriangle,
+  FiSearch,
+  FiLayers,
+  FiSettings,
+  FiMoon,
+  FiEye,
+  FiTarget,
+  FiNavigation,
+  FiAlertOctagon,
+  FiDatabase,
+  FiTrendingUp,
+  FiShield,
+  FiLock
+} from "react-icons/fi";
 
 function Monitor({ setName }) {
   setName("AI Monitoring");
@@ -173,8 +196,30 @@ function MonitoringObject({ cameradetails }) {
     </div>
   );
 }
-
 function DetectionFeature() {
+  let logoname = [
+    <FiUser />,
+    <FiTruck />,
+    <FiPackage />,
+    <FiActivity />,
+    <FiCrosshair />,
+    <FiMapPin />,
+    <FiCamera />,
+    <FiWifi />,
+    <FiAlertTriangle />,
+    <FiSearch />,
+    <FiLayers />,
+    <FiSettings />,
+    <FiMoon />,
+    <FiEye />,
+    <FiTarget />,
+    <FiNavigation />,
+    <FiAlertOctagon />,
+    <FiDatabase />,
+    <FiTrendingUp />,
+    <FiShield />,
+    <FiLock />
+  ];
   return (
     <div className="featurelist">
       {monitorfeaturelist.map((feature, i) => {
@@ -182,8 +227,8 @@ function DetectionFeature() {
           <div className="parentfeaturelist" key={i}>
             <div className="featurename">{feature.name}</div>
             <div className="featurecount">
-              <div></div>
-              <div>{feature.count}</div>
+              <div className="featurelogo">{logoname[i]}</div>
+              <div className="featurecount">{feature.count}</div>
             </div>
             <div className="featuredetails">{feature.details}</div>
           </div>
@@ -203,7 +248,10 @@ function Monitoringcont({ cameradetails }) {
           return (
             <div key={i}>
               {cameradetails === 0 ? (
-                <div className="infoondetails"> No camera Details Available</div>
+                <div className="infoondetails">
+                  {" "}
+                  No camera Details Available
+                </div>
               ) : (
                 <div className="camerafulinfo">
                   <div>
@@ -225,7 +273,9 @@ function Monitoringcont({ cameradetails }) {
                     </div>
                   </div>
                   <div className="infoobject">
-                    <div className="infoobjectsingnal">{information.signal}</div>
+                    <div className="infoobjectsingnal">
+                      {information.signal}
+                    </div>
                     <div className="infoobjectrisk">{information.risk}</div>
                   </div>
                 </div>

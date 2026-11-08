@@ -9,9 +9,6 @@ import Monitor from "./page/Monitoring/monitoring";
 import Decision from "./page/Decision/decision";
 import Analysis from "./page/Analysis/analysis";
 import Detection from "./page/Home/home_feature/detection";
-import Tracking from "./page/Home/home_feature/tracking";
-import Camerahelth from "./page/Home/home_feature/camera_helth";
-import Bordermemory from "./page/Home/home_feature/bordermemory";
 import TotalAlert from "./page/Alert/alert_feature/sequrityalert/totalalert";
 import Criticul from "./page/Alert/alert_feature/sequrityalert/criticul";
 import Underreview from "./page/Alert/alert_feature/sequrityalert/underreview";
@@ -36,10 +33,12 @@ import EnvironmentalAnalysis from "./page/Analysis/analysis_feature/Environmenta
 import EvisenceIntelligence from "./page/Analysis/analysis_feature/Evisence_Intelligence";
 import ModelPerformance from "./page/Analysis/analysis_feature/Model_Performance";
 import InfrastructureHealth from "./page/Analysis/analysis_feature/Infrastructure_Health";
-import Eventlog from "./page/Home/home_feature/eventlog";
 
 function App() {
   let [name, setName] = useState("Home Page");
+  let [headroute, setHeadroute] = useState([]);
+  let [routedata, setRoutedata] = useState([]);
+  let [title1, setTitle1] = useState();
   // let [cameradetails,setcameradetails]=useState();
   return (
     <div className="App">
@@ -49,27 +48,31 @@ function App() {
         </div>
         <div>
           <Routes>
-            <Route path="/" element={<HomePage setName={setName} />} />
+            <Route
+              path="/"
+              element={
+                <HomePage
+                  setName={setName}
+                  setRoutedata={setRoutedata}
+                  setHeadroute={setHeadroute}
+                  setTitle1={setTitle1}
+                />
+              }
+            />
             <Route path="/alert" element={<Dashboard setName={setName} />} />
-            <Route path="/monitoring" element={<Monitor setName={setName}/>} />
+            <Route path="/monitoring" element={<Monitor setName={setName} />} />
             <Route path="/decision" element={<Decision setName={setName} />} />
             <Route path="/analysis" element={<Analysis setName={setName} />} />
             <Route
               path="/home/detection"
-              element={<Detection setName={setName} />}
-            />
-            <Route
-              path="/home/tracking"
-              element={<Tracking setName={setName} />}
-            />
-            <Route
-              path="/home/bordermanage"
-              element={<Bordermemory setName={setName} />}
-            />
-            <Route path="/home/eventlog" element={<Eventlog setName={setName}/>}/>
-            <Route
-              path="/home/camerahealth"
-              element={<Camerahelth setName={setName} />}
+              element={
+                <Detection
+                  setName={setName}
+                  routedata={routedata}
+                  headroute={headroute}
+                  title1={title1}
+                />
+              }
             />
             {/* sequrity alert start */}
 

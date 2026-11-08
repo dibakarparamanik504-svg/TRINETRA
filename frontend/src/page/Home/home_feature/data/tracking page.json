@@ -55,401 +55,395 @@
       "id": "basic",
       "title": "Basic Tracking",
       "description": "Core object tracking and movement monitoring.",
-      "range": "01-16",
-      "features": [
-        {
-          "id": 1,
-          "name": "Real-Time Object Tracking",
-          "icon": "FiCrosshair",
-          "description": "Track detected objects across consecutive video frames.",
-          "technology": "YOLO + ByteTrack",
-          "status": "planned"
-        },
-        {
-          "id": 2,
-          "name": "Unique Tracking ID",
-          "icon": "FiFingerprint",
-          "description": "Assign a unique identifier to each tracking session.",
-          "technology": "Object tracking engine",
-          "status": "planned"
-        },
-        {
-          "id": 3,
-          "name": "Multi-Camera Tracking",
-          "icon": "FiCamera",
-          "description": "Associate observations from multiple camera feeds.",
-          "technology": "Camera association",
-          "status": "planned"
-        },
-        {
-          "id": 4,
-          "name": "Person Re-Identification",
-          "icon": "FiUserCheck",
-          "description": "Estimate whether person observations across cameras may represent the same individual.",
-          "technology": "Person Re-ID embeddings",
-          "status": "planned"
-        },
-        {
-          "id": 5,
-          "name": "Vehicle Re-Identification",
-          "icon": "FiTruck",
-          "description": "Associate vehicle observations across different camera views.",
-          "technology": "Vehicle Re-ID",
-          "status": "planned"
-        },
-        {
-          "id": 6,
-          "name": "Movement History",
-          "icon": "FiClock",
-          "description": "Maintain chronological movement records.",
-          "technology": "Trajectory database",
-          "status": "planned"
-        },
-        {
-          "id": 7,
-          "name": "Direction Tracking",
-          "icon": "FiNavigation",
-          "description": "Estimate the direction of object movement.",
-          "technology": "Trajectory analysis",
-          "status": "planned"
-        },
-        {
-          "id": 8,
-          "name": "Speed Estimation",
-          "icon": "FiGauge",
-          "description": "Estimate object speed using calibrated camera footage.",
-          "technology": "Perspective calibration",
-          "status": "planned"
-        },
-        {
-          "id": 9,
-          "name": "Distance Estimation",
-          "icon": "FiRuler",
-          "description": "Estimate approximate movement distance.",
-          "technology": "Camera calibration",
-          "status": "planned"
-        },
-        {
-          "id": 10,
-          "name": "Entry & Exit Tracking",
-          "icon": "FiLogIn",
-          "description": "Record object entry and exit events.",
-          "technology": "Zone-based tracking",
-          "status": "planned"
-        },
-        {
-          "id": 11,
-          "name": "Virtual Zone Tracking",
-          "icon": "FiMap",
-          "description": "Monitor objects inside configured virtual zones.",
-          "technology": "Polygon zone detection",
-          "status": "planned"
-        },
-        {
-          "id": 12,
-          "name": "Loitering Tracking",
-          "icon": "FiTimer",
-          "description": "Measure prolonged presence within configured zones.",
-          "technology": "Dwell-time analysis",
-          "status": "planned"
-        },
-        {
-          "id": 13,
-          "name": "Track Lost Detection",
-          "icon": "FiEyeOff",
-          "description": "Identify tracks that disappear from camera coverage.",
-          "technology": "Track lifecycle management",
-          "status": "planned"
-        },
-        {
-          "id": 14,
-          "name": "Track Recovery",
-          "icon": "FiRefreshCw",
-          "description": "Attempt to reacquire previously lost tracks.",
-          "technology": "Track association",
-          "status": "planned"
-        },
-        {
-          "id": 15,
-          "name": "Camera Handoff",
-          "icon": "FiGitMerge",
-          "description": "Record transitions between camera coverage areas.",
-          "technology": "Cross-camera association",
-          "status": "planned"
-        },
-        {
-          "id": 16,
-          "name": "Track Confidence Analysis",
-          "icon": "FiBarChart2",
-          "description": "Measure tracking consistency and uncertainty.",
-          "technology": "Confidence scoring",
-          "status": "planned"
-        }
-      ]
+      "range": "01-16"
     },
     {
       "id": "movement",
       "title": "Movement Intelligence",
       "description": "Analyze trajectories, movement patterns and route changes.",
-      "range": "17-26",
-      "features": [
-        {
-          "id": 17,
-          "name": "Trajectory Prediction",
-          "icon": "FiTrendingUp",
-          "description": "Estimate possible future movement trajectories.",
-          "technology": "Trajectory forecasting",
-          "status": "planned"
-        },
-        {
-          "id": 18,
-          "name": "Movement Pattern Recognition",
-          "icon": "FiActivity",
-          "description": "Identify recurring movement patterns.",
-          "technology": "Pattern analysis",
-          "status": "planned"
-        },
-        {
-          "id": 19,
-          "name": "Route Deviation Detection",
-          "icon": "FiGitBranch",
-          "description": "Identify deviations from configured routes.",
-          "technology": "Route comparison",
-          "status": "planned"
-        },
-        {
-          "id": 20,
-          "name": "Unusual Direction Change",
-          "icon": "FiShuffle",
-          "description": "Detect sudden changes in movement direction.",
-          "technology": "Motion vector analysis",
-          "status": "planned"
-        },
-        {
-          "id": 21,
-          "name": "Movement Acceleration Analysis",
-          "icon": "FiZap",
-          "description": "Analyze changes in object speed.",
-          "technology": "Motion analysis",
-          "status": "planned"
-        },
-        {
-          "id": 22,
-          "name": "Stop & Go Detection",
-          "icon": "FiPauseCircle",
-          "description": "Identify repeated stopping and movement.",
-          "technology": "Temporal tracking",
-          "status": "planned"
-        },
-        {
-          "id": 23,
-          "name": "Stationary Object Tracking",
-          "icon": "FiMapPin",
-          "description": "Monitor objects that remain stationary.",
-          "technology": "Motion state analysis",
-          "status": "planned"
-        },
-        {
-          "id": 24,
-          "name": "Reverse Movement Detection",
-          "icon": "FiCornerUpLeft",
-          "description": "Identify movement opposite to a configured direction.",
-          "technology": "Direction comparison",
-          "status": "planned"
-        },
-        {
-          "id": 25,
-          "name": "Circular Movement Detection",
-          "icon": "FiRotateCw",
-          "description": "Identify repeated movement within a small area.",
-          "technology": "Trajectory geometry",
-          "status": "planned"
-        },
-        {
-          "id": 26,
-          "name": "Boundary Approach Tracking",
-          "icon": "FiTarget",
-          "description": "Monitor movement toward configured boundaries.",
-          "technology": "Boundary proximity analysis",
-          "status": "planned"
-        }
-      ]
+      "range": "17-26"
     },
     {
       "id": "multicamera",
       "title": "Multi-Camera Intelligence",
       "description": "Coordinate tracking across connected CCTV cameras.",
-      "range": "27-36",
-      "features": [
-        {
-          "id": 27,
-          "name": "Camera Overlap Tracking",
-          "icon": "FiCamera",
-          "description": "Associate objects in overlapping camera views.",
-          "technology": "Spatial camera association",
-          "status": "planned"
-        },
-        {
-          "id": 28,
-          "name": "Camera Coverage Transition",
-          "icon": "FiGitMerge",
-          "description": "Record transitions between camera coverage zones.",
-          "technology": "Coverage mapping",
-          "status": "planned"
-        },
-        {
-          "id": 29,
-          "name": "Cross-Camera Trajectory Reconstruction",
-          "icon": "FiShare2",
-          "description": "Combine camera observations into chronological trajectories.",
-          "technology": "Trajectory reconstruction",
-          "status": "planned"
-        },
-        {
-          "id": 30,
-          "name": "Track Synchronization",
-          "icon": "FiRefreshCw",
-          "description": "Synchronize tracking observations across cameras.",
-          "technology": "Timestamp synchronization",
-          "status": "planned"
-        },
-        {
-          "id": 31,
-          "name": "Duplicate Track Detection",
-          "icon": "FiCopy",
-          "description": "Identify duplicate representations of an observed object.",
-          "technology": "Track deduplication",
-          "status": "planned"
-        },
-        {
-          "id": 32,
-          "name": "Track Association Confidence",
-          "icon": "FiPercent",
-          "description": "Measure confidence in cross-camera associations.",
-          "technology": "Association scoring",
-          "status": "planned"
-        },
-        {
-          "id": 33,
-          "name": "Camera Blind-Zone Handoff",
-          "icon": "FiEyeOff",
-          "description": "Handle transitions through camera coverage gaps.",
-          "technology": "Temporal association",
-          "status": "planned"
-        },
-        {
-          "id": 34,
-          "name": "Multi-Object Track Management",
-          "icon": "FiLayers",
-          "description": "Manage multiple simultaneous object tracks.",
-          "technology": "Multi-object tracking",
-          "status": "planned"
-        },
-        {
-          "id": 35,
-          "name": "Track Conflict Resolution",
-          "icon": "FiGitPullRequest",
-          "description": "Resolve conflicting track associations.",
-          "technology": "Association conflict resolution",
-          "status": "planned"
-        },
-        {
-          "id": 36,
-          "name": "Camera Network Tracking Status",
-          "icon": "FiMonitor",
-          "description": "Monitor tracking availability across cameras.",
-          "technology": "Camera health monitoring",
-          "status": "planned"
-        }
-      ]
+      "range": "27-36"
     },
     {
       "id": "behaviour",
       "title": "Behaviour Analytics",
       "description": "Analyze group movement and unusual tracking patterns.",
-      "range": "37-46",
-      "features": [
-        {
-          "id": 37,
-          "name": "Group Separation Detection",
-          "icon": "FiUsers",
-          "description": "Detect when a tracked group separates.",
-          "technology": "Group association",
-          "status": "planned"
-        },
-        {
-          "id": 38,
-          "name": "Group Formation Tracking",
-          "icon": "FiGrid",
-          "description": "Monitor changes in group formation.",
-          "technology": "Spatial clustering",
-          "status": "planned"
-        },
-        {
-          "id": 39,
-          "name": "Object Interaction Tracking",
-          "icon": "FiShare2",
-          "description": "Analyze spatial interactions between tracked objects.",
-          "technology": "Interaction analysis",
-          "status": "planned"
-        },
-        {
-          "id": 40,
-          "name": "Repeated Route Detection",
-          "icon": "FiRepeat",
-          "description": "Identify frequently repeated routes.",
-          "technology": "Historical route comparison",
-          "status": "planned"
-        },
-        {
-          "id": 41,
-          "name": "Zone Dwell-Time Analytics",
-          "icon": "FiClock",
-          "description": "Calculate time spent inside configured zones.",
-          "technology": "Dwell-time analytics",
-          "status": "planned"
-        },
-        {
-          "id": 42,
-          "name": "Entry-to-Exit Time Analysis",
-          "icon": "FiLogIn",
-          "description": "Calculate time between zone entry and exit.",
-          "technology": "Zone event analysis",
-          "status": "planned"
-        },
-        {
-          "id": 43,
-          "name": "Crowd Density Tracking",
-          "icon": "FiUsers",
-          "description": "Estimate object density in a defined area.",
-          "technology": "Density estimation",
-          "status": "planned"
-        },
-        {
-          "id": 44,
-          "name": "Movement Synchronization Analysis",
-          "icon": "FiActivity",
-          "description": "Identify correlated movement among objects.",
-          "technology": "Motion correlation",
-          "status": "planned"
-        },
-        {
-          "id": 45,
-          "name": "Track Anomaly Detection",
-          "icon": "FiAlertTriangle",
-          "description": "Flag unusual tracking patterns for human review.",
-          "technology": "Anomaly detection",
-          "status": "planned"
-        },
-        {
-          "id": 46,
-          "name": "Historical Trajectory Comparison",
-          "icon": "FiBarChart2",
-          "description": "Compare current and historical movement trajectories.",
-          "technology": "Historical analytics",
-          "status": "planned"
-        }
-      ]
+      "range": "37-46"
+    }
+  ],
+  "features": [
+    {
+      "id": 1,
+      "name": "Real-Time Object Tracking",
+      "icon": "FiCrosshair",
+      "description": "Track detected objects across consecutive video frames.",
+      "category": "YOLO + ByteTrack",
+      "status": "planned"
+    },
+    {
+      "id": 2,
+      "name": "Unique Tracking ID",
+      "icon": "FiFingerprint",
+      "description": "Assign a unique identifier to each tracking session.",
+      "category": "Object tracking engine",
+      "status": "planned"
+    },
+    {
+      "id": 3,
+      "name": "Multi-Camera Tracking",
+      "icon": "FiCamera",
+      "description": "Associate observations from multiple camera feeds.",
+      "category": "Camera association",
+      "status": "planned"
+    },
+    {
+      "id": 4,
+      "name": "Person Re-Identification",
+      "icon": "FiUserCheck",
+      "description": "Estimate whether person observations across cameras may represent the same individual.",
+      "category": "Person Re-ID embeddings",
+      "status": "planned"
+    },
+    {
+      "id": 5,
+      "name": "Vehicle Re-Identification",
+      "icon": "FiTruck",
+      "description": "Associate vehicle observations across different camera views.",
+      "category": "Vehicle Re-ID",
+      "status": "planned"
+    },
+    {
+      "id": 6,
+      "name": "Movement History",
+      "icon": "FiClock",
+      "description": "Maintain chronological movement records.",
+      "category": "Trajectory database",
+      "status": "planned"
+    },
+    {
+      "id": 7,
+      "name": "Direction Tracking",
+      "icon": "FiNavigation",
+      "description": "Estimate the direction of object movement.",
+      "category": "Trajectory analysis",
+      "status": "planned"
+    },
+    {
+      "id": 8,
+      "name": "Speed Estimation",
+      "icon": "FiGauge",
+      "description": "Estimate object speed using calibrated camera footage.",
+      "category": "Perspective calibration",
+      "status": "planned"
+    },
+    {
+      "id": 9,
+      "name": "Distance Estimation",
+      "icon": "FiRuler",
+      "description": "Estimate approximate movement distance.",
+      "category": "Camera calibration",
+      "status": "planned"
+    },
+    {
+      "id": 10,
+      "name": "Entry & Exit Tracking",
+      "icon": "FiLogIn",
+      "description": "Record object entry and exit events.",
+      "category": "Zone-based tracking",
+      "status": "planned"
+    },
+    {
+      "id": 11,
+      "name": "Virtual Zone Tracking",
+      "icon": "FiMap",
+      "description": "Monitor objects inside configured virtual zones.",
+      "category": "Polygon zone detection",
+      "status": "planned"
+    },
+    {
+      "id": 12,
+      "name": "Loitering Tracking",
+      "icon": "FiTimer",
+      "description": "Measure prolonged presence within configured zones.",
+      "category": "Dwell-time analysis",
+      "status": "planned"
+    },
+    {
+      "id": 13,
+      "name": "Track Lost Detection",
+      "icon": "FiEyeOff",
+      "description": "Identify tracks that disappear from camera coverage.",
+      "category": "Track lifecycle management",
+      "status": "planned"
+    },
+    {
+      "id": 14,
+      "name": "Track Recovery",
+      "icon": "FiRefreshCw",
+      "description": "Attempt to reacquire previously lost tracks.",
+      "category": "Track association",
+      "status": "planned"
+    },
+    {
+      "id": 15,
+      "name": "Camera Handoff",
+      "icon": "FiGitMerge",
+      "description": "Record transitions between camera coverage areas.",
+      "category": "Cross-camera association",
+      "status": "planned"
+    },
+    {
+      "id": 16,
+      "name": "Track Confidence Analysis",
+      "icon": "FiBarChart2",
+      "description": "Measure tracking consistency and uncertainty.",
+      "category": "Confidence scoring",
+      "status": "planned"
+    },
+    {
+      "id": 17,
+      "name": "Trajectory Prediction",
+      "icon": "FiTrendingUp",
+      "description": "Estimate possible future movement trajectories.",
+      "category": "Trajectory forecasting",
+      "status": "planned"
+    },
+    {
+      "id": 18,
+      "name": "Movement Pattern Recognition",
+      "icon": "FiActivity",
+      "description": "Identify recurring movement patterns.",
+      "category": "Pattern analysis",
+      "status": "planned"
+    },
+    {
+      "id": 19,
+      "name": "Route Deviation Detection",
+      "icon": "FiGitBranch",
+      "description": "Identify deviations from configured routes.",
+      "category": "Route comparison",
+      "status": "planned"
+    },
+    {
+      "id": 20,
+      "name": "Unusual Direction Change",
+      "icon": "FiShuffle",
+      "description": "Detect sudden changes in movement direction.",
+      "category": "Motion vector analysis",
+      "status": "planned"
+    },
+    {
+      "id": 21,
+      "name": "Movement Acceleration Analysis",
+      "icon": "FiZap",
+      "description": "Analyze changes in object speed.",
+      "category": "Motion analysis",
+      "status": "planned"
+    },
+    {
+      "id": 22,
+      "name": "Stop & Go Detection",
+      "icon": "FiPauseCircle",
+      "description": "Identify repeated stopping and movement.",
+      "category": "Temporal tracking",
+      "status": "planned"
+    },
+    {
+      "id": 23,
+      "name": "Stationary Object Tracking",
+      "icon": "FiMapPin",
+      "description": "Monitor objects that remain stationary.",
+      "category": "Motion state analysis",
+      "status": "planned"
+    },
+    {
+      "id": 24,
+      "name": "Reverse Movement Detection",
+      "icon": "FiCornerUpLeft",
+      "description": "Identify movement opposite to a configured direction.",
+      "category": "Direction comparison",
+      "status": "planned"
+    },
+    {
+      "id": 25,
+      "name": "Circular Movement Detection",
+      "icon": "FiRotateCw",
+      "description": "Identify repeated movement within a small area.",
+      "category": "Trajectory geometry",
+      "status": "planned"
+    },
+    {
+      "id": 26,
+      "name": "Boundary Approach Tracking",
+      "icon": "FiTarget",
+      "description": "Monitor movement toward configured boundaries.",
+      "category": "Boundary proximity analysis",
+      "status": "planned"
+    },
+    {
+      "id": 27,
+      "name": "Camera Overlap Tracking",
+      "icon": "FiCamera",
+      "description": "Associate objects in overlapping camera views.",
+      "category": "Spatial camera association",
+      "status": "planned"
+    },
+    {
+      "id": 28,
+      "name": "Camera Coverage Transition",
+      "icon": "FiGitMerge",
+      "description": "Record transitions between camera coverage zones.",
+      "category": "Coverage mapping",
+      "status": "planned"
+    },
+    {
+      "id": 29,
+      "name": "Cross-Camera Trajectory Reconstruction",
+      "icon": "FiShare2",
+      "description": "Combine camera observations into chronological trajectories.",
+      "category": "Trajectory reconstruction",
+      "status": "planned"
+    },
+    {
+      "id": 30,
+      "name": "Track Synchronization",
+      "icon": "FiRefreshCw",
+      "description": "Synchronize tracking observations across cameras.",
+      "category": "Timestamp synchronization",
+      "status": "planned"
+    },
+    {
+      "id": 31,
+      "name": "Duplicate Track Detection",
+      "icon": "FiCopy",
+      "description": "Identify duplicate representations of an observed object.",
+      "category": "Track deduplication",
+      "status": "planned"
+    },
+    {
+      "id": 32,
+      "name": "Track Association Confidence",
+      "icon": "FiPercent",
+      "description": "Measure confidence in cross-camera associations.",
+      "category": "Association scoring",
+      "status": "planned"
+    },
+    {
+      "id": 33,
+      "name": "Camera Blind-Zone Handoff",
+      "icon": "FiEyeOff",
+      "description": "Handle transitions through camera coverage gaps.",
+      "category": "Temporal association",
+      "status": "planned"
+    },
+    {
+      "id": 34,
+      "name": "Multi-Object Track Management",
+      "icon": "FiLayers",
+      "description": "Manage multiple simultaneous object tracks.",
+      "category": "Multi-object tracking",
+      "status": "planned"
+    },
+    {
+      "id": 35,
+      "name": "Track Conflict Resolution",
+      "icon": "FiGitPullRequest",
+      "description": "Resolve conflicting track associations.",
+      "category": "Association conflict resolution",
+      "status": "planned"
+    },
+    {
+      "id": 36,
+      "name": "Camera Network Tracking Status",
+      "icon": "FiMonitor",
+      "description": "Monitor tracking availability across cameras.",
+      "category": "Camera health monitoring",
+      "status": "planned"
+    },
+    {
+      "id": 37,
+      "name": "Group Separation Detection",
+      "icon": "FiUsers",
+      "description": "Detect when a tracked group separates.",
+      "category": "Group association",
+      "status": "planned"
+    },
+    {
+      "id": 38,
+      "name": "Group Formation Tracking",
+      "icon": "FiGrid",
+      "description": "Monitor changes in group formation.",
+      "category": "Spatial clustering",
+      "status": "planned"
+    },
+    {
+      "id": 39,
+      "name": "Object Interaction Tracking",
+      "icon": "FiShare2",
+      "description": "Analyze spatial interactions between tracked objects.",
+      "category": "Interaction analysis",
+      "status": "planned"
+    },
+    {
+      "id": 40,
+      "name": "Repeated Route Detection",
+      "icon": "FiRepeat",
+      "description": "Identify frequently repeated routes.",
+      "category": "Historical route comparison",
+      "status": "planned"
+    },
+    {
+      "id": 41,
+      "name": "Zone Dwell-Time Analytics",
+      "icon": "FiClock",
+      "description": "Calculate time spent inside configured zones.",
+      "category": "Dwell-time analytics",
+      "status": "planned"
+    },
+    {
+      "id": 42,
+      "name": "Entry-to-Exit Time Analysis",
+      "icon": "FiLogIn",
+      "description": "Calculate time between zone entry and exit.",
+      "category": "Zone event analysis",
+      "status": "planned"
+    },
+    {
+      "id": 43,
+      "name": "Crowd Density Tracking",
+      "icon": "FiUsers",
+      "description": "Estimate object density in a defined area.",
+      "category": "Density estimation",
+      "status": "planned"
+    },
+    {
+      "id": 44,
+      "name": "Movement Synchronization Analysis",
+      "icon": "FiActivity",
+      "description": "Identify correlated movement among objects.",
+      "category": "Motion correlation",
+      "status": "planned"
+    },
+    {
+      "id": 45,
+      "name": "Track Anomaly Detection",
+      "icon": "FiAlertTriangle",
+      "description": "Flag unusual tracking patterns for human review.",
+      "category": "Anomaly detection",
+      "status": "planned"
+    },
+    {
+      "id": 46,
+      "name": "Historical Trajectory Comparison",
+      "icon": "FiBarChart2",
+      "description": "Compare current and historical movement trajectories.",
+      "category": "Historical analytics",
+      "status": "planned"
     }
   ],
   "sampleTracks": [

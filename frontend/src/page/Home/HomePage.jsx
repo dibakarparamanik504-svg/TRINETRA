@@ -1,11 +1,16 @@
 import { Link } from "react-router-dom";
 import "./HomeStyle.css";
-import { MdPersonSearch,MdMemory } from "react-icons/md";
+import { MdPersonSearch, MdMemory } from "react-icons/md";
 import { LuScanSearch } from "react-icons/lu";
 import { TbVirusSearch } from "react-icons/tb";
-import {LuActivity} from "react-icons/lu"
+import { LuActivity } from "react-icons/lu";
+import detectiondata from "./home_feature/data/detection page.json";
+import trackingdata from "./home_feature/data/tracking page.json";
+import bordermemorydata from "./home_feature/data/border memory .json";
+import eventdata from "./home_feature/data/events management .json";
+import otherdata from "./home_feature/data/other page .json"
 
-function HomePage({ setName }) {
+function HomePage({ setName, setRoutedata,setHeadroute,setTitle1 }) {
   setName("Home");
 
   return (
@@ -14,63 +19,80 @@ function HomePage({ setName }) {
         <Images />
       </div>
       <div>
-        <Mostfeature />
+        <Mostfeature setRoutedata={setRoutedata} setHeadroute={setHeadroute} setTitle1={setTitle1}/>
       </div>
     </div>
   );
 }
 export default HomePage;
 
-function Mostfeature() {
+function Mostfeature({ setRoutedata ,setHeadroute ,setTitle1}) {
+  // setRoutedata("hello")
   let conts = [
     {
-      link: "/home/detection",
+      headdes:detectiondata.detectionModules,
+      bodydes:detectiondata.categories,
       icon: <MdPersonSearch />,
-      title: "Detection : ",
+      title: "Detection",
       subtitle: "AI-POWERED THREAT DETECTION",
       description:
         "Detect humans, vehicles, and suspicious activities in real time using AI-powered CCTV analytics.",
     },
     {
-      link: "/home/tracking",
+      headdes: trackingdata.features,
+      bodydes:trackingdata.overview,
       icon: <LuScanSearch />,
-      title: "Tracking : ",
+      title: "Tracking",
       subtitle: "MOVEMENT & TRAJECTORY ANALYSIS",
       description:
         "Track people and vehicles across video frames to understand movement, direction & trajectories.",
     },
     {
-       link: "/home/bordermanage",
+      headdes:bordermemorydata.navigation,
+      bodydes:bordermemorydata.filters,
       icon: <MdMemory />,
-      title: "Border Memory: ",
+      title: "Border Memory",
       subtitle: "PREVIOUS MEMORY SERVILENCE ",
       description:
         "Manage, prioritize and track surveillance events,evidence records in real time.",
     },
     {
-      link: "/home/eventlog",
+      headdes:eventdata.features,
+      bodydes:eventdata.categories,
       icon: <LuActivity />,
-      title: "Event Management: ",
+      title: "Event Management",
       subtitle: "INTELLIGENT EVENT ANALYSIS ",
       description:
-      "Manage, prioritize and track surveillance events,evidence records in real time.",
-
+        "Manage, prioritize and track surveillance events,evidence records in real time.",
     },
     {
-      link: "/home/camerahealth",
+      headdes:otherdata.categories,
+      bodydes:otherdata.filters,
       icon: <TbVirusSearch />,
-      title: "Other : ",
+      title: "Other Service",
       subtitle: "BEYOND TRADITIONAL SURVEILLANCE",
       description:
         "Explore a smarter surveillance ecosystem with secure event logs, environmental monitoring.",
     },
   ];
+
   return (
     <div className="maincontain">
       {conts.map((cont, i) => {
         return (
-          <Link to={cont.link}>
-            <div className="contener" key={i}>
+          <Link
+            to="/home/detection"
+            onClick={() => {
+              return (
+                setRoutedata(cont.headdes),
+                setHeadroute(cont.bodydes),
+                setTitle1(cont.title),
+                console.log("sucessfull")
+              );
+            }}
+            key={i}
+          >
+            <div className="contener">
               <div className="conticon">{cont.icon}</div>
               <div className="firstcont">
                 <div className="secondcont">

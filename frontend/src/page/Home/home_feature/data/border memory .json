@@ -42,36 +42,11 @@
       }
     ]
   },
+
   "navigation": [
-    { "id": "overview", "title": "Overview", "icon": "LuLayoutDashboard" },
-    { "id": "history", "title": "Event History", "icon": "LuHistory" },
-    { "id": "search", "title": "Smart Search", "icon": "LuSearch" },
-    { "id": "entities", "title": "Entity Records", "icon": "LuUsers" },
-    {
-      "id": "correlation",
-      "title": "Event Correlation",
-      "icon": "LuGitBranch"
-    },
-    {
-      "id": "patterns",
-      "title": "Pattern Analysis",
-      "icon": "LuChartNoAxesCombined"
-    },
-    { "id": "evidence", "title": "Evidence Vault", "icon": "LuArchive" },
-    { "id": "audit", "title": "Audit Trail", "icon": "LuClipboardCheck" },
-    { "id": "sync", "title": "Sync Center", "icon": "LuRefreshCw" },
-    { "id": "reports", "title": "Reports", "icon": "LuFileChartColumn" },
-    { "id": "archive", "title": "Archive Manager", "icon": "LuDatabase" },
-    {
-      "id": "retention",
-      "title": "Retention Settings",
-      "icon": "LuCalendarClock"
-    }
-  ],
-  "statistics": [
     {
       "id": "total-records",
-      "title": "Total Records",
+      "name": "Total Records",
       "value": 24850,
       "icon": "LuDatabase",
       "color": "blue",
@@ -80,7 +55,7 @@
     },
     {
       "id": "security-events",
-      "title": "Security Events",
+      "name": "Security Events",
       "value": 348,
       "icon": "LuShieldAlert",
       "color": "orange",
@@ -89,7 +64,7 @@
     },
     {
       "id": "camera-sources",
-      "title": "Camera Sources",
+      "name": "Camera Sources",
       "value": 126,
       "icon": "LuCamera",
       "color": "purple",
@@ -98,15 +73,151 @@
     },
     {
       "id": "integrity",
-      "title": "Data Integrity",
+      "name": "Data Integrity",
       "value": 98.6,
       "unit": "%",
       "icon": "LuShieldCheck",
       "color": "green",
       "trend": "+0.8%",
       "description": "Illustrative integrity metric"
+    },
+    { "id": "overview", "name": "Overview", "icon": "LuLayoutDashboard" },
+    { "id": "history", "name": "Event History", "icon": "LuHistory" },
+    { "id": "search", "name": "Smart Search", "icon": "LuSearch" },
+    { "id": "entities", "name": "Entity Records", "icon": "LuUsers" },
+    {
+      "id": "correlation",
+      "name": "Event Correlation",
+      "icon": "LuGitBranch"
+    },
+    {
+      "id": "patterns",
+      "name": "Pattern Analysis",
+      "icon": "LuChartNoAxesCombined"
+    },
+    { "id": "evidence", "name": "Evidence Vault", "icon": "LuArchive" },
+    { "id": "audit", "name": "Audit Trail", "icon": "LuClipboardCheck" },
+    { "id": "sync", "name": "Sync Center", "icon": "LuRefreshCw" },
+    { "id": "reports", "name": "Reports", "icon": "LuFileChartColumn" },
+    { "id": "archive", "name": "Archive Manager", "icon": "LuDatabase" },
+    {
+      "id": "retention",
+      "name": "Retention Settings",
+      "icon": "LuCalendarClock"
+    },
+    { "id": 1, "name": "Centralized Memory Repository", "enabled": true },
+    { "id": 2, "name": "Historical Event Timeline", "enabled": true },
+    { "id": 3, "name": "Advanced Memory Search", "enabled": true },
+    { "id": 4, "name": "Multi-Parameter Filtering", "enabled": true },
+    { "id": 5, "name": "Anonymous Person Tracking Records", "enabled": true },
+    { "id": 6, "name": "Vehicle Detection History", "enabled": true },
+    { "id": 7, "name": "Camera-Wise History", "enabled": true },
+    { "id": 8, "name": "Zone-Wise Records", "enabled": true },
+    { "id": 9, "name": "Event Relationship Mapping", "enabled": true },
+    { "id": 10, "name": "Repeated Event Detection", "enabled": true },
+    { "id": 11, "name": "Historical Movement Records", "enabled": true },
+    { "id": 12, "name": "Incident Comparison", "enabled": true },
+    { "id": 13, "name": "Pattern Recognition", "enabled": true },
+    { "id": 14, "name": "Historical Risk Analysis", "enabled": true },
+    { "id": 15, "name": "Hourly Event Analytics", "enabled": true },
+    { "id": 16, "name": "Daily Event Analytics", "enabled": true },
+    { "id": 17, "name": "Monthly Event Analytics", "enabled": true },
+    { "id": 18, "name": "Event Frequency Analysis", "enabled": true },
+    { "id": 19, "name": "False Positive Archive", "enabled": true },
+    { "id": 20, "name": "Verified Incident Archive", "enabled": true },
+    { "id": 21, "name": "Evidence Vault", "enabled": true },
+    { "id": 22, "name": "Evidence Hash Verification", "enabled": true },
+    { "id": 23, "name": "Blockchain Audit References", "enabled": true },
+    { "id": 24, "name": "Append-Only Audit Trail", "enabled": true },
+    { "id": 25, "name": "Record Version History", "enabled": true },
+    { "id": 26, "name": "Investigator Notes", "enabled": true },
+    { "id": 27, "name": "Incident Bookmarking", "enabled": true },
+    { "id": 28, "name": "Case Management Integration", "enabled": true },
+    { "id": 29, "name": "PDF Report Export", "enabled": true },
+    { "id": 30, "name": "CSV Data Export", "enabled": true },
+    { "id": 31, "name": "JSON Data Export", "enabled": true },
+    { "id": 32, "name": "Automatic Archive Backup", "enabled": true },
+    { "id": 33, "name": "Configurable Data Retention", "enabled": true },
+    { "id": 34, "name": "Automatic Record Archiving", "enabled": true },
+    { "id": 35, "name": "Duplicate Record Detection", "enabled": true },
+    { "id": 36, "name": "Memory Integrity Monitoring", "enabled": true },
+    { "id": 37, "name": "Offline Memory Access", "enabled": true },
+    { "id": 38, "name": "Low-Bandwidth Synchronization", "enabled": true },
+    {
+      "id": 39,
+      "name": "Synchronization Conflict Resolution",
+      "enabled": true
+    },
+    { "id": 40, "name": "Role-Based Access Control", "enabled": true },
+    { "id": 41, "name": "Archive Access History", "enabled": true },
+    { "id": 42, "name": "Alert-to-Memory Linking", "enabled": true },
+    { "id": 43, "name": "Historical Camera Health Records", "enabled": true },
+    { "id": 44, "name": "Incident Resolution Tracking", "enabled": true },
+    { "id": 45, "name": "AI Event Summarization", "enabled": true },
+    { "id": 46, "name": "Natural Language Memory Search", "enabled": true },
+    { "id": 47, "name": "Memory Statistics Dashboard", "enabled": true },
+    { "id": 48, "name": "Secure Archive Lock", "enabled": true },
+    { "id": 49, "name": "Data Integrity Reports", "enabled": true },
+    { "id": 50, "name": "Cross-Camera Event Correlation", "enabled": true },
+    { "id": 51, "name": "Event Tag Management", "enabled": true },
+    { "id": 52, "name": "Saved Search Queries", "enabled": true },
+    { "id": 53, "name": "Event Priority Management", "enabled": true },
+    { "id": 54, "name": "Historical Anomaly Comparison", "enabled": true },
+    { "id": 55, "name": "Audit Log Search", "enabled": true },
+    { "id": 56, "name": "Evidence Access Permissions", "enabled": true },
+    { "id": 57, "name": "Automatic Evidence Verification", "enabled": true },
+    { "id": 58, "name": "Archive Storage Monitoring", "enabled": true },
+    { "id": 59, "name": "Scheduled Archive Maintenance", "enabled": true },
+    { "id": 60, "name": "Metadata Management", "enabled": true }
+  ],
+
+
+
+
+
+  "filters": [
+    {
+      "id": "category",
+      "name": "Event Category",
+      "type": "select",
+      "options": [
+        "All",
+        "Movement",
+        "Vehicle",
+        "Camera Health",
+        "Perimeter",
+        "Other"
+      ]
+    },
+    {
+      "id": "riskLevel",
+      "name": "Risk Level",
+      "type": "select",
+      "options": ["All", "HIGH", "MEDIUM", "LOW"]
+    },
+    {
+      "id": "status",
+      "name": "Review Status",
+      "type": "select",
+      "options": ["All", "UNDER_REVIEW", "RESOLVED", "ARCHIVED"]
+    },
+    {
+      "id": "date",
+      "name": "Date Range",
+      "type": "date-range"
+    },
+    {
+      "id": "cameraId",
+      "name": "Camera Source",
+      "type": "text"
+    },
+    {
+      "id": "zoneId",
+      "name": "Zone Reference",
+      "type": "text"
     }
   ],
+
   "search": {
     "enabled": true,
     "placeholder": "Search memory records...",
@@ -119,48 +230,7 @@
       "caseId",
       "tags"
     ],
-    "filters": [
-      {
-        "id": "category",
-        "label": "Event Category",
-        "type": "select",
-        "options": [
-          "All",
-          "Movement",
-          "Vehicle",
-          "Camera Health",
-          "Perimeter",
-          "Other"
-        ]
-      },
-      {
-        "id": "riskLevel",
-        "label": "Risk Level",
-        "type": "select",
-        "options": ["All", "HIGH", "MEDIUM", "LOW"]
-      },
-      {
-        "id": "status",
-        "label": "Review Status",
-        "type": "select",
-        "options": ["All", "UNDER_REVIEW", "RESOLVED", "ARCHIVED"]
-      },
-      {
-        "id": "date",
-        "label": "Date Range",
-        "type": "date-range"
-      },
-      {
-        "id": "cameraId",
-        "label": "Camera Source",
-        "type": "text"
-      },
-      {
-        "id": "zoneId",
-        "label": "Zone Reference",
-        "type": "text"
-      }
-    ],
+
     "savedSearches": [],
     "searchHistory": []
   },
@@ -446,70 +516,7 @@
     ]
   },
   "features": [
-    { "id": 1, "name": "Centralized Memory Repository", "enabled": true },
-    { "id": 2, "name": "Historical Event Timeline", "enabled": true },
-    { "id": 3, "name": "Advanced Memory Search", "enabled": true },
-    { "id": 4, "name": "Multi-Parameter Filtering", "enabled": true },
-    { "id": 5, "name": "Anonymous Person Tracking Records", "enabled": true },
-    { "id": 6, "name": "Vehicle Detection History", "enabled": true },
-    { "id": 7, "name": "Camera-Wise History", "enabled": true },
-    { "id": 8, "name": "Zone-Wise Records", "enabled": true },
-    { "id": 9, "name": "Event Relationship Mapping", "enabled": true },
-    { "id": 10, "name": "Repeated Event Detection", "enabled": true },
-    { "id": 11, "name": "Historical Movement Records", "enabled": true },
-    { "id": 12, "name": "Incident Comparison", "enabled": true },
-    { "id": 13, "name": "Pattern Recognition", "enabled": true },
-    { "id": 14, "name": "Historical Risk Analysis", "enabled": true },
-    { "id": 15, "name": "Hourly Event Analytics", "enabled": true },
-    { "id": 16, "name": "Daily Event Analytics", "enabled": true },
-    { "id": 17, "name": "Monthly Event Analytics", "enabled": true },
-    { "id": 18, "name": "Event Frequency Analysis", "enabled": true },
-    { "id": 19, "name": "False Positive Archive", "enabled": true },
-    { "id": 20, "name": "Verified Incident Archive", "enabled": true },
-    { "id": 21, "name": "Evidence Vault", "enabled": true },
-    { "id": 22, "name": "Evidence Hash Verification", "enabled": true },
-    { "id": 23, "name": "Blockchain Audit References", "enabled": true },
-    { "id": 24, "name": "Append-Only Audit Trail", "enabled": true },
-    { "id": 25, "name": "Record Version History", "enabled": true },
-    { "id": 26, "name": "Investigator Notes", "enabled": true },
-    { "id": 27, "name": "Incident Bookmarking", "enabled": true },
-    { "id": 28, "name": "Case Management Integration", "enabled": true },
-    { "id": 29, "name": "PDF Report Export", "enabled": true },
-    { "id": 30, "name": "CSV Data Export", "enabled": true },
-    { "id": 31, "name": "JSON Data Export", "enabled": true },
-    { "id": 32, "name": "Automatic Archive Backup", "enabled": true },
-    { "id": 33, "name": "Configurable Data Retention", "enabled": true },
-    { "id": 34, "name": "Automatic Record Archiving", "enabled": true },
-    { "id": 35, "name": "Duplicate Record Detection", "enabled": true },
-    { "id": 36, "name": "Memory Integrity Monitoring", "enabled": true },
-    { "id": 37, "name": "Offline Memory Access", "enabled": true },
-    { "id": 38, "name": "Low-Bandwidth Synchronization", "enabled": true },
-    {
-      "id": 39,
-      "name": "Synchronization Conflict Resolution",
-      "enabled": true
-    },
-    { "id": 40, "name": "Role-Based Access Control", "enabled": true },
-    { "id": 41, "name": "Archive Access History", "enabled": true },
-    { "id": 42, "name": "Alert-to-Memory Linking", "enabled": true },
-    { "id": 43, "name": "Historical Camera Health Records", "enabled": true },
-    { "id": 44, "name": "Incident Resolution Tracking", "enabled": true },
-    { "id": 45, "name": "AI Event Summarization", "enabled": true },
-    { "id": 46, "name": "Natural Language Memory Search", "enabled": true },
-    { "id": 47, "name": "Memory Statistics Dashboard", "enabled": true },
-    { "id": 48, "name": "Secure Archive Lock", "enabled": true },
-    { "id": 49, "name": "Data Integrity Reports", "enabled": true },
-    { "id": 50, "name": "Cross-Camera Event Correlation", "enabled": true },
-    { "id": 51, "name": "Event Tag Management", "enabled": true },
-    { "id": 52, "name": "Saved Search Queries", "enabled": true },
-    { "id": 53, "name": "Event Priority Management", "enabled": true },
-    { "id": 54, "name": "Historical Anomaly Comparison", "enabled": true },
-    { "id": 55, "name": "Audit Log Search", "enabled": true },
-    { "id": 56, "name": "Evidence Access Permissions", "enabled": true },
-    { "id": 57, "name": "Automatic Evidence Verification", "enabled": true },
-    { "id": 58, "name": "Archive Storage Monitoring", "enabled": true },
-    { "id": 59, "name": "Scheduled Archive Maintenance", "enabled": true },
-    { "id": 60, "name": "Metadata Management", "enabled": true }
+    
   ],
   "ui": {
     "layout": "sidebar-dashboard",

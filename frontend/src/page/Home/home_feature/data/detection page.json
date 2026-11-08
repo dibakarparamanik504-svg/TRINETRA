@@ -91,19 +91,22 @@
       "icon": "FiUser",
       "status": "ready",
       "enabled": true,
-      "priority": "high"
+      "priority": "high",
+      "count":34
     },
     {
       "id": 2,
       "moduleId": "DET-002",
-      "name": "Human Tracking",
-      "category": "human-identity",
-      "description": "Track individual human movement across video frames.",
+      "name": "Animal Detection",
+      "category": "Animal Detection",
+      "description": "Track individual Animal movement across video frames.",
       "technology": ["ByteTrack", "DeepSORT"],
       "icon": "FiCrosshair",
       "status": "ready",
       "enabled": true,
+      "count":14,
       "priority": "high"
+
     },
     {
       "id": 3,
@@ -115,6 +118,7 @@
       "icon": "FiEye",
       "status": "ready",
       "enabled": true,
+      "count":54,
       "priority": "medium"
     },
     {
@@ -127,6 +131,7 @@
       "icon": "FiUsers",
       "status": "processing",
       "enabled": true,
+      "count":23,
       "priority": "high"
     },
     {
@@ -139,6 +144,7 @@
       "icon": "FiTruck",
       "status": "ready",
       "enabled": true,
+      "count":47,
       "priority": "high"
     },
     {
@@ -151,6 +157,7 @@
       "icon": "FiLayers",
       "status": "ready",
       "enabled": true,
+      "count":7,
       "priority": "medium"
     },
     {
@@ -163,6 +170,7 @@
       "icon": "FiCreditCard",
       "status": "ready",
       "enabled": true,
+      "count":29,
       "priority": "high"
     },
     {
@@ -175,6 +183,7 @@
       "icon": "FiPackage",
       "status": "ready",
       "enabled": true,
+      "count":90,
       "priority": "medium"
     },
     {
@@ -187,6 +196,7 @@
       "icon": "FiShield",
       "status": "ready",
       "enabled": true,
+      "count":38,
       "priority": "critical"
     },
     {
@@ -199,6 +209,7 @@
       "icon": "FiMapPin",
       "status": "ready",
       "enabled": true,
+      "count":34,
       "priority": "critical"
     },
     {
@@ -211,6 +222,7 @@
       "icon": "FiMoon",
       "status": "ready",
       "enabled": true,
+      "count":31,
       "priority": "high"
     },
     {
@@ -223,6 +235,7 @@
       "icon": "FiVideoOff",
       "status": "ready",
       "enabled": true,
+      "count":19,
       "priority": "high"
     },
     {
@@ -235,7 +248,8 @@
       "icon": "FiClock",
       "status": "ready",
       "enabled": true,
-      "priority": "medium"
+      "priority": "medium",
+      "count":41
     },
     {
       "id": 14,
@@ -247,6 +261,7 @@
       "icon": "FiActivity",
       "status": "ready",
       "enabled": true,
+      "count":35,
       "priority": "high"
     },
     {
@@ -259,6 +274,7 @@
       "icon": "FiUsers",
       "status": "ready",
       "enabled": true,
+      "count":8,
       "priority": "medium"
     },
     {
@@ -271,6 +287,7 @@
       "icon": "FiNavigation",
       "status": "ready",
       "enabled": true,
+      "count":55,
       "priority": "medium"
     },
     {
@@ -283,6 +300,7 @@
       "icon": "FiAlertOctagon",
       "status": "ready",
       "enabled": true,
+      "count":10,
       "priority": "high"
     },
     {
@@ -295,6 +313,7 @@
       "icon": "FiCloud",
       "status": "ready",
       "enabled": true,
+      "count":14,
       "priority": "medium"
     },
     {
@@ -307,6 +326,7 @@
       "icon": "FiTarget",
       "status": "ready",
       "enabled": true,
+      "count":64,
       "priority": "high"
     },
     {
@@ -319,6 +339,7 @@
       "icon": "FiVolume2",
       "status": "ready",
       "enabled": true,
+      "count":11,
       "priority": "medium"
     }
   ],

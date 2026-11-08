@@ -39,15 +39,33 @@
     }
   },
   "categories": [
-    "All Features",
-    "Event Detection",
-    "Event Classification",
-    "Event Prioritization",
-    "Alert Management",
-    "Incident Management",
-    "Network & Offline",
-    "Intelligence & Analytics",
-    "Audit & Security"
+    {
+      "name": "All Features"
+    },
+    {
+      "name": "Event Detection"
+    },
+    {
+      "name": "Event Classification"
+    },
+    {
+      "name": "Event Prioritization"
+    },
+    {
+      "name": "Alert Management"
+    },
+    {
+      "name": "Incident Management"
+    },
+    {
+      "name": "Network & Offline"
+    },
+    {
+      "name": "Intelligence & Analytics"
+    },
+    {
+      "name": "Audit & Security"
+    }
   ],
   "features": [
     {
