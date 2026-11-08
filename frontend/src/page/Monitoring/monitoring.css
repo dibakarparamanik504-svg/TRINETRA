@@ -119,6 +119,14 @@
         flex-direction: row;
         justify-content: space-around;
     }
+    .featurelogo{
+        color: rgb(244, 247, 62);
+        font-size: 40px;
+    }
+    .featurecountnum{
+        font-size: 30px;
+        font-weight: bold;
+    }
 
 
 
@@ -126,9 +134,9 @@
 
 
     .featurelist{
-       display: grid;
-       grid-template-columns: repeat(2,157px);
-       grid-template-rows: repeat(10,180px);
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
        padding: 2px;
        gap: 5px;
         margin: 5px;
@@ -141,6 +149,10 @@
         border-radius: 20px;
         background-color: rgba(147, 147, 148, 0.63);
         padding: 2px;
+        height: 200px;
+        width: 160px;
+        margin-top: 10px;
+        /* gap: 5px; */
     }
     .featurename{
         font-size: 20px;
@@ -196,7 +208,6 @@
         padding: 5px;
         border-radius: 20px;
     }
-    
 
 
 
@@ -210,11 +221,37 @@
 
     }
     .childinovation{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
         border: 5px,solid,rgba(209, 206, 206, 0.664);
         border-radius: 20px;
         width: 100%;
         height: 150px;
-        background-color: rgba(70, 69, 69, 0.26);
+        background-color: rgba(88, 87, 87, 0.479);
+    }
+    .inovationlogo{
+        font-size: 40px;
+        margin: 5px;
+        background-color: antiquewhite;
+        border-radius: 20px;
+        align-self: center;
+        padding: 10px;
+    }
+    .inovationame{
+        font-size: 20px;
+        color: azure;
+        font-weight: bold;
+        padding: 5px;
+        background-color: rgba(0, 0, 0, 0.377);
+        width: max-content;
+        margin: 2px;
+        border-radius: 20px;
+    }
+    .inovationdetails{
+        font-size: 20px;
+        color: rgba(247, 247, 247, 0.705);
+        padding: 5px;
     }
 }
 
@@ -341,9 +378,9 @@
 
 
     .featurelist{
-       display: grid;
-       grid-template-columns: repeat(2,157px);
-       grid-template-rows: repeat(10,180px);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
        padding: 2px;
        gap: 5px;
         margin: 5px;
@@ -351,7 +388,6 @@
     .parentfeaturelist{
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
         border: 2px solid black;
         border-radius: 20px;
         background-color: rgba(147, 147, 148, 0.63);
@@ -369,6 +405,19 @@
     .featuredetails{
         text-align: center;
         color: aliceblue;
+    }
+    .featurelogo{
+        color: rgb(244, 247, 62);
+        font-size: 40px;
+    }
+    .featurecountnum{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .featurecount{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
 
 
@@ -425,11 +474,39 @@
 
     }
     .childinovation{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
         border: 5px,solid,rgba(209, 206, 206, 0.664);
         border-radius: 20px;
         width: 100%;
         height: 150px;
-        background-color: rgba(70, 69, 69, 0.26);
+        background-color: rgba(88, 87, 87, 0.479);
     }
+    .inovationlogo{
+        font-size: 40px;
+        margin: 5px;
+        background-color: antiquewhite;
+        border-radius: 20px;
+        align-self: center;
+        padding: 10px;
+    }
+    .inovationame{
+        font-size: 20px;
+        color: azure;
+        font-weight: bold;
+        padding: 5px;
+        background-color: rgba(0, 0, 0, 0.377);
+        width: max-content;
+        margin: 2px;
+        border-radius: 20px;
+    }
+    .inovationdetails{
+        font-size: 20px;
+        color: rgba(247, 247, 247, 0.705);
+        padding: 5px;
+    }
+
+    
     
 }

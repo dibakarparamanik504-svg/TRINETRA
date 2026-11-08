@@ -27,8 +27,15 @@ import {
   FiDatabase,
   FiTrendingUp,
   FiShield,
-  FiLock
+  FiLock,
 } from "react-icons/fi";
+
+import {
+  IoIosCellular,
+  IoMdWarning,
+  IoMdPeople,
+  IoMdFiling,
+} from "react-icons/io";
 
 function Monitor({ setName }) {
   setName("AI Monitoring");
@@ -218,7 +225,7 @@ function DetectionFeature() {
     <FiDatabase />,
     <FiTrendingUp />,
     <FiShield />,
-    <FiLock />
+    <FiLock />,
   ];
   return (
     <div className="featurelist">
@@ -228,7 +235,7 @@ function DetectionFeature() {
             <div className="featurename">{feature.name}</div>
             <div className="featurecount">
               <div className="featurelogo">{logoname[i]}</div>
-              <div className="featurecount">{feature.count}</div>
+              <div className="featurecountnum">{feature.count}</div>
             </div>
             <div className="featuredetails">{feature.details}</div>
           </div>
@@ -293,21 +300,25 @@ function Coreinovation() {
       id: 1,
       name: "Bandwidth-Aware AI",
       details: "Process fewer frames on weak networks",
+      logo: <IoIosCellular />,
     },
     {
       id: 2,
       name: "False-Alert Reduction",
       details: "Combine confidence checks with duplicate filtering",
+      logo: <IoMdWarning />,
     },
     {
       id: 3,
       name: "Unified Object Tracking",
       details: "Link object IDs across detection events",
+      logo: <IoMdPeople />,
     },
     {
       id: 4,
       name: "Tamper-Evident Audit",
       details: "Use cryptographic hashes to verify records",
+      logo: <IoMdFiling />,
     },
   ];
   return (
@@ -315,8 +326,11 @@ function Coreinovation() {
       {innovations.map((inovation, i) => {
         return (
           <div key={i} className="childinovation">
-            <div className="inovationame">{inovation.name}</div>
-            <div className="inovationdetails">{inovation.details}</div>
+            <div className="inovationlogo">{inovation.logo}</div>
+            <div>
+              <div className="inovationame">{inovation.name}</div>
+              <div className="inovationdetails">{inovation.details}</div>
+            </div>
           </div>
         );
       })}
