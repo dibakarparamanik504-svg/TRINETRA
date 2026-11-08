@@ -86,7 +86,6 @@ function Mostfeature({ setRoutedata ,setHeadroute ,setTitle1}) {
               return (
                 setRoutedata(cont.headdes),
                 setHeadroute(cont.bodydes),
-                setTitle1(cont.title),
                 console.log("sucessfull")
               );
             }}

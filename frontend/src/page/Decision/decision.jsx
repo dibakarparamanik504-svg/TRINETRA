@@ -75,27 +75,23 @@ function Decisionhead() {
       headtitle: "Panding Decisions",
       headlogo: <GoCpu />,
       headnum: "25",
-      link:"/dicision/panding",
     },
     {
       id: 1,
       headtitle: "High Priority",
       headlogo: <FiAlertTriangle />,
-      link:"/dicision/high",
       headnum: "8",
     },
     {
       id: 2,
       headtitle: "Assigned Cases",
       headlogo: <IoPeopleSharp />,
-      link:"/dicision/assigned",
       headnum: "10",
     },
     {
       id: 3,
       headtitle: "Resolved Today",
       headlogo: <GoCheckCircle />,
-      link:"/dicision/resolved",
       headnum: "15",
     },
   ];
@@ -103,7 +99,6 @@ function Decisionhead() {
     <div className="disiheadermain">
       {header.map((headitem, i) => {
         return (
-          <Link to={headitem.link}>
           <div className="disiheader">
             <div className="headtitle">{headitem.headtitle}</div>
             <div className="logonum">
@@ -111,7 +106,6 @@ function Decisionhead() {
               <div className="headnum">{headitem.headnum}</div>
             </div>
           </div>
-          </Link>
         );
       })}
     </div>

@@ -9,18 +9,9 @@ import Monitor from "./page/Monitoring/monitoring";
 import Decision from "./page/Decision/decision";
 import Analysis from "./page/Analysis/analysis";
 import Detection from "./page/Home/home_feature/detection";
-import TotalAlert from "./page/Alert/alert_feature/sequrityalert/totalalert";
-import Criticul from "./page/Alert/alert_feature/sequrityalert/criticul";
-import Underreview from "./page/Alert/alert_feature/sequrityalert/underreview";
-import Resolved from "./page/Alert/alert_feature/sequrityalert/resolved";
-import Alertanalysis from "./page/Alert/alert_feature/sequrityalert/alertanalysis";
+// import Alertanalysis from "./page/Alert/alert_feature/sequrityalert/alertanalysis";
 // import Cameradetails from "./page/Monitoring/motitorfeature/cameradetails";
 import Alertdicision from "./page/Decision/dicision_feature/alert_dicision";
-import Makedicision from "./page/Decision/dicision_feature/make_dicision";
-import Pandingdicision from "./page/Decision/dicision_feature/panding_dicision";
-import Highpriority from "./page/Decision/dicision_feature/high_priority";
-import Assignedcase from "./page/Decision/dicision_feature/assigned_case";
-import Resolvedtoday from "./page/Decision/dicision_feature/resolved";
 import Eventanalysis from "./page/Analysis/analysis_feature/event_analysis";
 import Flagged from "./page/Analysis/analysis_feature/flagged";
 import Cameraavailblity from "./page/Analysis/analysis_feature/camera_availblity";
@@ -38,7 +29,10 @@ function App() {
   let [name, setName] = useState("Home Page");
   let [headroute, setHeadroute] = useState([]);
   let [routedata, setRoutedata] = useState([]);
-  let [title1, setTitle1] = useState();
+  let[title,setTitle]=useState("");
+  let[body,setBody]=useState("");
+  let[check,setCheck] = useState(false);
+  // let [title1, setTitle1] = useState();
   // let [cameradetails,setcameradetails]=useState();
   return (
     <div className="App">
@@ -55,11 +49,11 @@ function App() {
                   setName={setName}
                   setRoutedata={setRoutedata}
                   setHeadroute={setHeadroute}
-                  setTitle1={setTitle1}
+                  // setTitle1={setTitle1}
                 />
               }
             />
-            <Route path="/alert" element={<Dashboard setName={setName} />} />
+            <Route path="/alert" element={<Dashboard setName={setName} setTitle={setTitle} setBody={setBody} setCheck={setCheck} title={title} body={body} check={check}/>} />
             <Route path="/monitoring" element={<Monitor setName={setName} />} />
             <Route path="/decision" element={<Decision setName={setName} />} />
             <Route path="/analysis" element={<Analysis setName={setName} />} />
@@ -70,33 +64,16 @@ function App() {
                   setName={setName}
                   routedata={routedata}
                   headroute={headroute}
-                  title1={title1}
+                  // title1={title1}
                 />
               }
             />
             {/* sequrity alert start */}
-
-            <Route
-              path="/monitoring/totalalert"
-              element={<TotalAlert setName={setName} />}
-            />
-            <Route
-              path="/monitoring/critical"
-              element={<Criticul setName={setName} />}
-            />
-            <Route
-              path="/monitoring/underreview"
-              element={<Underreview setName={setName} />}
-            />
-            <Route
-              path="/monitoring/resolve"
-              element={<Resolved setName={setName} />}
-            />
-
+{/* 
             <Route
               path="/alert/alertanalysis"
-              element={<Alertanalysis setName={setName} />}
-            />
+              element={<Alertanalysis />}
+            /> */}
 
             {/* monitoring start */}
 
@@ -111,26 +88,7 @@ function App() {
               path="/decision/alert/dicision"
               element={<Alertdicision setName={setName} />}
             />
-            <Route
-              path="/dicision/create/dicision"
-              element={<Makedicision setName={setName} />}
-            />
-            <Route
-              path="/dicision/panding"
-              element={<Pandingdicision setName={setName} />}
-            />
-            <Route
-              path="/dicision/high"
-              element={<Highpriority setName={setName} />}
-            />
-            <Route
-              path="/dicision/assigned"
-              element={<Assignedcase setName={setName} />}
-            />
-            <Route
-              path="/dicision/resolved"
-              element={<Resolvedtoday setName={setName} />}
-            />
+
 
             {/* Analysis start */}
 

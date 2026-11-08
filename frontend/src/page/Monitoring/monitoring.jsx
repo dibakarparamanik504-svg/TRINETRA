@@ -44,7 +44,7 @@ function Monitor({ setName }) {
   return (
     <div className="mainmoni">
       <div>
-        <CameraBox setcameradetails={setcameradetails} />
+        <CameraBox setcameradetails={setcameradetails}  cameradetails={cameradetails}/>
       </div>
       <div>
         <MonitoringObject cameradetails={cameradetails} />
@@ -57,7 +57,7 @@ export default Monitor;
 
 // camera function create hare
 
-function CameraBox({ setcameradetails }) {
+function CameraBox({ setcameradetails,cameradetails }) {
   let [cameralength, setcameralength] = useState(0);
   let [index, setIndex] = useState(0);
   let [cameras, setCamera] = useState([
@@ -100,7 +100,8 @@ function CameraBox({ setcameradetails }) {
         return [...revio.slice(0, id), ...revio.slice(id + 1)];
       }),
       setIndex(cameralength - 1),
-      setcameralength(cameralength - 1)
+      setcameralength(cameralength - 1),
+      setcameradetails(cameradetails - 1)
     );
   };
   return (
@@ -256,7 +257,6 @@ function Monitoringcont({ cameradetails }) {
             <div key={i}>
               {cameradetails === 0 ? (
                 <div className="infoondetails">
-                  {" "}
                   No camera Details Available
                 </div>
               ) : (
