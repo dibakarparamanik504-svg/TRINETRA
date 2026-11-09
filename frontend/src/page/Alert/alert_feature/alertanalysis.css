@@ -5,7 +5,7 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
-        padding-bottom: 50px;
+        padding-bottom: 60px;
     }
     .parentbody{
         padding: 10px;
@@ -20,6 +20,39 @@
         padding: 5px;
         font-weight: bold;
     }
+
+
+
+    .listcls1{
+        padding-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+    .listscls2{
+        width: max-content;
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        background-color: rgb(207, 208, 209);
+        border-radius: 20px;
+        color: black;
+        padding: 5px;
+        font-size: 20px;
+        gap: 5px;
+
+    }
+    .listlogo{
+        color: rgb(255, 145, 0);
+        font-size: 40px;
+    }
+
+
+
+
+
     .bodycomponent{
         display: flex;
         flex-direction: row;
@@ -94,6 +127,10 @@
             border-bottom: none;
         }
     }
+
+
+
+    
 }
 @media screen and (min-width: 1000px){
     .mainalertanalysis{

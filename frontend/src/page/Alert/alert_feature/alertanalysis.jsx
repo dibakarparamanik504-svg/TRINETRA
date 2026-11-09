@@ -1,4 +1,5 @@
 import "./alertanalysis.css";
+import {IoIosAddCircle,IoIosPulse,IoIosCheckmarkCircle,IoIosCloseCircle,IoIosSend,IoIosDownload} from "react-icons/io"
 function Alertanalysis({ setName, alertsdata }) {
   setName(alertsdata.type);
   let indentity = [
@@ -12,12 +13,11 @@ function Alertanalysis({ setName, alertsdata }) {
     },
     {
       names: "Spcial Funcation",
-      components: "",
+      components: <Specialfunc />,
     },
   ];
   return (
     <div className="mainalertanalysis">
-      <div></div>
       {indentity.map((ids, i) => {
         return (
           <div className="parentbody" key={i}>
@@ -26,11 +26,51 @@ function Alertanalysis({ setName, alertsdata }) {
           </div>
         );
       })}
-      <div></div>
     </div>
   );
 }
 export default Alertanalysis;
+
+function Specialfunc() {
+  let lists = [
+    {
+      Name: "Make Decision",
+      logo: <IoIosAddCircle/>,
+    },
+    {
+      Name: "Analysis",
+      logo: <IoIosPulse/>,
+    },
+    {
+      Name: "True Error",
+      logo:<IoIosCheckmarkCircle/>,
+    },
+    {
+      Name: "False Error",
+      logo: <IoIosCloseCircle/>,
+    },
+    {
+      Name: "Share",
+      logo: <IoIosSend/>,
+    },
+    {
+      Name: "Download",
+      logo: <IoIosDownload/>,
+    },
+  ];
+  return (
+    <div className="listcls1">
+      {lists.map((list,i) => {
+        return (
+          <div className="listscls2" key={i}>
+            <div className="listlogo">{list.logo}</div>
+            <div className="listname">{list.Name}</div>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
 
 function Cameraproof() {
   return (
