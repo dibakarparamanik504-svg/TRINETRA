@@ -270,8 +270,20 @@
         z-index: 3000;
     }
 
+
+    .fullcameradetails{
+        position:fixed;
+        z-index: 234789978;
+        top: 100px;
+        right: 30px;
+        border: 2px solid bisque;
+        border-radius: 20px;
+        padding: 5px;
+        font-size: 20px;
+    }
+
     .maincamera{
-        width: 95%;
+        width: 800px;
         height: 250px;
         border: 1px,solid,rgb(185, 183, 183);
         margin: 10px;
@@ -308,7 +320,7 @@
         position: fixed;
         width: max-content;
         top: 200px;
-        right: 0px;
+        right: 480px;
         /* margin-left: auto; */
         background-color: aliceblue;
         color: black;
@@ -338,7 +350,7 @@
     }
     .cancle{
         position: fixed;
-        right: 10px;
+        right: 580px;
         padding: 5px;
         margin: 5px;
         color: red;
@@ -350,12 +362,13 @@
     }
 
     .monfeature{
-        top: 320px;
+        top: 250px;
         position: relative;
         display: grid;
         grid-template-columns: repeat(1,1fr);
         margin: 10px;
         gap: 5px;
+        color: black;
 
     }
     .parentbox{
@@ -382,7 +395,8 @@
         flex-direction: row;
         flex-wrap: wrap;
        padding: 2px;
-       gap: 5px;
+       justify-content: space-around;
+       gap: 10px;
         margin: 5px;
     }
     .parentfeaturelist{
@@ -391,7 +405,7 @@
         border: 2px solid black;
         border-radius: 20px;
         background-color: rgba(147, 147, 148, 0.63);
-        padding: 2px;
+        padding: 10px;
     }
     .featurename{
         font-size: 20px;
@@ -506,6 +520,9 @@
         color: rgba(247, 247, 247, 0.705);
         padding: 5px;
     }
+
+
+    
 
     
     

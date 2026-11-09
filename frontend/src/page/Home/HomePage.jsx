@@ -8,30 +8,32 @@ import detectiondata from "./home_feature/data/detection page.json";
 import trackingdata from "./home_feature/data/tracking page.json";
 import bordermemorydata from "./home_feature/data/border memory .json";
 import eventdata from "./home_feature/data/events management .json";
-import otherdata from "./home_feature/data/other page .json"
+import otherdata from "./home_feature/data/other page .json";
 
-function HomePage({ setName, setRoutedata,setHeadroute,setTitle1 }) {
+function HomePage({ setName, setRoutedata, setHeadroute, setTitle1 }) {
   setName("Home");
 
   return (
     <div>
+      <Images />
       <div>
-        <Images />
-      </div>
-      <div>
-        <Mostfeature setRoutedata={setRoutedata} setHeadroute={setHeadroute} setTitle1={setTitle1}/>
+        <Mostfeature
+          setRoutedata={setRoutedata}
+          setHeadroute={setHeadroute}
+          setTitle1={setTitle1}
+        />
       </div>
     </div>
   );
 }
 export default HomePage;
 
-function Mostfeature({ setRoutedata ,setHeadroute ,setTitle1}) {
+function Mostfeature({ setRoutedata, setHeadroute, setTitle1 }) {
   // setRoutedata("hello")
   let conts = [
     {
-      headdes:detectiondata.detectionModules,
-      bodydes:detectiondata.categories,
+      headdes: detectiondata.detectionModules,
+      bodydes: detectiondata.categories,
       icon: <MdPersonSearch />,
       title: "Detection",
       subtitle: "AI-POWERED THREAT DETECTION",
@@ -40,7 +42,7 @@ function Mostfeature({ setRoutedata ,setHeadroute ,setTitle1}) {
     },
     {
       headdes: trackingdata.features,
-      bodydes:trackingdata.overview,
+      bodydes: trackingdata.overview,
       icon: <LuScanSearch />,
       title: "Tracking",
       subtitle: "MOVEMENT & TRAJECTORY ANALYSIS",
@@ -48,8 +50,8 @@ function Mostfeature({ setRoutedata ,setHeadroute ,setTitle1}) {
         "Track people and vehicles across video frames to understand movement, direction & trajectories.",
     },
     {
-      headdes:bordermemorydata.navigation,
-      bodydes:bordermemorydata.filters,
+      headdes: bordermemorydata.navigation,
+      bodydes: bordermemorydata.filters,
       icon: <MdMemory />,
       title: "Border Memory",
       subtitle: "PREVIOUS MEMORY SERVILENCE ",
@@ -57,8 +59,8 @@ function Mostfeature({ setRoutedata ,setHeadroute ,setTitle1}) {
         "Manage, prioritize and track surveillance events,evidence records in real time.",
     },
     {
-      headdes:eventdata.features,
-      bodydes:eventdata.categories,
+      headdes: eventdata.features,
+      bodydes: eventdata.categories,
       icon: <LuActivity />,
       title: "Event Management",
       subtitle: "INTELLIGENT EVENT ANALYSIS ",
@@ -66,8 +68,8 @@ function Mostfeature({ setRoutedata ,setHeadroute ,setTitle1}) {
         "Manage, prioritize and track surveillance events,evidence records in real time.",
     },
     {
-      headdes:otherdata.categories,
-      bodydes:otherdata.filters,
+      headdes: otherdata.categories,
+      bodydes: otherdata.filters,
       icon: <TbVirusSearch />,
       title: "Other Service",
       subtitle: "BEYOND TRADITIONAL SURVEILLANCE",

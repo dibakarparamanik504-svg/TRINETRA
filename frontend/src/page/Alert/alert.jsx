@@ -84,7 +84,7 @@ function Filteroptipn() {
     },
   ];
   return (
-    <div className="searchbox">
+    <div className="searchbox1">
       <div>
         <input
           type="text"

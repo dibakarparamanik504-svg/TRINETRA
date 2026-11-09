@@ -365,7 +365,7 @@
         color: rgb(0, 0, 0);
         font-weight: bold;
         position: relative;
-        left: 200px;
+        left: 170px;
         font-size: 40px;
     }
     .clslablename3{
@@ -378,7 +378,7 @@
         /* Filter page start  */
 
 
-    .searchbox{
+    .searchbox1{
         margin-top: 10px;
         display: flex;
         flex-direction: row;

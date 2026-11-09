@@ -261,7 +261,7 @@ function Monitoringcont({ cameradetails }) {
         .map((information, i) => {
           console.log(cameradetails);
           return (
-            <div key={i}>
+            <div className="fullcameradetails" key={i}>
               {cameradetails === 0 ? (
                 <div className="infoondetails">No camera Details Available</div>
               ) : (
