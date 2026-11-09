@@ -1,0 +1,473 @@
+{
+  "page": {
+    "id": "ibvap-detection",
+    "title": "Detection Center",
+    "subtitle": "AI-Powered Border Surveillance & Analytics",
+    "systemStatus": "online",
+    "monitoringStatus": "active",
+    "version": "1.0.0"
+  },
+
+  "overview": [
+    {
+      "id": 1,
+      "title": "Human Detected",
+      "value": 24,
+      "unit": "persons",
+      "icon": "FiUser",
+      "color": "blue",
+      "source": "demo"
+    },
+    {
+      "id": 2,
+      "title": "Vehicles Detected",
+      "value": 12,
+      "unit": "vehicles",
+      "icon": "FiTruck",
+      "color": "purple",
+      "source": "demo"
+    },
+    {
+      "id": 3,
+      "title": "Security Events",
+      "value": 8,
+      "unit": "events",
+      "icon": "FiAlertTriangle",
+      "color": "red",
+      "source": "demo"
+    },
+    {
+      "id": 4,
+      "title": "Active Cameras",
+      "value": "18/20",
+      "unit": "cameras",
+      "icon": "FiCamera",
+      "color": "green",
+      "source": "demo"
+    }
+  ],
+
+  "categories": [
+    {
+      "id": "human-identity",
+      "name": "Human & Identity",
+      "icon": "FiUsers",
+      "totalModules": 4
+    },
+    {
+      "id": "vehicle-object",
+      "name": "Vehicle & Object",
+      "icon": "FiTruck",
+      "totalModules": 4
+    },
+    {
+      "id": "border-security",
+      "name": "Border Security",
+      "icon": "FiShield",
+      "totalModules": 4
+    },
+    {
+      "id": "behaviour-analytics",
+      "name": "Behaviour Analytics",
+      "icon": "FiActivity",
+      "totalModules": 4
+    },
+    {
+      "id": "environment-system",
+      "name": "Environment & System",
+      "icon": "FiCloud",
+      "totalModules": 4
+    }
+  ],
+
+  "detectionModules": [
+    {
+      "id": 1,
+      "moduleId": "DET-001",
+      "name": "Human Detection",
+      "category": "human-identity",
+      "description": "Detect people in CCTV footage.",
+      "technology": ["YOLO", "OpenCV"],
+      "icon": "FiUser",
+      "status": "ready",
+      "enabled": true,
+      "priority": "high",
+      "count":34
+    },
+    {
+      "id": 2,
+      "moduleId": "DET-002",
+      "name": "Animal Detection",
+      "category": "Animal Detection",
+      "description": "Track individual Animal movement across video frames.",
+      "technology": ["ByteTrack", "DeepSORT"],
+      "icon": "FiCrosshair",
+      "status": "ready",
+      "enabled": true,
+      "count":14,
+      "priority": "high"
+
+    },
+    {
+      "id": 3,
+      "moduleId": "DET-003",
+      "name": "Face Detection",
+      "category": "human-identity",
+      "description": "Detect visible human faces in CCTV footage.",
+      "technology": ["OpenCV", "YOLO"],
+      "icon": "FiEye",
+      "status": "ready",
+      "enabled": true,
+      "count":54,
+      "priority": "medium"
+    },
+    {
+      "id": 4,
+      "moduleId": "DET-004",
+      "name": "Multi-Camera Identity Association",
+      "category": "human-identity",
+      "description": "Associate the same tracked person across multiple cameras using privacy-controlled visual features.",
+      "technology": ["Person Re-ID", "Feature Embeddings"],
+      "icon": "FiUsers",
+      "status": "processing",
+      "enabled": true,
+      "count":23,
+      "priority": "high"
+    },
+    {
+      "id": 5,
+      "moduleId": "DET-005",
+      "name": "Vehicle Detection",
+      "category": "vehicle-object",
+      "description": "Detect cars, trucks, motorcycles and other vehicles.",
+      "technology": ["YOLO", "OpenCV"],
+      "icon": "FiTruck",
+      "status": "ready",
+      "enabled": true,
+      "count":47,
+      "priority": "high"
+    },
+    {
+      "id": 6,
+      "moduleId": "DET-006",
+      "name": "Vehicle Classification",
+      "category": "vehicle-object",
+      "description": "Classify detected vehicles according to vehicle type.",
+      "technology": ["YOLO", "CNN"],
+      "icon": "FiLayers",
+      "status": "ready",
+      "enabled": true,
+      "count":7,
+      "priority": "medium"
+    },
+    {
+      "id": 7,
+      "moduleId": "DET-007",
+      "name": "ANPR / Number Plate Detection",
+      "category": "vehicle-object",
+      "description": "Locate and recognize vehicle registration plates where legally authorized.",
+      "technology": ["YOLO", "OCR", "EasyOCR"],
+      "icon": "FiCreditCard",
+      "status": "ready",
+      "enabled": true,
+      "count":29,
+      "priority": "high"
+    },
+    {
+      "id": 8,
+      "moduleId": "DET-008",
+      "name": "Object Detection",
+      "category": "vehicle-object",
+      "description": "Identify bags, packages and other relevant objects.",
+      "technology": ["YOLO", "OpenCV"],
+      "icon": "FiPackage",
+      "status": "ready",
+      "enabled": true,
+      "count":90,
+      "priority": "medium"
+    },
+    {
+      "id": 9,
+      "moduleId": "DET-009",
+      "name": "Virtual Fence Intrusion",
+      "category": "border-security",
+      "description": "Detect entry into digitally configured restricted zones.",
+      "technology": ["YOLO", "Polygon ROI", "OpenCV"],
+      "icon": "FiShield",
+      "status": "ready",
+      "enabled": true,
+      "count":38,
+      "priority": "critical"
+    },
+    {
+      "id": 10,
+      "moduleId": "DET-010",
+      "name": "Border Crossing Detection",
+      "category": "border-security",
+      "description": "Detect movement across configured virtual boundaries.",
+      "technology": ["Object Tracking", "Motion Detection"],
+      "icon": "FiMapPin",
+      "status": "ready",
+      "enabled": true,
+      "count":34,
+      "priority": "critical"
+    },
+    {
+      "id": 11,
+      "moduleId": "DET-011",
+      "name": "Night Movement Detection",
+      "category": "border-security",
+      "description": "Detect movement in low-light surveillance conditions.",
+      "technology": ["OpenCV", "YOLO", "Low-Light Enhancement"],
+      "icon": "FiMoon",
+      "status": "ready",
+      "enabled": true,
+      "count":31,
+      "priority": "high"
+    },
+    {
+      "id": 12,
+      "moduleId": "DET-012",
+      "name": "Camera Tampering Detection",
+      "category": "border-security",
+      "description": "Detect camera obstruction, displacement and loss of view.",
+      "technology": ["OpenCV", "Image Analysis"],
+      "icon": "FiVideoOff",
+      "status": "ready",
+      "enabled": true,
+      "count":19,
+      "priority": "high"
+    },
+    {
+      "id": 13,
+      "moduleId": "DET-013",
+      "name": "Loitering Detection",
+      "category": "behaviour-analytics",
+      "description": "Identify unusually prolonged presence within a configured zone.",
+      "technology": ["ByteTrack", "Time Analysis"],
+      "icon": "FiClock",
+      "status": "ready",
+      "enabled": true,
+      "priority": "medium",
+      "count":41
+    },
+    {
+      "id": 14,
+      "moduleId": "DET-014",
+      "name": "Suspicious Movement Detection",
+      "category": "behaviour-analytics",
+      "description": "Flag unusual movement patterns for human review.",
+      "technology": ["Anomaly Detection", "Machine Learning"],
+      "icon": "FiActivity",
+      "status": "ready",
+      "enabled": true,
+      "count":35,
+      "priority": "high"
+    },
+    {
+      "id": 15,
+      "moduleId": "DET-015",
+      "name": "Group Movement Detection",
+      "category": "behaviour-analytics",
+      "description": "Detect unusual crowd formations and coordinated movement patterns.",
+      "technology": ["YOLO", "Crowd Analysis"],
+      "icon": "FiUsers",
+      "status": "ready",
+      "enabled": true,
+      "count":8,
+      "priority": "medium"
+    },
+    {
+      "id": 16,
+      "moduleId": "DET-016",
+      "name": "Direction & Speed Analysis",
+      "category": "behaviour-analytics",
+      "description": "Estimate movement direction and speed using calibrated camera footage.",
+      "technology": ["Object Tracking", "Optical Flow"],
+      "icon": "FiNavigation",
+      "status": "ready",
+      "enabled": true,
+      "count":55,
+      "priority": "medium"
+    },
+    {
+      "id": 17,
+      "moduleId": "DET-017",
+      "name": "Smoke & Fire Detection",
+      "category": "environment-system",
+      "description": "Identify visible smoke and fire indicators.",
+      "technology": ["YOLO", "Image Classification"],
+      "icon": "FiAlertOctagon",
+      "status": "ready",
+      "enabled": true,
+      "count":10,
+      "priority": "high"
+    },
+    {
+      "id": 18,
+      "moduleId": "DET-018",
+      "name": "Weather & Visibility Detection",
+      "category": "environment-system",
+      "description": "Detect fog, rain and visibility degradation.",
+      "technology": ["Computer Vision", "Image Analysis"],
+      "icon": "FiCloud",
+      "status": "ready",
+      "enabled": true,
+      "count":14,
+      "priority": "medium"
+    },
+    {
+      "id": 19,
+      "moduleId": "DET-019",
+      "name": "Blind-Spot Detection",
+      "category": "environment-system",
+      "description": "Identify CCTV coverage gaps and obstructed surveillance zones.",
+      "technology": ["Coverage Analysis", "Camera Calibration"],
+      "icon": "FiTarget",
+      "status": "ready",
+      "enabled": true,
+      "count":64,
+      "priority": "high"
+    },
+    {
+      "id": 20,
+      "moduleId": "DET-020",
+      "name": "Audio Event Detection",
+      "category": "environment-system",
+      "description": "Detect supported audio events such as alarms and unusual loud sounds.",
+      "technology": ["Audio Classification", "Signal Processing"],
+      "icon": "FiVolume2",
+      "status": "ready",
+      "enabled": true,
+      "count":11,
+      "priority": "medium"
+    }
+  ],
+
+  "intelligenceFeatures": [
+    {
+      "id": 1,
+      "name": "AI Suspicion Score",
+      "icon": "FiActivity",
+      "description": "Combine event indicators into a review-priority score.",
+      "status": "planned"
+    },
+    {
+      "id": 2,
+      "name": "Future Intrusion Prediction",
+      "icon": "FiTrendingUp",
+      "description": "Forecast potential risks using validated historical patterns.",
+      "status": "planned"
+    },
+    {
+      "id": 3,
+      "name": "Behaviour Fingerprinting",
+      "icon": "FiFingerprint",
+      "description": "Analyze recurring observable movement patterns.",
+      "status": "planned"
+    },
+    {
+      "id": 4,
+      "name": "Border Memory Engine",
+      "icon": "FiSearch",
+      "description": "Search historical surveillance events using natural language.",
+      "status": "planned"
+    },
+    {
+      "id": 5,
+      "name": "Low-Bandwidth Optimization",
+      "icon": "FiWifi",
+      "description": "Adaptive frame processing and event-based transmission.",
+      "status": "planned"
+    },
+    {
+      "id": 6,
+      "name": "Offline Detection Buffer",
+      "icon": "FiDatabase",
+      "description": "Store events locally during network disconnection.",
+      "status": "planned"
+    },
+    {
+      "id": 7,
+      "name": "Blockchain Event Verification",
+      "icon": "FiLock",
+      "description": "Maintain tamper-evident event hashes and audit records.",
+      "status": "planned"
+    },
+    {
+      "id": 8,
+      "name": "Self-Testing Surveillance",
+      "icon": "FiSettings",
+      "description": "Monitor camera health and AI service performance.",
+      "status": "planned"
+    }
+  ],
+
+  "network": {
+    "mode": "edge-optimized",
+    "lowBandwidth": true,
+    "eventBasedTransmission": true,
+    "offlineBuffer": true,
+    "autoSynchronization": true,
+    "adaptiveFrameSampling": true,
+    "encryption": "TLS"
+  },
+
+  "eventFilters": {
+    "types": [
+      "human",
+      "vehicle",
+      "intrusion",
+      "face",
+      "anpr",
+      "loitering",
+      "night-movement",
+      "camera-tampering",
+      "smoke-fire",
+      "audio"
+    ],
+    "riskLevels": ["critical", "high", "medium", "low"],
+    "timeRange": ["today", "last-24-hours", "last-7-days", "custom"]
+  },
+
+  "sampleEvents": [
+    {
+      "id": "EVT-1024",
+      "type": "intrusion",
+      "title": "Virtual Fence Intrusion",
+      "cameraId": "CAM-002",
+      "timestamp": "2026-11-05T18:42:10+05:30",
+      "riskLevel": "high",
+      "confidence": 0.96,
+      "status": "under-review"
+    },
+    {
+      "id": "EVT-1023",
+      "type": "human",
+      "title": "Human Detected",
+      "cameraId": "CAM-001",
+      "timestamp": "2026-11-05T18:40:32+05:30",
+      "riskLevel": "low",
+      "confidence": 0.94,
+      "status": "logged"
+    },
+    {
+      "id": "EVT-1022",
+      "type": "vehicle",
+      "title": "Vehicle Detected",
+      "cameraId": "CAM-004",
+      "timestamp": "2026-11-05T18:38:15+05:30",
+      "riskLevel": "medium",
+      "confidence": 0.91,
+      "status": "logged"
+    }
+  ],
+
+  "configuration": {
+    "defaultConfidenceThreshold": 0.75,
+    "allowModuleToggle": true,
+    "allowCameraAssignment": true,
+    "requireHumanReview": true,
+    "enableAuditLogging": true
+  }
+}
