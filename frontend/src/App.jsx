@@ -12,18 +12,18 @@ import Detection from "./page/Home/home_feature/detection";
 import Alertanalysis from "./page/Alert/alert_feature/alertanalysis";
 // import Cameradetails from "./page/Monitoring/motitorfeature/cameradetails";
 import Loading from "./page/FuncationBox/Loading";
-import Eventanalysis from "./page/Analysis/analysis_feature/event_analysis";
-import Flagged from "./page/Analysis/analysis_feature/flagged";
-import Cameraavailblity from "./page/Analysis/analysis_feature/camera_availblity";
-import Simpleprecision from "./page/Analysis/analysis_feature/simple_precision";
-import SpatialIntelligent from "./page/Analysis/analysis_feature/Spatial_Intelligent";
-import PredictiveAnalytics from "./page/Analysis/analysis_feature/Predictive_Analytics";
-import BehaviourAnalysis from "./page/Analysis/analysis_feature/Behaviour_Analysis";
-import NetworkTesting from "./page/Analysis/analysis_feature/Network_Testing";
-import EnvironmentalAnalysis from "./page/Analysis/analysis_feature/Environmental_Analysis";
-import EvisenceIntelligence from "./page/Analysis/analysis_feature/Evisence_Intelligence";
-import ModelPerformance from "./page/Analysis/analysis_feature/Model_Performance";
-import InfrastructureHealth from "./page/Analysis/analysis_feature/Infrastructure_Health";
+// import Eventanalysis from "./page/Analysis/analysis_feature/event_analysis";
+// import Flagged from "./page/Analysis/analysis_feature/flagged";
+// import Cameraavailblity from "./page/Analysis/analysis_feature/camera_availblity";
+// import Simpleprecision from "./page/Analysis/analysis_feature/simple_precision";
+// import SpatialIntelligent from "./page/Analysis/analysis_feature/Spatial_Intelligent";
+// import PredictiveAnalytics from "./page/Analysis/analysis_feature/Predictive_Analytics";
+// import BehaviourAnalysis from "./page/Analysis/analysis_feature/Behaviour_Analysis";
+// import NetworkTesting from "./page/Analysis/analysis_feature/Network_Testing";
+// import EnvironmentalAnalysis from "./page/Analysis/analysis_feature/Environmental_Analysis";
+// import EvisenceIntelligence from "./page/Analysis/analysis_feature/Evisence_Intelligence";
+// import ModelPerformance from "./page/Analysis/analysis_feature/Model_Performance";
+// import InfrastructureHealth from "./page/Analysis/analysis_feature/Infrastructure_Health";
 
 function App() {
   let [name, setName] = useState("Home Page");
@@ -94,7 +94,7 @@ function App() {
 
             {/* Analysis start */}
 
-            <Route
+            {/* <Route
               path="/analysis/event"
               element={<Eventanalysis setName={setName} />}
             />
@@ -142,7 +142,7 @@ function App() {
             <Route
               path="/analysis/infrastructurehealth"
               element={<InfrastructureHealth setName={setName} />}
-            />
+            /> */}
           </Routes>
           <div>
             <Footer name={name} />
