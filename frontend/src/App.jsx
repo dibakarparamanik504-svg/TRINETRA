@@ -35,6 +35,7 @@ function App() {
   let[loadingpath, setLoadingpath] = useState("");
   let [title1, setTitle1] = useState();
   // let [cameradetails,setcameradetails]=useState();
+  let[alertsdata,setAlertsdata]=useState([]);
   return (
     <div className="App">
       <BrowserRouter>
@@ -54,7 +55,7 @@ function App() {
                 />
               }
             />
-            <Route path="/alert" element={<Dashboard setName={setName}/>} />
+            <Route path="/alert" element={<Dashboard setName={setName} setAlertsdata={setAlertsdata}/>} />
             <Route path="/monitoring" element={<Monitor setName={setName} setLoadingpath={setLoadingpath}/>} />
             <Route path="/decision" element={<Decision setName={setName} setLoadingpath={setLoadingpath}/>}/>
             <Route path="/analysis" element={<Analysis setName={setName} setLoadingpath={setLoadingpath}/>} />
@@ -73,7 +74,7 @@ function App() {
 
             <Route
               path="/alert/alertanalysis"
-              element={<Alertanalysis setName={setName}/>}
+              element={<Alertanalysis setName={setName} alertsdata={alertsdata}/>}
             />
 
             {/* monitoring start */}

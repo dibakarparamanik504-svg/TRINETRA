@@ -1,7 +1,98 @@
 @media screen and (max-width:800px) {
     .mainalertanalysis{
-        color: aqua;
+        color: rgb(255, 218, 5);
         padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 50px;
+    }
+    .parentbody{
+        padding: 10px;
+        background-color: rgba(156, 156, 155, 0.445);
+        border-radius: 20px;
+    }
+    .parentname{
+        color: rgb(248, 241, 241);
+        background-color: rgb(0, 0, 0);
+        border-radius: 20px;
+        width: max-content;
+        padding: 5px;
+        font-weight: bold;
+    }
+    .bodycomponent{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .child1{
+        color: rgba(248, 244, 244, 0.568);
+        font-size: 20px;
+        font-weight: bold;
+        padding: 5px;
+    }
+    .child2{
+        padding-top: 10px;
+        color: rgb(250, 251, 252);
+    }
+    .proof1{
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .proof2{
+        height: 200px;
+        width: 300px;
+        background-color: black;
+        border-radius: 30px;
+    }
+    .loading1 {
+        color: red;
+        padding-top: 50px;
+        justify-self: center;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+    .loadinglogo1 {
+        width: 70px;
+        height: 70px;
+        /* border-top: 10px dotted white; */
+        border-radius:100%;
+        animation-name: loading1;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes loading1 {
+        0% {
+            border-right: none;
+            border-top: 10px dotted white;
+            border-left: none;
+            border-bottom: none;
+        }
+
+        25% {
+            border-right: 10px dotted white;
+            border-top: none;
+            border-left: none;
+            border-bottom: none;
+        }
+
+        50% {
+            border-right: none;
+            border-top: none;
+            border-left: none;
+            border-bottom: 10px dotted white;
+        }
+
+        100% {
+           border-right: none;
+            border-top: none;
+            border-left: 10px dotted white;
+            border-bottom: none;
+        }
     }
 }
 @media screen and (min-width: 1000px){

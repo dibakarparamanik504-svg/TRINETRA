@@ -4,30 +4,13 @@ import { MdSecurity } from "react-icons/md";
 import { BiSolidBellRing } from "react-icons/bi";
 import { RiAlertFill } from "react-icons/ri";
 import { FaRegClock, FaCheckCircle, FaImages } from "react-icons/fa";
-import Alertanalysis from "../FuncationBox/small_window";
 import { Link } from "react-router-dom";
 
-function Dashboard({
-  setName,
-  setTitle,
-  setBody,
-  setCheck,
-  title,
-  body,
-  check,
-}) {
+function Dashboard({ setName, setAlertsdata }) {
   setName("Live Alert");
 
   return (
     <div className="maindash">
-      <div>
-        <Alertanalysis
-          title={title}
-          body={body}
-          check={check}
-          setCheck={setCheck}
-        />
-      </div>
       <div className="fixposition">
         <div className="mainaleheader">
           <SecurityAlert />
@@ -37,11 +20,7 @@ function Dashboard({
         </div>
       </div>
       <div>
-        <Alertcomponent
-          setTitle={setTitle}
-          setBody={setBody}
-          setCheck={setCheck}
-        />
+        <Alertcomponent setAlertsdata={setAlertsdata} />
       </div>
     </div>
   );
@@ -49,36 +28,36 @@ function Dashboard({
 
 export default Dashboard;
 
-function Alertcomponent({ setTitle }) {
+function Alertcomponent({ setAlertsdata}) {
   return (
     <div className="mainalertbox">
       {alerts.map((alertsitem, i) => {
         return (
-          <Link to="/alert/alertanalysis" key={i}>
-          <div className="fullcont">
-            <div className="imagesclas">
-              <FaImages />
-            </div>
-            <div className="description">
-              <div className="decriptitle">{alertsitem.title}</div>
+          <Link to="/alert/alertanalysis" onClick={()=>{setAlertsdata(alertsitem)}} key={i}>
+            <div className="fullcont">
+              <div className="imagesclas">
+                <FaImages />
+              </div>
+              <div className="description">
+                <div className="decriptitle">{alertsitem.title}</div>
 
-              <div className="descripcamera">
-                {alertsitem.camera} • {alertsitem.zone}
+                <div className="descripcamera">
+                  {alertsitem.camera} • {alertsitem.zone}
+                </div>
+                <div className="descripdate">{alertsitem.date}</div>
+                <div className="descripcamera">{alertsitem.time}</div>
               </div>
-              <div className="descripdate">{alertsitem.date}</div>
-              <div className="descripcamera">{alertsitem.time}</div>
+              <div className="alertscore">
+                <div>
+                  <div className="securityscore2">Priority</div>
+                  <div className="securityscore1">{alertsitem.severity}</div>
+                </div>
+                <div>
+                  <div className="securityscore3">Risk</div>
+                  <div className="securityscore1">{alertsitem.confidence}</div>
+                </div>
+              </div>
             </div>
-            <div className="alertscore">
-              <div>
-                <div className="securityscore2">Priority</div>
-                <div className="securityscore1">{alertsitem.severity}</div>
-              </div>
-              <div>
-                <div className="securityscore3">Risk</div>
-                <div className="securityscore1">{alertsitem.confidence}</div>
-              </div>
-            </div>
-          </div>
           </Link>
         );
       })}
@@ -118,8 +97,8 @@ function Filteroptipn() {
         <select name="" id="" className="prioricty">
           {priorictys.map((prioricty, i) => {
             return (
-              <div>
-                <option value={prioricty.value} key={i}>
+              <div key={i}>
+                <option value={prioricty.value} >
                   {prioricty.value}
                 </option>
               </div>
@@ -184,7 +163,7 @@ function SecurityAlert() {
               <div className="clslable1">
                 <div className={aleheader.logoclass}>{aleheader.headlogo}</div>
               </div>
-              <div clslable2>
+              <div className="clslable2">
                 <div className="clslablename1">{aleheader.headname}</div>
                 <div className="clslablename2">{aleheader.altnum}</div>
                 <div className="clslablename3">{aleheader.feedback}</div>
