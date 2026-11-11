@@ -138,9 +138,7 @@
         grid-template-columns: repeat(2,160px);
         grid-template-rows: repeat(10,200px);
        flex-wrap: wrap;
-       padding: 2px;
        gap: 5px;
-        margin: 5px;
     }
     .parentfeaturelist{
         display: flex;
